@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleespecifico.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 3</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+
+  <h1>Aula 3.2</h1>
+  (CSS)
+  <br /><br />
+
+  <h1>Caixas</h1><br />
+
+<h1>Dimensões da Caixa</h1><br />
+Por padrão, uma caixa recebe o tamanho exato para acomodar
+seu conteúdo. Podemos fixar estes valores utilizando as
+propriedades width
+e height. Para isso podemos fixar os valores
+em pixels ou percentagem.<br /><br />
+Width: Define a largura do elemento.<br />
+<br /><div class="cody2">
+<xmp>width: 8%;</xmp></div><br />
+Height: Define a altura do elemento.<br />
+<br /><div class="cody2">
+<xmp>height: 8%;</xmp></div><br />
+
+<h1>Limitando largura e altura</h1><br />
+Alguns designs de página se expandem e se contraem para se
+adaptar ao tamanho das telas, com estas propriedades podemo
+s
+limitar estas adaptações dando valores máximos e mínimos:<br /><br />
+Min-width e max-width: Para definir mínimo e máximo para
+largura.<br />
+<br /><div class="cody2">
+<xmp>max-width: 8%;</xmp></div><br />
+Min-height e max-height: Para definir mínimo e máximo para
+altura.<br />
+<br /><div class="cody2">
+<xmp>min-height: 8%;</xmp></div><br />
+
+<h1>overflow</h1><br />
+Podemos usar a propriedade overflow para tratar como o
+conteúdo das caixas devem se comportar quando ficam maiores
+que ela. Temos duas opções:<br /><br />
+Hidden: oculta qualquer conteúdo que não caiba na
+caixa.<br /><br /><div class="cody2">
+<xmp>over-flow:hidden;</xmp></div><br />
+Scroll: adiciona uma barra de rolagem para rolar o
+conteúdo.<br /><br /><div class="cody2">
+<xmp>over-flow:scroll;</xmp></div><br />
+Auto: se for necessário, adiciona uma barra de
+rolagem para rolar o conteúdo.<br /><br /><div class="cody2">
+<xmp>over-flow:scroll;</xmp></div><br />
+
+<h1>Bordas</h1><br />
+Cada caixa tem uma borda (mesmo que ela não estiver visível ou for
+especificada para ter 0px de largura). A borda contorna e determina a caixa.
+Para visualizarmos a borda precisamos definir as três propriedades principais:
+largura, estilo e cor.<br /><br />
+
+Border-width: Define a largura de uma borda. Podemos definir uma largura
+para todas as bordas do elemento ou definir a largura de cada borda.<br /><br /><div class="cody2">
+<xmp>border-width: 2px;</xmp></div><br />
+Para definir cada lado usamos:<br /><br />
+Border-top-width:<br /><br /><div class="cody2">
+<xmp>border-top-width: 2px;</xmp></div><br />
+Border-right-width:<br /><br /><div class="cody2">
+<xmp>border-rigth-width: 2px;</xmp></div><br />
+Border-bottom-width<br /><br /><div class="cody2">
+<xmp>border-bottom-width: 2px;</xmp></div><br />
+Border-left-width<br /><br /><div class="cody2">
+<xmp>border-left-width: 2px;</xmp></div><br />
+
+<h1>Estilo de Bordas</h1><br />
+
+Border-style: Define o estilo de uma borda. Podemos definir um estilo para todas
+as bordas do elemento ou definir o estilo de cada borda.<br />
+
+Tipos de bordas:<br /><br />
+Solid:<br /><br />
+<div class="cody2">
+<xmp>border 1px solid;</xmp></div><br />
+Dotted:<br /><br />
+<div class="cody2">
+<xmp>border 1px dotted;</xmp></div><br />
+Dashed:<br /><br />
+<div class="cody2">
+<xmp>border 1px dashed;</xmp></div><br />
+Double:<br /><br />
+<div class="cody2">
+<xmp>border 1px dolid;</xmp></div><br />
+Groove:<br /><br />
+<div class="cody2">
+<xmp>border 1px groove;</xmp></div><br />
+Ridge:<br /><br />
+<div class="cody2">
+<xmp>border 1px ridge;</xmp></div><br />
+Inset:<br /><br />
+<div class="cody2">
+<xmp>border 1px inset;</xmp></div><br />
+Outset:<br /><br />
+<div class="cody2">
+<xmp>border 1px outset;</xmp></div><br />
+
+Border-color: Define a cor de uma borda. Podemos definir uma cor para todas as
+bordas do elemento ou definir a cor de cada borda<br /><br />
+<div class="cody2">
+<xmp>border-color: red;</xmp></div><br />
+
+<h1>Preenchimento</h1><br />
+A propriedade padding permite especificar quanto será o espaço terá entre o
+conteúdo e a borda do elemento.
+Podemos define um preenchimento para todos os lados do conteúdo ou definir
+o preenchimento de cada lado.<br /><br />
+<div class="cody2">
+<xmp>padding: 15%;</xmp></div><br />
+
+<h1>Margem</h1><br />
+A propriedade margin define o espaço entre o elemento e os demais elementos
+da página.
+Podemos define o espaço para todos os lados da caixa ou definir o espaço de
+cada lado.<br /><br />
+<div class="cody2">
+<xmp>margin: 15%;</xmp></div><br />
+
+<h1>Centralizando</h1><br />
+Para centralizarmos uma caixa podemos utilizar o valor auto para as margens
+direita e esquerda.<br /><br />
+<div class="cody2">
+<xmp>margin: 1% auto 1% auto;</xmp></div><br />
+Podemos também resumir agrupando top com bottom e right com left, fazendo
+assim:<br /><br />
+<div class="cody2">
+<xmp>margin: 1% auto;</xmp></div><br />
+OBS. Só podemos usar este tipo de resumo quanto quisermos que os valores
+top com bottom e right com left sejam iguais.<br /><br />
+
+<h1>Alterar entre linha e bloco</h1><br />
+A propriedade display permite transformar um elemento está em linha num
+elemento em bloco, ou vice-versa. Também pode ser usado para ocultar um
+elemento. Os 4 valores principais são:<br /><br />
+inline: Isso faz com que um elemento em bloco funcione como um elemento
+em linha;<br /><br /><div class="cody2">
+<xmp>display: inline;</xmp></div><br />
+block: Isso faz com que um elemento em linha funcione como um elemento em
+bloco;<br /><br /><div class="cody2">
+<xmp>display: block;</xmp></div><br />
+Inline-block: Isso faz com que um elemento em bloco flua como um elemento
+em linha, mas mantendo as outras características de um elemento em bloco;<br /><br /><div class="cody2">
+<xmp>display: inline-block;</xmp></div><br />
+none: Isso oculta um elemento da página;<br /><br /><div class="cody2">
+<xmp>display: none;</xmp></div><br />
+
+<h1>Ocultando Caixas</h1><br />
+Se quiser ocultar e (ou) um elemento na página sem que seu espaço seja
+preenchido pelo próximo, você pode utilizar a propriedade visibility. Temos
+dois valores para esta propriedade:<br /><br />
+hidden: Isso oculta o elemento.<br /><br /><div class="cody2">
+<xmp>visibility:hidden;</xmp></div><br />
+visible: Isso exibe o elemento.<br /><br /><div class="cody2">
+<xmp>visibility:visible;</xmp></div><br />
+
+<h1>Sombra nas Caixas</h1><br />
+A propriedade box-shadow permite adicionar uma sombra em torno da caixa :<br /><br /> Horizontal, Vertical, Distorção, Cor :<br /><br /><div class="cody2">
+<xmp>box-shadow: 2px 2px 10px green;</xmp></div><br />
+
+Cantos Arredondados
+A propriedade border-radius permite que arredondemos as bordas da caixa.
+<br /><br /><div class="cody2">
+<xmp>border-radius: 2px;</xmp></div><br />
+ou assim:
+<br /><br /><div class="cody2">
+<xmp>border-radius: 2px 2px 10px 20px;</xmp></div><br />
+
+<h1>Posição dos Elementos</h1><br />
+A propriedade position define a posição do elemento em relação aos demais da
+página. Para configurar podemos usar as opções:<br /><br />
+position: static: é o valor default do elemento;<br /><br />
+<div class="cody2">
+<xmp>position:static;</xmp></div><br />
+position: relative: move um elemento em relação ao local onde ele estaria no
+fluxo normal.<br /><br />
+<div class="cody2">
+<xmp>position:relative;</xmp></div><br />
+position: absolute: remove o elemento do fluxo normal e ele não mais afeta o
+fluxo dos demais elementos . Precisa usar as propriedades top, bottom, right e
+left para configurar.<br /><br />
+<div class="cody2">
+<xmp>position:absolute;</xmp></div><br />
+position: fixed: marca o posicionamento em relação a janela. Precisa usar as
+propriedades top, bottom, right e left para configurar.<br /><br />
+<div class="cody2">
+<xmp>position:fixed;</xmp></div><br />
+
+<h1>Sobrepondo os Elementos</h1><br />
+Ao usar o posicionamento relativo, fixo ou absoluto os elementos podem se
+sobrepor. Assim, com a propriedade z-index, podemos ordenar a sequência de
+sobreposição. Por exemplo, um elemento com z-index de 5 ficará sobre um
+outro com o z-index de 4.<br /><br />
+<div class="cody2">
+<xmp>z-index:4;</xmp></div><br />
+
+<h1>Elementos Flutuantes</h1><br />
+A propriedade float permite selecionar um elemento do fluxo normal e
+posicioná-lo o máximo possível a direita ou a esquerda do elemento container.
+Ao usar a propriedade float você também deve usar a propriedade width, pois
+você pode ter um resultado inconsistente.<br /><br />
+<div class="cody2">
+<xmp>float:left;</xmp></div><br />
+Podemos isolar elementos flutuantes utilizando a propriedade clear, ela
+determina que nenhum elemento deve flutuar do lado selecionado do
+elemento. Temos os valores: left, right, both
+e none.<br /><br />
+<div class="cody2">
+<xmp>clear:both;</xmp></div><br />
+
+<h1>Transição de Efeitos</h1><br />
+A propriedade transition adiciona um efeito quando o navegador troca de um
+estilo para outro, sem usar animações em flash ou javascript. Promovendo
+mudanças suaves e com um tempo determinado. Temos as configurações:<br /><br />
+
+transition-property: nome da propriedade que sofrerá a transição, para
+adicionar a todas use o valor all;<br /><br />
+<div class="cody2">
+<xmp>transition-property:border-color;</xmp></div><br />
+
+transition-duration: duração do efeito em segundos;<br /><br />
+<div class="cody2">
+<xmp>transition-duration:3s;</xmp></div><br />
+
+transition-timing-function: forma como a transição progride no tempo. Temos
+os valores: linear, Ease, Ease-in, Ease-out e Ease-in-out;<br /><br />
+ease: Especifica um efeito de transição com um arranque lento, em seguida
+rapidamente, em seguida, termina-se lentamente (isto é o padrão).<br /><br />
+<div class="cody2">
+<xmp>transition-timing-function:ease;</xmp></div><br />
+linear: Especifica um efeito de transição com a mesma velocidade do início ao fim.<br /><br />
+<div class="cody2">
+<xmp>transition-timing-function:linear;</xmp></div><br />
+Ease-in: Especifica um efeito de transição com um arranque lento.<br /><br />
+<div class="cody2">
+<xmp>transition-timing-function:ease-in;</xmp></div><br />
+Ease-out: Especifica um efeito de transição com uma extremidade lento.<br /><br />
+<div class="cody2">
+<xmp>transition-timing-function:ease-out;</xmp></div><br />
+Ease-in-out: Especifica um efeito de transição com um lento início e fim.<br /><br />
+<div class="cody2">
+<xmp>transition-timing-function:ease-in-out;</xmp></div><br />
+
+<h1>Transição de Efeitos</h1><br />
+Transition-delay: define a partir de quanto tempo em segundos que o efeito da
+transição vai se iniciar.<br /><br />
+<div class="cody2">
+<xmp>transition-delay: 0.2s;</xmp></div><br />
+Podemos configurar em uma só linha assim:<br /><br />
+transition: property | duration | timing-function | delay;<br /><br />
+<div class="cody2">
+<xmp>transition: border-color 1s linear 0.2s;</xmp></div><br />
+
+
+<h1>Layout de Largura Fixa</h1><br />
+Designs de layout de largura fixa não mudam de tamanho quando o usuário
+aumenta ou diminui o tamanho da janela do navegador. As medidas tendem a
+serem exatas e em pixels.<br /><br />
+Como o tamanho será fixo e nosso site poderá ser visualizados em dispositivos
+de tamanho diferente, uma boa prática é fixar a largura do body em 960px, que
+é visualizado pela grande maioria e centralizá-lo deixando as margens laterais
+como auto.<br /><br />
+
+<h1>Layout Fluído</h1><br />
+O layout fluído usa a percentagem para especificar a largura de cada caixa de
+modo que o design se estenderá para se ajustar ao tamanho da tela.<br /><br />
+Há uma boa prática de deixar o body com 90% de modo que haja um pequeno
+espaço entre as laterais. Use percentagem tanto para seus elementos quanto
+para as margens, assim seu layout não irá quebrar.<br /><br />
+Ao testar isso no navegador, lembre-se de aumentar e reduzir a janela.<br /><br />
+
+<h1>Layout Responsivo</h1><br />
+O layout responsivo nos permite criar uma estilização própria para cada
+tamanho de tela, fazendo com que a página se adapte automaticamente a cada
+tamanho de tela.<br /><br />
+Para trabalhar com este tipo de layout utilizamos o @media que funciona de
+forma dinâmica e é acionado assim que a página recebe seus atributos.<br /><br />
+Ao testar isso no navegador, lembre-se de aumentar e reduzir a janela.<br /><br />
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="aula2.html"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="#"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+  <li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+  <li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+  <label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

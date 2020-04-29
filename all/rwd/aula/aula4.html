@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleespecifico.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 4</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+  <script type="text/javascript">
+  var carro = {
+  cor: "azul",
+  tipo: "sedan",
+  numPortas: 4,
+  modelo:"voyage",
+  marca: "VW",
+  pedido : "Quero um copo d\’água.’",
+  num: 3.5432,
+  acelerar: function(){alert("Estou correndo!")}
+  };
+
+  var num2 = 123.5432;
+  var num3 = num2.toString();
+  var verifica = typeof num3;
+
+  </script>
+
+  <h1>Aula 4</h1>
+  (Java)
+  <br /><br />
+
+  <br><div class="codigo">
+  <div class="case">
+  <object>
+  <embed src="../../../svg/jscsht.svg">
+  </object>
+  </div>
+</div><br />
+
+
+  <div class="codigo">
+  Java Script - Comportamento
+</div><br />
+  <div class="codigo">
+  <s>Css - Apresentação</s>
+  </div><br>
+  <div class="codigo">
+  <s>Html - Estrutura dos Dados (Conteúdo)</s>
+</div><br /><br />
+
+  <h1>JavaScript (JSS)</h1><br />
+
+  JavaScript é uma linguagem de programação interpretada.  Foi originalmente implementada como parte dos
+   navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário
+    sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido.<br /><br />
+É atualmente a principal linguagem para programação cliente-side em navegadores web. Começa também a
+ ser bastante utilizada do lado do servidor através de ambientes como o node.js. Foi concebida para
+  ser uma linguagem script com orientação a objetos baseada em protótipos, tipagem fraca e dinâmica
+   e funções de primeira classe. Possui suporte à programação funcional e apresenta recursos como fechamentos
+   e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++. É a linguagem de programação mais utilizada do mundo.<br /><br />
+
+   <h1>Utilização</h1>
+   Existem 3 formas de utilização de JavaScript:<br /><br />
+
+    <u>Em um evento Inline:</u><br /><br />
+    Codigo:
+    <br /><div class="cody2"><xmp><button class="button2" onclick="alert('Olá Mundo!!!');">Button</button></xmp></div><br />
+    Resultado:
+    <br /><div class="cody2"><button class="button2" onclick="alert('Olá Mundo!!!');">Button</button><br /><br /></div><br />
+  <u>Cabeçalho da corpo da página:</u><br /><br />
+   Codigo:
+   <br /><div class="cody2"><xmp><html>
+<head>
+<script type="text/javascript">
+alert('Olá Mundo!!!');
+</script>
+</head>
+<body>
+
+</body>
+</html>
+</xmp></div><br />
+   <u>Em um arquivo externo:</u><br /><br />
+   Codigo:
+   <br /><div class="cody2"><xmp><button class="button2" onclick="alert('Olá Mundo!!!');">Button</button></xmp></div><br />
+
+  <u>Em um arquivo JavaScript "Externo":</u><br /><br />
+   Codigo:
+   <br /><div class="cody2"><xmp>< script type="text/javascript" src=“js/script.js"></script></xmp></div><br />
+
+<h1>Eventos</h1>
+(São ultilizados quando alçgo acontece na página)<br /><br />
+• Clique do mouse.<br />
+• Carregamento da página.<br />
+• Envio de informações.<br /><br />
+
+<h1>Ler e Escrever</h1>
+É possivel escrever em conteúdo de elementos html e da mesma
+forma ler os seus valores.<br /><br />
+
+<h1>Validar Dados</h1>
+é Possível Validar Informações Antes Mesmo Delas Serem Enviadas Ao
+Servidor<br /><br />
+
+<h1>Comentarios:</h1>
+
+Em javascript os comentários podem ser adicionados
+no código de duas maneiras:<br /><br />
+
+Linha única, representada por duas barras seguidas do texto<br /><br />
+Codigo:
+<br /><div class="cody2"><xmp>// Um exemplo de comentário numa linha única.</xmp></div><br />
+
+
+
+Bloco, representado por um texto entre uma barra e um asterisco<br /><br />
+Codigo:
+<br /><div class="cody2"><xmp>/*
+Este é um comentário
+javascript
+em bloco
+*//
+</xmp></div><br />
+
+<h1>Variáveis e Tipos de Dados</h1>
+São Características das Variáveis do Javascript:<br /><br />
+
+Em Javascript as Variáveis Não São Tipadas, Logo Basta Declará-las
+Utilizando a Palavra Reservada "var".<br /><br />
+
+o Javascript é Case Sensitive, ou Seja, Ele Faz Diferenciação Entre Letras
+Maiúsculas e Minúsculas.<br /><br />
+
+A forma de declaração das variáveis utilizada no mercado é o camel
+case, onde a primeira palavra começa com letra minúscula e as
+demais com letra maiúscula sem espaço entre elas.<br /><br />
+
+O javascript pode interpretar as variáveis como os tipos:<br /><br />
+<br /><div class="cody2"><xmp>Int = números inteiros.
+
+Ex:
+float = números flutuantes com casas decimais.
+
+Ex:
+string = variáveis de texto, elas devem ser representadas entre aspas
+simples ou duplas.
+
+Ex:
+booleanos = que recebe os valores falso ou verdadeiro.
+
+Ex:
+array = conjunto de elementos, deve ser representado entre
+conchetes e os valores separados por virgula.
+
+Ex:
+o javascript pode interpretar as variáveis como os tipos:
+
+var idadealuno = 18;
+var valorproduto = 5.35;
+var nomealuno = "pedro henrique";
+var casado = true;
+var linguagens = ["java", "c#", "python"];
+</xmp></div><br />
+
+<h1>Objetos</h1><br />
+É um conjunto de informações sobre algo em específico como
+um array, mas ao invés de serem acessadas por suas posições,
+podemos dar nomes as posições.<br />
+<br /><div class="cody2"><xmp>var carro = {
+cor: "azul",
+tipo: "sedan",
+numPortas: 4,
+modelo:"voyage",
+marca: "VW"
+};
+
+alert(carro.cor);
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick="alert(carro.cor);">Button</button><br /><br /></div><br />
+
+Assim como os objetos no java, além de atributos do objeto,
+podemos ter também ações, são os métodos.<br /><br />
+<div class="cody2"><xmp>var carro = {
+cor: "azul",
+tipo: "sedan",
+numPortas: 4,
+modelo:"voyage",
+marca: "VW",
+acelerar: function(){alert("Estou correndo!")}
+};
+
+carro.acelerar();
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick="carro.acelerar();">Button</button><br /><br /></div><br />
+
+
+<h1>Manipulando textos e números</h1><br />
+Os textos (string) devem sempre estar entre aspas duplas ou simples.<br /><br />
+<div class="cody2"><xmp>var nomeAluno = "Pedro Henrique";
+var nomeAluno = ‘Pedro Henrique’;
+</xmp></div><br />
+
+Quando precisamos usar algum caractere reservado em nosso texto
+usamos a barra invertida “\” antes do caractere para ele fazer parte
+do texto.<br /><br />
+<div class="cody2"><xmp>var pedido = ‘Quero um copo d\’água.’;
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick="alert(carro.pedido);">Button</button><br /><br /></div><br />
+
+Podemos verificar o tamanho da nossa string utilizando o método
+“length”<br /><br />
+<div class="cody2"><xmp>onclick="alert(carro.pedido.length)"
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick="alert(carro.pedido.length);">Button</button><br /><br /></div><br />
+
+Outro método que podemos utilizar é o “indexof( )”, ele retorna a
+primeira posição na string de um trecho do texto.<br /><br />
+<div class="cody2"><xmp>onclick="alert(carro.pedido.indexOf('um'));"
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick="alert(carro.pedido.indexOf('um'));">Button</button><br /><br /></div><br />
+
+Para sabermos a última vez que o trecho aparece no texto utilizamos
+o “lastindexof( )”.<br /><br />
+<div class="cody2"><xmp>onclick="alert(carro.pedido.LastIndexOf('copo'));"
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick="alert(carro.pedido.lastIndexOf('copo'));">Button</button><br /><br /></div><br />
+
+
+Nós podemos também extrair parte do texto, para isso utilizamos o
+“slice( )”, quando apontamos o início e o fim do trecho que queremos
+extrair e ele nos retorna o trecho como uma nova string.<br /><br />
+<div class="cody2"><xmp>console.log(pedido.slice(0,5));
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(carro.pedido.slice(0,5))'>Button</button><br /><br /></div><br />
+
+Temos também o “substr( )” que recebe a posição inicial e a quantidade
+de caracteres que queremos pegar.
+<div class="cody2"><xmp>console.log(pedido.substr(0,5));
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='console.log(carro.pedido.substr(0,5))'>Button</button><br /><br /></div><br /><br />
+
+É possível também substituirmos um trecho do texto o “replace( )”,
+recebe o trecho que deve ser substituido e o trecho que entrará no
+lugar dele.
+<div class="cody2"><xmp>console.log(carro.pedido.replace("Quero","Give"));
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(carro.pedido.replace("Quero","Give"));'>Button</button><br /><br /></div><br /><br />
+
+O método “tolowercase( )” irá converter toda a string em letras
+minúsculas.
+<div class="cody2"><xmp>alert(carro.pedido.toLowerCase());
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(carro.pedido.toLowerCase())'>Button</button><br /><br /></div><br /><br />
+
+Para os números nós também podemos definir algumas formas de
+apresentação, por exemplo temos o “tofixed( )”, que define o número
+de casas decimais do valor.
+
+<div class="cody2"><xmp>alert(carro.num.toFixed(2))
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(carro.num.toFixed(2))'>Button</button><br /><br /></div><br /><br />
+
+Se quisermos definir um número de casas independente do ponto
+usamos o “toprecision( )”, que define o número de casas do valor como
+um todo.
+
+<div class="cody2"><xmp>alert(carro.num.toPrecision(4))
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(carro.num.toPrecision(4))'>Button</button><br /><br /></div><br /><br />
+
+Podemos precisar mudar o tipo da variável, como por exemplo de
+float para integer, nesse caso usamos o “parseint( )”, o valor perderá
+as casas depois da virgula.
+
+<div class="cody2"><xmp>alert(parseInt(carro.num))
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(parseInt(carro.num))'>Button</button><br /><br /></div><br /><br />
+
+Se a string for composta de numeros podemos transforma-la
+também, para isso podemos usar o “parsefloat( )”, no caso do valor
+tiver casas depois do ponto.
+<div class="cody2"><xmp>alert(parseFloat(carro.num2))
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(parseFloat(num2))'>Button</button><br /><br /></div><br /><br />
+
+Caso queira converter uma variável para string devemos usar o
+método “tostring( )”.
+
+<div class="cody2"><xmp>alert(carro.num.toString())
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(carro.num.toString())'>Button</button><br /><br /></div><br /><br />
+
+
+Caso queira converter uma variável para string devemos usar o
+método “tostring( )”.
+
+<div class="cody2"><xmp>var num2 = 123.5432;
+var num3 = num2.toString();
+var verifica = typeof num3;
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert(verifica);'>Button</button><br /><br /></div><br /><br />
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="aula2.html"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="#"><p> Aula 4</p></a></li>
+  <li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+  <li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 2</title>
+</head>
+<body onload="marcar()"><dl>
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+  <h1>Aula 2</h1>
+  <p>(HTML5)</p>
+  <br><br>
+
+⫺ IDE<br>
+⫺ Introdução<br>
+⫺ HTML/HTML5<br>
+⫺ HTML – Formulários<br><br />
+
+<h1>Introdução</h1><br>
+HTML (abreviação para a expressão inglesa HyperText Markup Language,
+que significa Linguagem de Marcação de Hipertexto) é uma linguagem de
+marcação utilizada para produzir páginas na Web. Documentos HTML
+podem ser interpretados por navegadores.<br><br> A tecnologia é fruto do "casamento" dos padrões HyTime e SGML.<br><br> HyTime (Hypermedia/Time-based Document Structuring Language):
+padrão para representação estruturada de documentos multimídia e
+hipermídia.<br><br>
+SGML (Standard Generalized Markup Language): padrão de formatação de
+textos, não é aplicado de maneira padronizada<br><br>
+
+<h1>⨰ HTML: TAGS (ETIQUETAS)</h1><br>
+⫺ As tags dizem ao web browser como o texto e as imagens serão exibidas.<br>
+⫺ As tags são representadas pelos sinais < >.<br>
+⫺ O fechamento de uma tag deve ser feito usando a barra invertida / , indicando que a tag
+está finalizando a marcação de um texto.<br><br />
+⫺ Exemplos: <br /><br />
+Codigo:<br>
+<br><div class="cody">
+<xmp><p> Texto </p>
+<p><b> Texto </b></p>
+<br/></xmp></div><br />
+
+Resultado:<br>
+
+<br><div class="codigo">
+<p>Texto</p>
+<p><b> Texto </b></p>
+</div><br>
+
+Importante:<br />
+• Elementos HTML devem ser alinhados corretamente; <br/>
+• O nome das Tags devem estar em letra minúscula;<br/>
+
+<br><div class="cody">
+<xmp>⫺ <html></html>: marca o início e o fim documento HTML
+⫺ <head></head>: delimita a área de cabeçalho do documento
+⫺ <title></title>: usada dentro da tag <head>, define o título do documento.
+⫺ <body></body>: marca o início e o fim do conteúdo (corpo), onde estarão textos, imagens e links da sua página.
+</xmp>
+</div><br />
+
+<h1>⨰ Tags para definição de títulos:</h1><br />
+Codigo:<br />
+<br><div class="cody">
+<xmp><h1>Título</h1>
+<h2> Subtítulo nível 2</h2>
+<h3> Subtítulo nível 3</h3>
+<h4> Subtítulo nível 4</h4>
+<h5>Subtítulo nível 5</h5>
+<h6> Subtítulo nível 6</h6>
+</xmp></div><br />
+
+Resultado:<br />
+
+<br><div class="codigo">
+<h1>Título</h1>
+<h2> Subtítulo nível 2</h2>
+<h3> Subtítulo nível 3</h3>
+<h4> Subtítulo nível 4</h4>
+<h5>Subtítulo nível 5</h5>
+<h6> Subtítulo nível 6</h6>
+</div><br />
+
+<h1>⨰ Tag para definição de parágrafos</h1><br />
+
+Codigo:<br />
+
+<br><div class="cody">
+<xmp><p>Olá</p></xmp>
+</xmp></div><br />
+
+Resultado:<br />
+<br /><div class="codigo">
+<p>Olá</p>
+</div><br />
+
+< dl>: tag para criar listas de descrição;<br />
+< dt>: tag que define o nome/termo;<br />
+< dd>: tag que descreve o nome/termo.<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><dl>
+<dt>Java</dt>
+<dd>Linguagem de Programação Orientada a Objetos</dd>
+<dt>TomCat</dt>
+<dd>Servidor Web</dd>
+<dt>C</dt>
+<dd>Linguagem de Programação Estruturada</dd>
+<dl>
+</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<dl>
+<dt>Java</dt>
+<dd>Linguagem de Programação Orientada a Objetos</dd>
+<dt>TomCat</dt>
+<dd>Servidor Web</dd>
+<dt>C</dt>
+<dd>Linguagem de Programação Estruturada</dd>
+<dl>
+</div><br />
+
+<h1>⨰ Lista Dentro de Listas (Alinhadas)</h1><br />
+
+Codigo:<br />
+<br><div class="cody">
+<xmp><ul>
+<li>Informática
+<ul>
+<li>SmartPhone</li>
+<li>Tablets</li>
+</ul>
+</li>
+<li>Livros
+<ul>
+<li>Aventura</li>
+<li>Romance</li>
+</ul>
+</li>
+</ul>
+</xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+  <ul>
+  <li>Informática
+  <ul>
+  <li>SmartPhone</li>
+  <li>Tablets</li>
+  </ul>
+  </li>
+  <li>Livros
+  <ul>
+  <li>Aventura</li>
+  <li>Romance</li>
+  </ul>
+  </li>
+  </ul>
+</div><br />
+
+<br><div class="cody">
+<xmp>⫺ <div></div>: tag que define um bloco de elementos na pagina HTML;
+⫺ <span></span>: tag que em conjunto do estilo é possível formatar um texto. Ela por
+si só não faz alteração alguma no código.
+⫺ <address></address>: tag que define as informações de contato para o autor /
+proprietário de um documento ou um artigo.
+⫺ <hr/> tag que define uma linha na página.
+</xmp>
+</div><br />
+
+<h1>⨰ Outros elementos</h1><br />
+
+Codigo:<br />
+<br><div class="cody">
+<xmp><div>
+<h1>Java (Linguagem de Progamação)</h1>
+<hr/>
+<p>Java é uma linguagem de <span>Programação</span> orientada
+a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada
+por James Gosling, na empresa Sun Microsystem.</p>
+</div>
+</xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+<div>
+<h1>Java (Linguagem de Progamação)</h1>
+<hr/>
+<p>Java é uma linguagem de <span>Programação</span> orientada
+a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada
+por James Gosling, na empresa Sun Microsystem.</p>
+</div>
+</div><br />
+
+
+<h1>⨰ Formatação de Caracteres</h1><br>
+Existem no HTML tags que trazem características visuais para o conteúdo da página. As
+tags < b> e < i> tem o mesmo valor semântico que a tag < span>, com a diferença que o
+texto aparece em negrito ou itálico.<br />
+
+
+<br><div class="cody">
+<xmp><b>Negrito</b>
+<i>Itálico</i>
+<small>Pequeno</small>
+<big>Grande</big>
+<strong>Forte</strong>
+<strike>Riscado</strike>
+<s>Riscado</s>
+<sub>Subscrito</sub>
+<sup>Sobrescrito</sup>
+<u>Sublinhado</u>
+<em>Enfatizado</em></xmp>
+</div>
+
+<br><div class="codigo">
+<b>Negrito</b><br />
+<i>Itálico</i><br />
+<small>Pequeno</small><br />
+<big>Grande</big><br />
+<strong>Forte</strong><br />
+<strike>Riscado</strike><br />
+<s>Riscado</s><br />
+<sub>Subscrito</sub><br />
+<sup>Sobrescrito</sup><br />
+<u>Sublinhado</u><br />
+<em>Enfatizado</em>
+</div><br />
+
+<h1>⨰ Imagens</h1><br />
+
+< img />: tag que insere uma imagem:<br /><br />
+» src=“url” – Indica o caminho da imagem. (Obrigatório)<br /><br />
+» alt=“texto” – Especifica uma descrição da imagem. (Obrigatório)<br /><br />
+» height=“pixel ou %” – Especifica a altura da imagem (Opcional)<br /><br />
+» width=“pixel ou %” – Especifica a largura da imagem (Opcional)<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><div>
+<img src="https://i.imgur.com/9bbWYgz.png" alt="LogoCy"/>
+<div></xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<div>
+<img src="http://www.espaciobyte.org/exp/117/pixelmewr.png"alt="LogoCy"/>
+</div>
+</div><br />
+
+<h1>⨰ Tabelas</h1><br />
+
+
+» < table>: tag que delimita a área de uma tabela<br />
+» < tr>: tag que determina uma linha da tabela;<br />
+» < th>: tag que determina uma coluna de “cabeçalho” da tabela;<br />
+» < td>: tag que determina uma coluna de conteúdo tabela;<br />
+<br />
+
+<ul>
+<li>Algumas propriedades paras as tags < th> e < td>:
+<ul>
+<li>colspan=“numero” – Especifica a quantidade de colunas que
+serão mescladas;</li>
+<li>rowspan=“numero” – Especifica a quantidade linhas que serão
+mescladas.</li>
+</li>
+</ul>
+</ul>
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><table>
+<tr>
+<th>Modelo</th>
+<th>Marca</th>
+<th>Ano</th>
+</tr>
+<tr>
+<td>Fusca</td>
+<td>Volks</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Fiesta</td>
+<td>Ford</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>Uno</td>
+<td>Fiat</td>
+<td>2007</td>
+</tr>
+</table>
+</xmp></div><br />
+
+Resultado:<br />
+
+<br><div class="codigo">
+<table>
+<tr>
+<th>Modelo</th>
+<th>Marca</th>
+<th>Ano</th>
+</tr>
+<tr>
+<td>Fusca</td>
+<td>Volks</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Fiesta</td>
+<td>Ford</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>Uno</td>
+<td>Fiat</td>
+<td>2007</td>
+</tr>
+</table>
+</div>
+<br><div class="codigo">
+Alguns atributos da Tag Table:<br /><br />
+• BORDER – Cria linhas de borda na tabela;<br />
+• CELLSPACING – Especifica a distânciaentre as células da tabela.
+</div><br />
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="#"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+  <li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+  <li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+  <label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

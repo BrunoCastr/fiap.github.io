@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicio 1</title>
+</head>
+<body onload="marcar2();time();">
+  <script type="text/javascript">
+
+
+  function change(){
+    var texto = document.getElementById("idTexto");
+    var paragrafo = document.getElementById("idFormatacao");
+    var fonte = document.getElementById("idFortfont");
+    var tamanho = document.getElementById("idFortamanho");
+    var cor = document.getElementById("idFortcolor");
+
+    if(texto.value != ""){
+    paragrafo.innerHTML = texto.value;
+    }
+    paragrafo.style.fontFamily = fonte.value;
+    paragrafo.style.fontSize = tamanho.value + "px";
+    paragrafo.style.color = cor.value;
+    }
+
+    function soma(){
+    var num1 = parseInt(document.getElementById('idConta1').value);
+    var num2 = parseInt(document.getElementById('idConta2').value);
+
+    document.getElementById('idResult').innerHTML = "C:/> " + (num1 + num2);
+
+  }
+
+  function soma2(){
+  var sun1 = parseInt(document.getElementById('idNum1').value);
+  var sun2 = parseInt(document.getElementById('idNum2').value);
+  document.getElementById('idResult2').innerHTML = "C:/> " + (sun1 / sun2);
+  }
+
+  function soma3(){
+  var a1 = parseInt(document.getElementById('idNum3').value);
+  document.getElementById('idResult3').innerHTML = "C:/> Metade~? " + (a1 / 2);
+  document.getElementById('idResult4').innerHTML = " Dobro~? " + (a1 + a1);
+  }
+
+  function soma4(){
+  var k1 = document.getElementById('idNome').value;
+  var k2 = parseInt(document.getElementById('idNum4').value);
+  document.getElementById('idResult5').innerHTML = "Nome~? "+k1+" idade~? "+(k2 + 30);
+  }
+
+  function soma5(){
+  var k3 = parseInt(document.getElementById('idNum5').value);
+  var k4 = parseInt(document.getElementById('idNum6').value);
+  document.getElementById('idResult6').innerHTML = "soma~? "+(k3+k4)+" subtracao~? "+(k4-k3)+" subtracao~? "+(k3-k4)+" multiplicao~? "+(k3*k4)+" divisao~? "+(k3/k4);
+  }
+
+
+  </script>
+
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed"><br><br>
+
+  ‣ 1. Utilizando o projeto “formatarfonte” que será
+disponibilizado, crie o projeto abaixo com os códigos
+que virão a seguir<br /><br />
+  <div class="cody2">
+  <h2> ( •_•) Formate seu Texto </h2><br /><br />
+
+  <p5 id="idFormatacao">Seu texto formatado</p5><br /><br />
+
+
+  <div class="arruma1">
+
+
+  <label for="idTexto">Seu texto:</label><br /><br />
+  <input type="texto" id="idTexto" class="barrinhas" maxlength="20"></input><br /><br /><br />
+
+  <label for="idForfont">Escolha:</label><br /><br />
+  <select id="idFortfont" class="barrinha2">
+    <option>Arial</option>
+    <option>Broadway</option>
+    <option>Brush Script Std</option>
+    <option>Calibri</option>
+    <option>Cooper</option>
+    <option>Forte</option>
+    <option>Impact</option>
+    <option>Monotype Corsiva</option>
+  </select>
+  </div>
+
+  <div class="arruma2">
+  <label for="idFortamanho">Tamanho:</label><br /><br />
+  <input type="number" id="idFortamanho" min="8" max="32" step="4" value="16" class="barrinhas"></input><br /><br /><br />
+
+  <label for="idFortcolor">Cor:</label><br /><br />
+  <input type="color" id="idFortcolor" class="barrinhas"></input><br /><br /><br />
+  </div>
+
+  <button class="button3" onclick='change()'>Button</button>
+
+  </div><br /><br />
+
+‣ 2. Faça um programa que leia dois números, calcule e
+imprima a soma desses dois números.<br /><br />
+
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="idConta1">Numero 1:</label><br /><br />
+  <input type="text" id="idConta1" class="barrinhas" maxlength="2"></input>
+  </div>
+  <div class="arruma2">
+  <label for="idConta2">Numero 2:</label><br /><br />
+  <input type="text" id="idConta2" class="barrinhas" maxlength="2"></input>
+  </div><br /><br /><br /><br /><br />
+
+  <div class="barradaresp">
+  <p6 id="idResult">C:/></p6></div><br />
+
+  <button class="button3" onclick='soma()'>Button</button>
+
+  </div><br /><br />
+
+‣ 3. Faça um programa que receba dois números, calcule e
+  imprima a divisão do primeiro número pelo segundo.
+
+<br /><br />
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="idNum1">Numero 1:</label><br /><br />
+  <input type="text" id="idNum1" class="barrinhas"></input>
+  </div>
+  <div class="arruma2">
+  <label for="idNum2" >Numero 2:</label><br /><br />
+  <input type="text" id="idNum2" class="barrinhas"></input>
+  </div><br /><br /><br /><br /><br />
+  <div class="barradaresp">
+  <p6 id="idResult2">C:/></p6></div><br />
+    <button class="button3" onclick='soma2()'>Button</button>
+</div><br /><br />
+
+‣ 4. Faça um programa que leia um número e informe a
+metade e o dobro desse número.
+
+<br /><br />
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="idNum3">Numero 1:</label><br /><br />
+  <input type="text" id="idNum3" class="barrinhas"></input>
+  </div>
+  <div class="arruma2">
+  <label >Numero 2:</label><br /><br />
+  <input type="text" class="barrinhas" disabled placeholder="Disabled"></input>
+  </div><br /><br /><br /><br /><br />
+  <div class="barradaresp">
+  <p6 id="idResult3">C:/> </p6><p6 id="idResult4"></p6></div><br />
+
+    <button class="button3" onclick='soma3()'>Button</button>
+</div><br /><br />
+
+4. Escrever um programa que permita receber o nome e
+a idade de uma pessoa e em seguida, informar o nome
+digitado e a idade da pessoa daqui a 30 anos.
+<br /><br />
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="idNome">Nome:</label><br /><br />
+  <input type="text" id="idNome" class="barrinhas"></input>
+  </div>
+  <div class="arruma2">
+  <label for="idNum4">Idade:</label><br /><br />
+  <input type="text" class="barrinhas" id="idNum4"></input>
+  </div><br /><br /><br /><br /><br />
+  <div class="barradaresp">
+  <p6> C:/> </p6><p6 id="idResult5"></p6></div><br />
+
+    <button class="button3" onclick='soma4()'>Button</button>
+</div><br /><br />
+
+5. Faça um programa que receba dois números inteiros,
+calcule e retorne em parágrafos:<br /><br />
+- soma dos dois números;<br />
+- subtração do primeiro pelo segundo;<br />
+- subtração do segundo pelo primeiro;<br />
+- Multiplicação dos dois números;<br />
+- divisão do primeiro pelo segundo;
+
+<br /><br />
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="idNum5">Numero 1:</label><br /><br />
+  <input type="text" id="idNum5" class="barrinhas"></input>
+  </div>
+  <div class="arruma2">
+  <label for="idNum6">Numero 2:</label><br /><br />
+  <input type="text" class="barrinhas" id="idNum6"></input>
+  </div><br /><br /><br /><br /><br />
+  <div class="barradaresp">
+  <p6> C:/> </p6><p6 id="idResult6"></p6></div><br />
+
+    <button class="button3" onclick='soma5()'>Button</button>
+</div><br /><br />
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula4.2.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

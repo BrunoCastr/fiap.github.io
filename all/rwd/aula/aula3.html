@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleespecifico.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 3</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+
+  <h1>Aula 3</h1>
+  (CSS)
+  <br /><br />
+
+  <br><div class="codigo">
+  <div class="case">
+  <object>
+  <embed src="../../../svg/jscsht.svg">
+  </object>
+  </div>
+</div><br />
+
+
+  <div class="codigo">
+  <s>Java Script - Comportamento</s>
+</div><br />
+  <div class="codigo">
+  Css - Apresentação
+  </div><br>
+  <div class="codigo">
+  <s>Html - Estrutura dos Dados (Conteúdo)</s>
+</div><br />
+
+  <h1>Cascading Style Sheets (CSS)</h1><br />
+
+
+  É uma "folha de estilo" composta
+  por “camadas” e utilizada para definir a apresentação
+  (aparência) em páginas da internet que adotam para o seu
+  desenvolvimento linguagens de marcação. O CSS define como
+  serão exibidos os elementos contidos no código de uma página
+  da internet e sua maior vantagem é efetuar a separação entre a
+  apresentação e a estrutura de uma página.<br /><br />
+
+  <h1>Por que o CSS foi criado?</h1><br />
+Com a evolução das páginas da internet e a exigência dos usuários, houve uma
+necessidade de aprimorar a forma de formatar as páginas.<br />
+Foram criados novos recursos (TAGS) no HTML, e cada vez mais ficava difícil criar e
+manter um padrão para as páginas.<br />
+Era necessário separar a formatação da estrutura da página.
+Diminuir o tempo de trabalho, aumentando a reusabilidade.<br />
+Aplicar múltiplo estilos dentro de uma única página.<br />
+Assim, o CSS foi criado junto com o HTML 4.0.<br /><br />
+
+Podemos trabalhar com o CSS em um documento de 3 formas:<br /><br />
+<b>Folha de Estilo Incorporada:</b> É criada uma TAG de marcação
+ style> dentro do head do documento, onde são inseridas as
+instruções CSS.<br /><br />
+
+Exemplo:<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><style>
+h3{color:red;}
+</style></xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+<style>
+h3{color:red;}
+</style>
+<h3> Texto para visualizar o CSS</h3>
+</div><br />
+
+<b>Folha de Estilo Inline:</b> É utilizado o atribulo style para inserir a
+estitilização diretamente dentro da TAG.
+Exemplo:
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><h4 style="color:red;margin-left:2%"> Texto para visualizar o CSS</h4></xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+<h4 style="color:red;margin-left:1%"> Texto para visualizar o CSS</h4>
+</div><br />
+
+<b>Folha de Estilo Externa:</b> É criado um arquivo externo com a
+extensão “.css”, separando completamente a camada de
+estrutura da apresentação.
+Utilizamos a TAG < link> para conectar nosso arquivo de estilo.<br />
+
+<br />Codigo:<br /><br />Html:<br />
+<br><div class="cody">
+<xmp><link rel="stylesheet" href="../../../css/styleespecifico.css">
+<r>Texto para visualizar o CSS</r></xmp></div><br />Css:<br />
+<br><div class="cody2">
+<xmp>p{color: red;}</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<h9> Texto para visualizar o CSS</h9>
+</div><br />
+
+
+<h1>Seletores</h1><br />
+A sintaxe padrão do CSS é bem simples, precisamos indicar um
+seletor que pode ser uma Tag, um Id ou uma Classe, e dentro de
+um bloco definido por chaves inserimos os comandos referente à
+formatação.<br />
+
+<br><div class="codigo">
+p = Seletor<br /><br />
+{ = Bloco de instruções<br /><br />
+color: red; = Propriedade e Valor<br /><br />
+font-size:20pt; = Propriedade e Valor<br /><br />
+} = Bloco de instruções
+</div><br />
+
+<h1>Seletores CSS</h1><br />
+Existem vários tipos de seletores CSS, os padrões são os
+seletores para tags, ids e classes.
+Seletor para TAG: O seletor de tag é o mais simples de todos,
+basta informar o nome da tag, neste caso, todas as tags
+< p> existentes no documento receberão a formatação
+indicada.<br /><br />
+
+Seletor para ID: O seletor para id é mais específico do que o de
+tags, formata somente a tag que possui o id especificado, para
+indicar que o seletor será para um id basta anteceder o nome do
+id com o caractere hash “#”.<br />
+<br><div class="cody2">
+<xmp>#idDiv{border: 1px solid;}</xmp></div><br />
+
+Seletor para CLASS: Este seletor formata todos os elementos que
+usam a classe indicada, desta maneira podemos ter várias tags
+<p> por exemplo, somente receberão a formatação aquelas que
+tiverem o atributo class com o nome da classe configurada, para
+identificar este seletor, basta usar um ponto “.” antes do nome
+da classe.<br />
+<br><div class="cody2">
+<xmp>.classeDiv{border: 1px solid;}</xmp></div><br />
+
+<h1>Cores</h1><br />
+
+Cores em CSS podem ser especificadas pelos seguintes métodos:<br /><br />
+ᛃ Cores hexadecimais<br />
+<br><div class="cody2">
+<xmp>color: #RRGGBB</xmp></div><br />
+ᛃ Cores RGB<br />
+<br><div class="cody2">
+<xmp>color: rgb(255, 0, 0);</xmp></div><br />
+ᛃ Cores RGBA<br />
+<br><div class="cody2">
+<xmp>color: rgba(255, 0, 0,0.5);</xmp></div><br />
+ᛃ Cores HSL<br />
+<br><div class="cody2">
+<xmp>color: hsl(0, 100%, 50%);</xmp></div><br />
+
+<h1>Fontes</h1><br />
+A propriedade font-Family permite especificar a fonte que deve
+ser usada para qualquer texto dentro do(s) elemento(s) ao qual a
+regra CSS se aplica.
+Você pode especificar uma lista de fontes separadas por virgulas
+de modo que, se o usuário não tiver a primeira fonte instalada, o
+navegador pode tentar usar a próxima da lista.<br />
+
+<br><div class="cody2">
+<xmp>font-family:arial;</xmp></div><br />
+
+É uma boa prática terminar a lista com o tipo da fonte principal,
+pois se nenhuma delas for encontrada, o navegador busca uma
+fonte do mesmo tipo.<br /><br />
+Temos 3 tipos de fonte:<br /><br />
+<p1>SERIF:</p1> ela têm detalhes adicionais nas extremidades<br /><br />
+<p2>SANS-SERIF:</p2> ela têm as extremidades retas, sem detalhes<br /><br />
+<p3>MONOSPACE:</p3> ela têm todas as letras com o mesmo
+espaçamento<br /><br />
+
+<h1>@Font-face</h1><br />
+Com o @font-face, podemos usar uma fonte existente em nosso
+projeto, assim não dependemos que o usuário tenha a fonte.
+Para isso, precisamos ter o arquivo da fonte salvo dentro do
+nosso projeto.<br />
+
+<br /><div class="cody2">
+<xmp>@font-face{
+font-family: 'cartoon';
+src:url('...fonts/cartoon.ttf')
+}</xmp></div><br />
+
+<h1>Font-size</h1><br />
+A propriedade font-size permite especificar o tamanho da fonte.
+Podemos utilizar algumas unidades de medida para isso:<br />
+PIXELS: referente aos pontos da tela, ela permite uma precisão
+maior para controlar o tamanho das fontes. EX: 80px.<br />
+PERCENTAGENS: Ele altera o tamanho da fonte usando uma
+percentagem relativa ao seu tamanho padrão. O padrão de
+textos é 16px. Ex: 75% (sobre 16 seria 12px)<br />
+EMS: Um em é equivalente ao tamanho padrão web “16px”. Ex:
+1.5em.<br />
+
+<br><div class="cody2">
+<xmp>font-size:50%;</xmp></div><br />
+
+<h1>Font-weight</h1><br />
+A propriedade font-weight deixa o texto em negrito. Temos duas
+variáveis desta propriedade:<br />
+<br><div class="cody2">
+<xmp>font-weight: normal;</xmp></div><br />
+Normal: Isso faz com que o texto apareça em um peso normal.
+Bold: Isso faz com que o texto apareça em negrito<br />
+<br><div class="cody2">
+<xmp>font-weight: bold;</xmp></div><br />
+
+<h1>Font-style</h1><br />
+Para criar um texto em itálico usamos a propriedade font-style.
+Temos 3 valores possíveis para esta propriedade:<br /><br />
+Normal: Isso faz com que o texto apareça em um estilo normal.<br />
+<br><div class="cody2">
+<xmp>font-style: normal;</xmp></div><br />
+Italic: Isso faz com que o texto apareça em itálico.<br />
+<br><div class="cody2">
+<xmp>font-style: italic;</xmp></div><br />
+Oblique: Isso faz com que o texto apareça obliquo.<br />
+<br><div class="cody2">
+<xmp>font-style: oblique;</xmp></div><br />
+
+<h1>Textos</h1><br />
+
+<h1>Text-transform</h1><br />
+O text-transform é usado para alterar o uso de maiúsculas e
+minúsculas no texto. Temo os seguintes valores:<br /><br />
+Uppercase: Isso faz com que o texto apareça em maiúsculo.<br />
+<br><div class="cody2">
+<xmp>text-transform: uppercase;</xmp></div><br />
+Lowercase: Isso faz com que o texto apareça em minusculo.<br />
+<br><div class="cody2">
+<xmp>text-transform: lowercase;</xmp></div><br />
+Capitalize: Isso faz com que a primeira letra de cada palavra do
+texto apareça em maiúsculo.<br />
+<br><div class="cody2">
+<xmp>text-transform: capitalize;</xmp></div><br />
+
+<h1>Text-decoration</h1><br />
+
+O text-decoration permite aplicar 5 valores diferentes:<br /><br />
+
+None: Isso remove qualquer decoração já aplicada no texto.<br />
+<br><div class="cody2">
+<xmp>text-decoration: none;</xmp></div><br />
+Underline: Adiciona uma linha abaixo do texto.<br />
+<br><div class="cody2">
+<xmp>text-decoration: underline;</xmp></div><br />
+Overline: Adiciona uma linha acima do texto.<br />
+<br><div class="cody2">
+<xmp>text-decoration: overline;</xmp></div><br />
+Line-through: Adiciona uma linha no meio do texto.<br />
+<br><div class="cody2">
+<xmp>text-decoration: line-through;</xmp></div><br />
+Underline overline: Cria uma linha acima e outra abaixo do texto.<br />
+<br><div class="cody2">
+<xmp>text-decoration: underline overline;</xmp></div><br />
+
+<h1>Text-align</h1><br />
+A propriedade text-align permite controlar o alinhamento do
+texto. A propriedade pode receber um dos 4 valores:<br /><br />
+left: Isso indica que o texto irá ser alinhado a esquerda.<br />
+<br><div class="cody2">
+<xmp>text-aling: left;</xmp></div><br />
+right: Isso indica que o texto será alinhado a direita.<br />
+<br><div class="cody2">
+<xmp>text-aling: right;</xmp></div><br />
+center: Isso faz com que o texto se alinhe ao centro.<br />
+<br><div class="cody2">
+<xmp>text-aling: center;</xmp></div><br />
+justify: Isso faz com que o texto se alinhe dos dois dados.<br />
+<br><div class="cody2">
+<xmp>text-aling: justify;</xmp></div><br />
+
+<h1>Text-shadow:</h1><br />
+A propriedade text-shadow cria uma sobra nas letras do texto.<br />
+<br><div class="cody2">
+<xmp>text-shadow: 1px 1px 1px red;</xmp></div><br />
+
+<h1>Outras configurações:</h1><br />
+Line-height: Regula o espaço entre linhas de um parágrafo.<br />
+<br><div class="cody2">
+<xmp>line-height: 20px;</xmp></div><br />
+Letter-spacing: Define o espaçamento entre as letras do texto.<br />
+<br><div class="cody2">
+<xmp>letter-spacing: 20px;</xmp></div><br />
+Word-spacing: Define o espaçamento entre as palavras do texto.<br />
+<br><div class="cody2">
+<xmp>word-spacing: 20px;</xmp></div><br />
+Text-indent: Recua a primeira linha de um objeto de texto.<br />
+<br><div class="cody2">
+<xmp>text-indent: 20px;</xmp></div><br />
+
+<h1>Pseudoclasses:</h1><br /><br />
+
+<h1>Pseudoclasses (Textos)</h1><br />
+First-letter: Ele é atribuído ao seletor do elemento e permite
+estilizar apenas a primeira letra do texto.<br />
+<br><div class="cody2">
+<xmp>p:first-letter{font-size:20px;}</xmp></div><br />
+First-line: Ele é atribuído ao seletor do elemento e permite
+estilizar apenas a primeira linha do texto.<br />
+<br><div class="cody2">
+<xmp>p:first-line{font-size:20px;}</xmp></div><br /><br />
+<h1>Pseudoclasses (Links)</h1><br />
+Temos duas pseudoclasses que utilizamos para personalizar
+nossos links:<br /><br />
+Link: Isso permite definir estilos para os links que ainda não
+foram visitados.<br />
+<br><div class="cody2">
+<xmp>p:link{color: red;}</xmp></div><br />
+Visited: Isso permite definir estilos para os links que já foram
+visitados.<br />
+<br><div class="cody2">
+<xmp>p:visited{color: red;}</xmp></div><br /><br />
+
+<h1>Pseudoclasses (Interação com o usuário)</h1><br />
+Temos três pseudoclasses que utilizamos para interagir com os
+usuários:<br /><br />
+Hover: Isso permite mudar os estilos quando o mouse passa
+sobre o elemento.<br />
+<br><div class="cody2">
+<xmp>p:hover{color: red;}</xmp></div><br />
+Active: Isso permite mudar os estilos quando o usuário clica no
+elemento.<br />
+<br><div class="cody2">
+<xmp>p:active{color: red;}</xmp></div><br />
+Focus: Isso permite mudar os estilos quando o elemento recebe
+o foco.<br />
+<br><div class="cody2">
+<xmp>input[type="text"]:focus{color:blue;}</xmp></div><br /><br />
+
+<h1>Preenchimentos do fundo</h1><br />
+A propriedade background permite preenchermos o fundo da caixa dos
+elementos de diversas formas.<br /><br />
+background-color: É a propriedade que define a cor de fundo de um elemento.<br />
+<br><div class="cody2">
+<xmp>backgorund-color: #red;</xmp></div><br />
+background-image: É a propriedade que define uma imagem como
+fundo.<br />
+<br><div class="cody2">
+<xmp>background-image: url('img/ola.png');</xmp></div><br /><br />
+
+<h1>Background-repeat</h1><br />
+
+A propriedade background-repeat controla a repetição de uma imagem
+de fundo. Podemos configurar esta propriedade de 4 formas:<br /><br />
+background-repeat : repeat-x: imagem repete na horizontal<br />
+<br><div class="cody2">
+<xmp>background-repeat:repeat-x;</xmp></div><br />
+
+background-repeat : repeat-y : imagem repete na vertical<br />
+<br><div class="cody2">
+<xmp>background-repeat:repeat-y;</xmp></div><br />
+
+background-repeat : repeat: imagem repete em ambas as posições<br />
+<br><div class="cody2">
+<xmp>background-repeat:repeat;</xmp></div><br />
+No-repeat: a imagem não se repete<br /><br />
+<div class="cody2">
+<xmp>background-repeat:no-repeat;</xmp></div><br />
+
+<h1>Background-attachment</h1><br />
+
+background-attachment : fixed: A imagem de fundo permanece na mesma
+posição da página.<br />
+<br><div class="cody2">
+<xmp>background-attachment: fixed;</xmp></div><br />
+background-attachment : scroll: A imagem de fundo move-se com o conteúdo
+quando o usuário rola a página.<br />
+<br><div class="cody2">
+<xmp>background-attachment: scroll;</xmp></div><br />
+
+<h1>Posição do Fundo</h1><br />
+Quando uma imagem não é repetida a propriedade background-position<br />
+especifica a posição da imagem na janela. Podemos usar os valores:<br /><br />
+Top, Botton e Center: para alinhamento vertical;<br />
+Right, Left e Center: para alinhamento horizontal;<br />
+<br><div class="cody2">
+<xmp>background-position: 50% 50%;</xmp></div><br />
+
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="aula2.html"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="#"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+  <li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+  <li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+  <label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

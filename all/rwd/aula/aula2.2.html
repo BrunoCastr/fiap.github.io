@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 2.2</title>
+</head>
+<body onload="marcar()"><dl>
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+  <h1>Aula 2.2</h1>
+  <p>(HTML5)</p>
+  <br><br>
+
+⫺ Formulários com HTML5<br>
+⫺ Lista de Tags<br>
+⫺ Novas Tags<br>
+⫺ Novos Atributos<br>
+⫺ Áudio e Vídeo<br><br>
+
+<h1>⨰ Formulários</h1><br />
+
+* A tag input possui vários tipos:<br />
+- text, password, hidden, radio, checkbox, button, submit, file,
+image;<br /><br />
+
+* Novos tipos de tags para input foram adicionados no HTML5;<br />
+- search, tel, url, e-mail, date, month, week, time, datetime,
+datetime- local, number, range, color;<br /><br />
+
+* Existem browsers que não suportam todos os novos tipos, neste
+caso, o tipo text é utilizado por padrão;<br /><br />
+* http://html5test.com<br /><br />
+
+<h1>⨰ Form</h1><br />
+
+< form>: tag que delimita a área do formulário;<br /><br />
+Propriedades:<br /><br />
+• method=“get|post” – Define a forma de envio dos dados;<br />
+• action=“URL” – Define quem irá receber os dados do formulário.<br /><br />
+
+< input />: define vários tipos entrada de dados.<br /><br />
+» name=“value” – Especifica o nome do campo, será utilizado para recuperar o
+valor inserido pelo usuário,<br /><br />
+» type=“value”– Especifica o tipo de entrada conforme abaixo:<br /><br />
+– <b>text:</b> define um campo para digitação de texto,<br />
+– <b>button:</b> define um botão na pagina,<br />
+– <b>checkbox:</b> define um grupo de múltipla escolha,<br />
+– <b>file:</b> define um campo para realizar upload,<br />
+– <b>hidden:</b> define que o campo será oculto,<br />
+– <b>password:</b> define um campo de senha, assim os caracteres aparecem mascarados,<br />
+– <b>radio:</b> define um campo de escolha única,<br />
+– <b>reset:</b> define um botão para limpar o conteúdo digitado no formulário,<br />
+– <b>submit:</b> define um botão para postar as informações do formulário,<br />
+– <b>image:</b> define uma imagem como botão de submit.<br /><br />
+
+Exemplos:<br />
+Campos: text, password, file, hidden, button, submit e reset.<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form action="cadastrar" method="post">
+<div>
+<input type="text" name="usuario"/>
+</div>
+<div>
+<input type="password" name="senha"/>
+</div>
+<div>
+<input type="file" name="foto"/>
+</div>
+<div>
+<input type="hidden" name="cadastrar" value="true"/>
+</div>
+<div>
+<input type="button" value="Buscar CEP"/>
+</div>
+<div>
+<input type="submit" value="Enviar"/><input type="reset" value="Limpar"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+
+<br><div class="codigo">
+  <br />
+<form action="#" method="post">
+<div>
+<input type="text" name="usuario"/>
+</div><br /><br /><br />
+<div>
+<input type="password" name="senha"/>
+</div><br /><br /><br /><br />
+<div>
+<input type="file" name="foto"/>
+</div>
+<div>
+<input type="hidden" name="cadastrar" value="true"/>
+</div><br /><br /><br /><br />
+<div>
+<input type="button" value="Buscar CEP"/>
+</div>
+<div>
+<input type="submit" value="Enviar"/><input type="reset" value="Limpar"/>
+</div>
+</form><br /><br /><br />
+</div><br />
+
+
+Exemplo:<br />
+Input type = checkbox, radio, image.<br />
+
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form action="#" method="post">
+<div>
+<input type="checkbox" name="html"/>HTML
+<input type="checkbox" name="javascript"/>JavaScript
+</div>
+<div>
+<input type="radio" name="sexo" value="F"/>Feminino
+<input type="radio" name="sexo" value="M"/>Masculino
+</div>
+<div>
+<input type="image" src="https://serenesforest.net/forums/public/style_emoticons/default/Kappa.png"/>
+</div>
+</form>
+</xmp></div><br />
+
+
+Resultado:<br />
+<br><div class="codigo">
+<form action="#" method="post">
+<div>
+<input type="checkbox" name="html"/>HTML<br />
+<input type="checkbox" name="javascript"/>JavaScript
+</div>
+<div>
+<input type="radio" name="sexo" value="F"/>Feminino<br />
+<input type="radio" name="sexo" value="M"/>Masculino
+</div>
+<div>
+<input type="image" class="kappa" src="https://serenesforest.net/forums/public/style_emoticons/default/Kappa.png"/>
+</div>
+</form><br /><br />
+</div><br />
+
+
+<h1>⨰ TextArea</h1><br />
+
+< textarea>: campo de multiplas linhas para entrada de dados,<br /><br />
+» cols=“número” – Especifica o numero de colunas;<br />
+» rows=“número” – Especifica o numero de linhas;<br />
+» name=“value” – Especifica o<br />
+nome do campo, será utilizado para recuperar o valor inserido pelo usuário.
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form action="#" method="post">
+<div>
+<textarea rows="3" cols="10" name="comentario"></textarea>
+</div>
+<div>
+<input type="submit" value="Enviar"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+
+<br><div class="codigo">
+<form action="#" method="post">
+<div>
+<textarea class="mene" rows="3" cols="10" name="comentario" style="resize: none"></textarea>
+</div><br />
+<div>
+<input type="submit" value="Enviar"/>
+</div>
+</form><br /><br />
+</div><br />
+
+<h1>⨰ Formulário SELECT</h1><br />
+
+< select>: determina uma lista de escolhas (caixa de seleção);<br /><br />
+• name=“value” – Especifica o nome do campo, será utilizado
+para recuperar o valor inserido pelo usuário.<br /><br />
+• < option>: define os itens da caixa de seleção;<br /><br />
+• selected=“value” – Define que o item será pre-selecionado no carregamento
+da pagina.<br /><br />
+• value=“texto” – Especifica o valor o item<br /><br />
+• < optgroup>: tag que define um grupo de itens da caixa de seleção;<br /><br />
+• label=‘texto” – Especifica um texto para o grupo
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form action="cadastrar" method="post">
+<div>
+Estado:
+<select name="estado">
+<option value="SP">São Paulo</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="MG">Minas Gerais</option>
+</select>
+</div>
+<div>
+<input type="submit" value="Enviar"/>
+</div>
+</form></xmp></div><br />
+
+Resultado:<br />
+
+<br><div class="codigo">
+<form action="#" method="post">
+<div>
+Estado:
+<select name="estado" class="menee">
+<option value="SP">São Paulo</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="MG">Minas Gerais</option>
+</select>
+</div><br />
+<div>
+<input type="submit" value="Enviar"/>
+</div>
+</form><br /><br />
+</div><br />
+
+
+Exemplo 2 (optgroup):<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form action="cadastrar" method="post">
+<div>
+Carro:
+<select name="carro">
+<optgroup label="FIAT">
+<option value="Uno">Uno</option>
+<option value="Palio">Palio</option>
+</optgroup>
+<optgroup label="FORD">
+<option value="Fiesta">Fiesta</option>
+<option value="Fusion">Fusion</option>
+<option value="EcoSport">Eco Sporte</option>
+</optgroup>
+</select>
+</div>
+<div>
+<input type="submit" value="Enviar"/>
+</div>
+</form></xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+<form action="#" method="post">
+<div>
+Carro:
+<select name="carro"  class="menee">
+<optgroup label="FIAT">
+<option value="Uno">Uno</option>
+<option value="Palio">Palio</option>
+</optgroup>
+<optgroup label="FORD">
+<option value="Fiesta">Fiesta</option>
+<option value="Fusion">Fusion</option>
+<option value="EcoSport">Eco Sporte</option>
+</optgroup>
+</select>
+</div><br />
+<div>
+<input type="submit" value="Enviar"/>
+</div><br /><br />
+</form>
+</div><br />
+
+
+⪖ Label / Legend / FieldSet<br /><br />
+• < label> - define uma etiqueta para um controle de um campo do formulário;<br />
+• for=“texto” – Especifica para quem é a etiqueta através do atributo id do campo;<br />
+• < fieldset> - define um ou mais conjuntos de campos;<br />
+• < legend> - define a legenda do conjunto de campos.<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form action="cadastrar" method="post">
+<fieldset>
+<legend>Cadastro de Cliente</legend>
+<div>
+<label for="idNome">Nome</label>
+<input type="text" name="nome" id="idNome"/>
+</div>
+<div>
+<input type="submit" vale="Enviar"/>
+</div>
+</fieldset>
+</form>
+</xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+  <form action="#" method="post">
+<fieldset>
+<legend>Cadastro de Cliente</legend>
+<div>
+<label for="idNome">Nome</label><br />
+<input type="text" name="nome" id="idNome"/>
+</div>
+<div>
+<input type="submit" vale="Enviar"/>
+</div>
+</fieldset>
+</form>
+</div><br /><br />
+
+FORMULÁRIOS – OUTROS ATRIBUTOS<br /><br />
+⪖ As tags de formulário possuem outros atributos importantes:<br /><br />
+• <b>value=“texto”</b> – Especifica um valor para um campo;<br /><br />
+• <b>placeholder=“texto”</b> – Exibe um valor para um campo;<br /><br />
+• <b>required</b> – Especifica que o campo é obrigatório;<br /><br />
+• <b>maxlength=“numero”</b> – Especifica a quantidade de caracteres permitida no
+campo;<br /><br />
+• <b>size=“numero</b>” – Especifica o tamanho do campo;<br /><br />
+• <b>checked=“checked”</b> – Especifica um item de checkbox pré-selecionado;<br /><br />
+• <b>readonly=“readonly”</b> – Define que o campo seja somente de leitura;<br /><br />
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="#"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+<li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+<li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+  <label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

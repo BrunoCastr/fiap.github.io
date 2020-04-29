@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleespecifico.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 4.2</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+  <script type="text/javascript">
+
+function teste(){
+var teste0 = confirm("Você é um aluno?");
+alert("Resultado da caixa:"+ teste0);
+}
+
+function teste2(){
+  var texto = prompt("Qual o seu nome?","escreva aqui");
+  alert("O seu nome é:  "+texto);
+}
+
+function soma(){
+resultado = 5 + 6;
+alert("A soma das variaveis é de:" +resultado);
+}
+
+function inserir(){
+var numero = document.getElementById("posicao").value - 1;
+var novo = document.getElementById("novo").value;
+document.getElementsByName("corredor")[numero].value = novo;
+}
+
+function mostrar(){
+var num = document.getElementById("numeroo").value -1;
+var mes = document.getElementsByTagName("LI")[num].innerHTML;
+document.getElementById("resulteds").innerHTML = mes;
+}
+
+  </script>
+
+  <h1>Aula 4.2</h1>
+  (Java)
+  <br /><br />
+
+  <h1>Caixas de mensagem</h1><br />
+
+  Em JS as caixas de mensagens são usadas para apresentar
+  informações para o usuário. São elas: <br /><br />
+
+<div class="cody2"><xmp>alert("Olá, sou uma caixa de alerta!");
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert("Olá, sou uma caixa de alerta!");'>Button</button><br /><br /></div><br /><br />
+
+<h1>Caixa de confirmação:</h1><br />
+Ela retorna um valor "boleano", "true" para ok e false para cancelar
+
+<div class="cody2"><xmp>var testee = confirm("Você é um aluno?");
+alert("Resultado da caixa:"+ testee);
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='teste()'>Button</button><br /><br /></div><br />
+
+
+<h1>Caixa de Texto:</h1><br />
+Ela retorna a string digitada para "ok" e "null" para cancelar.
+<div class="cody2"><xmp>var texto = prompt("Qual o seu nome?","escreva aqui");
+alert("O seu nome é:  "+texto);
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='teste2()'>Button</button><br /><br /></div><br />
+
+<h1>Função</h1><br /> É um conjunto de instruções que executa
+uma tarefa ou calcula um valor quando chamada.
+<div class="cody2"><xmp>function soma(){
+resultado = 5 + 6;
+alert("A soma das variaveis é de:" +resultado);
+}
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='soma()'>Button</button><br /><br /></div><br />
+
+
+<h1>Manipular elementos com js</h1><br />
+Podemos acessar e manipular as informações e atributos dos
+nossos elementos HTML pelo ID, pelo name e pelo nome da
+TAG. Sendo que a opção mais usada é pelo ID (por ser único). Os
+demais usamos quando queremos percorrer ou coletar várias
+informações.<br /><br />
+▪ Usando o ID: Para acessarmos o ID usamos a sintaxe:<br /><br />
+document.getElementById(“nome”).innerHTML = “Luís”;<br /><br />
+document se refere a página html;<br />
+getElementById( ) recupera um elemento pelo seu ID;
+innerHTML utilizamos para alterar/inserir o conteúdo do
+elemento.<br /><br />
+
+<div class="cody2"><xmp>var novo = document.getElementById("idNome");
+function troca(){
+document.getElementById("idTitulo").innerHTML = novo.value;
+}
+
+<h1 id="idTitulo"> Exemplo </h1>
+
+<label for="idNovo">Novo nome:</label>
+<input type="text" id="idNovo"><br>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2">
+
+<div class="arruma">
+<label for="idNovo"><p4>Novo nome:</p4></label><br /><br />
+<input type="text" id="idNovo" class="barrinhas" maxlength="10">
+</div><br /><br /><br />
+
+<h2 id="idTitulo"> ( •_•) Formate seu Texto </h2><br />
+
+<button class="button2" onclick='troca()'>Button</button><br /><br /></div><br />
+
+
+
+▪ Usando o Name: Acessamos utilizando o Name quando
+precisamos retornar uma coleção de elementos com um mesmo
+name :<br /><br />
+var x = document.getElementsByName(“nome”)[0].value;
+document se refere a página html;<br /><br />
+getElementsByName(“name”)[0] recupera um elemento com o
+name especificado pela sua posição, começando por “0”;
+value retorna o valor “conteúdo” do elemento. <br /><br />
+
+<div class="cody2"><xmp>function inserir(){
+var numero = document.getElementById("posicao").value - 1;
+var novo = document.getElementById("novo").value;
+document.getElementsByName("corredor")[numero].value = novo;
+}
+
+<h2 id="idxTitulo">Exemplo por NAME</h1><br />
+
+<div class="arruma">
+
+Primeiro:<input type="text" name="corredor" class="barrinhas"><br />
+Segundo:<input type="text" name="corredor" class="barrinhas"><br />
+Terceiro:<input type="text" name="corredor" class="barrinhas"><br />
+
+Novo Classificado: <br /><br /><input type="text" id="novo" class="barrinhas"><br />
+Posição:<br /><br /><input type="number" id="posicao" min="1" max="3" class="barrinhas"><br />
+</div>
+</xmp></div><br />
+
+
+Resultado:
+<br /><div class="cody2">
+<br />  <h2 id="idxTitulo">Exemplo por NAME</h1><br /><br />
+  <div class="arruma">
+
+  Primeiro:<br /><br /><input type="text" name="corredor" class="barrinhas"><br /><br /><br />
+  Segundo:<br /><br /><input type="text" name="corredor" class="barrinhas"><br /><br /><br />
+  Terceiro:<br /><br /><input type="text" name="corredor" class="barrinhas"><br /><br /><br />
+
+  Novo Classificado: <br /><br /><input type="text" id="novo" class="barrinhas"><br /><br /><br />
+  Posição:<br /><br /><input type="number" id="posicao" min="1" max="3" class="barrinhas"><br /><br /><br />
+</div>
+<button class="button2" onclick='inserir()'>Button</button><br /><br /></div><br />
+
+▪ Usando o TagName: Assim como com o name, podemos acessar
+elementos pelo nome da Tag se precisarmos retornar uma
+coleção de elementos dessa tag :<br /><br />
+var x = document.getElementsByTagName(“li”)[0].value;
+document se refere a página html;<br /><br />
+getElementsByTagName(“tag”)[0] recupera um elemento pelo
+nome da tag especificado pela sua posição, começando por “0”;
+value retorna o valor “conteúdo” do elemento. <br /><br />
+
+
+<div class="cody2"><xmp>function mostrar(){
+var num = document.getElementById("numeroo").value -1;
+var mes = document.getElementsByTagName("LI")[num].innerHTML;
+document.getElementById("resulteds").innerHTML = mes;
+}
+
+
+<h2> Exemplo por TAGNAME </h2><br />
+<div class="arruma">
+
+<ul>
+<LI>Janeiro</LI><br />
+<LI>Fevereiro</LI><br />
+<LI>Março</LI><br />
+<LI>Abril</LI><br />
+</ul>
+
+Escolha um Mês:  <br /><br /><input type="number" id="numeroo" min="1" max="4"  class="barrinhas">
+
+</div><br /><br /><br />
+
+<h2 id="resulteds">Suas escolha</h2><br />
+<button class="button2" onclick='mostrar()'>Button</button><br /><br /></div><br />
+
+</xmp></div><br />
+
+Resultado:
+<br /><div class="cody2">
+<h2> Exemplo por TAGNAME </h2><br />
+<div class="arruma">
+
+<ul>
+<LI>Janeiro</LI><br />
+<LI>Fevereiro</LI><br />
+<LI>Março</LI><br />
+<LI>Abril</LI><br />
+</ul>
+
+Escolha um Mês:  <br /><br /><input type="number" id="numeroo" min="1" max="4"  class="barrinhas">
+
+</div><br /><br /><br />
+
+<h2 id="resulteds">( •_•) Formate seu Texto</h2><br />
+<button class="button2" onclick='mostrar()'>Button</button><br /><br /></div><br />
+
+
+Resultado:
+<br />
+
+<br /><h1>Exercicios</h1>
+<br><div class="codigo">
+<a href="../exercicios/exercicio1.html">Exercicios-1.html</a><br>
+</div><br>
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="aula2.html"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+  <li><a href="#"><p> Aula 4.2</p></a></li>
+  <li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

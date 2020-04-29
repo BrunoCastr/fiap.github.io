@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleespecifico.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 4.3</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+
+<script type="text/javascript">
+
+function mudar(){
+var barra = document.getElementById('idBarra').value;
+document.getElementById('idValor').innerHTML = barra;}
+
+function mandar(){
+alert(' ⊙.◎)»');
+}
+
+function chage(){
+document.getElementById('okue').innerHTML = "⦾";
+document.getElementById('okue').style.color = 'rgba(255,000,000,0.5)'
+}
+
+function chage2(){
+document.getElementById('okue').innerHTML = '⦿';
+document.getElementById('okue').style.color = 'rgba(255,255,255,1)'
+}
+
+function change2(){
+document.getElementById('lul').style.backgroundColor = 'rgba(255,000,000,0.3)'
+}
+
+function change1(){
+document.getElementById('lul').style.backgroundColor = 'rgba(255,000,000,0)'
+}
+
+function agradecer(){
+alert("Muito obrigado pela sua participação!");
+}
+
+
+function listar(){
+var frutas = ["maça","pera","morango"];
+var lista = document.getElementById("idLista");
+var itens = "";
+for(i = 0; i < frutas.length; ++i){
+itens += "<li>"+frutas[i]+"</li>";
+}
+lista.innerHTML = itens;
+}
+
+function responder(){
+var nome = document.getElementById('ome').value;
+var idade = document.getElementById('ade').value;
+var resposta = document.getElementById('re');
+
+if(idade < 18){
+resposta.innerHTML = 'Olá '+nome+' você não é obrigado a votar.';
+}else if(idade >=18 && idade <65){
+resposta.innerHTML = 'Olá '+nome+' você é obrigado a votar.';
+}else{
+resposta.innerHTML = 'Olá '+nome+' você ja não é obrigado a votar.';
+}}
+
+function validarNome(tag){
+var nome = tag.value;
+var validacao = /^[A-Za-záàâãéèêíïóôõöüúçñÁÀÂÃÉÈÍÏÓÔÕÖÜÚÇÑ' ]+$/;
+if (!validacao.test(nome)){
+alert("Por favor digite somente o seu nome!");
+}
+else{
+alert("Obrigado por preencher nosso cadastro!!");
+} }
+
+function validarRm(tag){
+var rm = parseInt(tag.value);
+var validacao = /^\d{5}$/;
+if (!validacao.test(rm)){
+alert("Por favor digite seu RM com 5 digitos!");
+}else{
+alert("RM digitado com sucesso!");
+}
+}
+
+</script>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+
+<h1>Aula 4.3</h1>
+(JavaScript)
+<br /><br />
+
+<h1>Eventos</h1><br />
+Eventos são ações que acontecem a elementos html.
+Quando usamos javascript em nossas páginas
+podemos determinar o que acontecerá nesses
+eventos.
+Utilizamos estes eventos como atributos que contém
+código javascript para disparar as ações.<br /><br />
+
+<div class="cody2"><xmp><button class="button2" onclick='alert("Olá, sou uma caixa de alerta!");'>Button</button>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert("Olá, sou uma caixa de alerta!");'>Button</button><br /><br /></div><br /><br />
+
+Através dos eventos podemos disparar ações no
+próprio elemento ou em qualquer outro da página.<br /><br />
+
+<div class="cody2"><xmp><button class="button2" onclick="document.getElementById('idTitulo').innerHTML='( x_x) Formatado'">Button</button>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2">
+
+<h2 id="idTitulo"> ( •_•) Formate seu Texto </h2><br />
+
+<button class="button2" onclick="document.getElementById('idTitulo').innerHTML='( x_x) Formatado'">Button</button>
+
+<br /><br /></div><br /><br />
+
+Obs. Para interagirmos com o próprio elemento podemos utilizar o
+termo “this”.<br /><br />
+
+<div class="cody2"><xmp><button class="button2" onclick="this.innerHTML='(⌐■_■)'">( •_•)</button>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2">
+<button class="button2" onclick="this.innerHTML='(⌐■_■)'">( •_•)</button>
+
+<br /><br /></div><br /><br />
+
+Os principais eventos são:<br /><br />
+<h1>Onchange</h1><br /> Dispara o evento quando o elemento é alterado.<br /><br />
+
+
+<div class="cody2"><xmp><input type="range" class="aa" onchange="document.getElementById('valor').innerHTML = this.value"></div>
+<span id="valor" class="aa">0</span>%</div>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2">
+  <div class="arruma">
+  <input type="range" class="aa" onchange="document.getElementById('valor').innerHTML = this.value"></div>
+  <div class="arruma2">
+  <span id="valor" class="aa">0</span>%</div>
+</div><br />
+
+Instrução dentro da função
+<br /><br />
+
+<div class="cody2"><xmp>function mudar(){
+var barra = document.getElementById('idBarra').value;
+document.getElementById('idValor').innerHTML = barra;}
+
+<input type="range" id="idBarra" class="aa" onchange="mudar();"></input></div>
+<span id="idValor" class="aa">0</span>%
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2">
+  <div class="arruma">
+  <input type="range" id="idBarra" class="aa" onchange="mudar();"></input></div>
+  <div class="arruma2">
+  <span id="idValor" class="aa">0</span>%</div>
+</div><br /><br />
+
+<h1>Onclick</h1><br /> Dispara o evento quando o usuário clica
+no elemento
+
+<div class="cody2"><xmp><button class="button2" onclick='alert("⇎_⇎");'>Button</button>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='alert("⇎_⇎");'>Button</button><br /><br /></div><br /><br />
+
+
+<div class="cody2"><xmp>function mandar(){
+alert(' ⊙.◎)»');}
+<button class="button2" onclick='mandar();'>Button</button>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><button class="button2" onclick='mandar();'>Button</button><br /><br /></div><br /><br />
+
+<h1>Onmouseover</h1><br /> Quando o usuário move o mouse
+sobre o elemento.<br /><br />
+
+<h1>Onmouseout</h1><br /> Quando o usuário tira o mouse do elemento.<br /><br />
+
+
+<div class="cody2"><xmp><h3 onmouseout="this.innerHTML = '⦾';" onmouseover="this.innerHTML = '⦿';" style="">⦾</h1>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><h3  onmouseout="this.innerHTML = '⦾';" onmouseover="this.innerHTML = '⦿';" style="">⦾</h1></div><br /><br />
+
+<div class="cody2"><xmp>function chage(){
+document.getElementById('okue').innerHTML = "⦾";
+document.getElementById('okue').style.color = 'rgba(255,000,000,0.5)'
+}
+
+function chage2(){
+document.getElementById('okue').innerHTML = '⦿';
+document.getElementById('okue').style.color = 'rgba(255,255,255,1)'
+}
+
+<h3  id='okue' onmouseout="chage();" onmouseover="chage2();" style="">⦾</h3>
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><h3  id='okue' onmouseout="chage();" onmouseover="chage2();" style="">⦾</h3></div><br /><br />
+
+<h1>Onfocus</h1><br /> Quando o usuário seleciona um campo
+para inserir dados ou selecionaruma opção.<br /><br />
+
+<h1>Onblur</h1><br /> Quando o usuário sai um campo após ter
+sido visitado.<br /><br />
+
+<div class="cody2"><xmp><input class="barrinhas"  onblur="this.style.backgroundColor = 'rgba(255,000,000,0.0)';"
+onfocus="this.style.backgroundColor = 'rgba(255,000,000,0.2)';">
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><div class="bb"><input class="barrinhas"  onblur="this.style.backgroundColor = 'rgba(255,000,000,0.0)';"  onfocus="this.style.backgroundColor = 'rgba(255,000,000,0.2)';"></div></div><br /><br />
+
+<div class="cody2"><xmp>function change2(){
+document.getElementById('lul').style.backgroundColor = 'rgba(255,000,000,0.3)'
+}
+
+function change1(){
+document.getElementById('lul').style.backgroundColor = 'rgba(255,000,000,0)'
+}
+
+<input class="barrinhas" id="lul"  onblur="change1();"  onfocus="change2();">
+</xmp></div><br />
+Resultado:
+<br /><div class="cody2"><div class="bb"><input class="barrinhas" id="lul"  onblur="change1();"  onfocus="change2();"></div></div><br /><br />
+
+<h1>Onsubmit</h1><br /> É utilizado em formulários para ações
+quando o formulário é submetido.<br /><br />
+
+
+<div class="cody2"><xmp><form action="" id="cadastro" method="get" onsubmit="agradecer();">
+Nome:<input type="text" id="idNome" name="nome">
+Idade:<input type="number" id="idIdade" name="idade">
+<input type="submit" value="Gravar">
+</form>
+
+function agradecer(){
+alert("Muito obrigado pela sua participação!");
+}
+</xmp></div><br /><br />
+
+Resultado:
+<div class="cody2">
+<form action="" id="cadastro" method="get" onsubmit="agradecer();">
+<div class="arruma">
+Nome:<br /><br /><input type="text" id="idNome" name="nome" class="barrinhas"><br /><br />
+Idade:<br /><br /><input type="number" id="idIdade" name="idade" class="barrinhas"><br /><br /><br /></div>
+<input type="submit" value="Gravar" class="button2">
+</form>
+</div><br /><br />
+
+Assim como java utilizamos os blocos de condições
+“if, else e else if” para impormos condições para
+defirnir as ações.<br /><br />
+
+<div class="cody2"><xmp>function responder(){
+var nome = document.getElementById('ome').value;
+var idade = document.getElementById('ade').value;
+var resposta = document.getElementById('re');
+
+if(idade < 18){
+resposta.innerHTML = 'Olá '+nome+' você não é obrigado a votar.';
+}else if(idade >=18 && idade < 65){
+resposta.innerHTML = 'Olá '+nome+' você é obrigado a votar.';
+}else{
+resposta.innerHTML = 'Olá '+nome+' você ja não é obrigado a votar.';
+}}
+
+Nome: <br /><br /><input type="text" id="ome" class="barrinhas">
+Idade: <br /><br /><input type="number" id="ade" name="idade" class="barrinhas">
+<button class="button3" onclick='responder();'>Button</button>
+<p id="re" class="cc"></p>
+</xmp></div><br />
+
+Resultado:
+<div class="cody2">
+<div class="arruma">
+  Nome: <br /><br /><input type="text" id="ome" class="barrinhas"><br /><br />
+  Idade: <br /><br /><input type="number" id="ade" name="idade" class="barrinhas"><br /><br /><br /></div>
+  <button class="button2" onclick='responder();'>Button</button> <br /><br /> <br />
+  <p id="re" class="cc"></p>
+
+</div><br /><br />
+
+Podemos também utilizar a estrutura de repetição
+“for” para criar repetições e percorrer arrays.<br /><br />
+
+<div class="cody2"><xmp>function listar(){
+var frutas = ["maça","pera","morango"];
+var lista = document.getElementById("idLista");
+var itens = "";
+for(i = 0; i < frutas.length; ++i){
+itens += "<li>"+frutas[i]+"</li>";
+}
+lista.innerHTML = itens;
+}
+
+<h2>Lista de frutas</h1><br /><br />
+<ul id="idLista" class="dd"></ul>
+<button class="button2" onclick='listar();'>
+</xmp></div><br />
+
+Resultado:
+<div class="cody2">
+<h2>Lista de frutas</h1><br /><br />
+<div class="arruma">
+<ul id="idLista" class="dd"></ul><br /><br />
+</div>
+<button class="button2" onclick='listar();'>Button</button> <br />
+</div><br /><br />
+
+<h1>Validação</h1><br />
+
+Uma das maiores funcionalidades do javascript são
+as validações sobre tipo e formato de dados, que
+podemos fazer diretamente do navegador, ficando
+assim o processo muito mais rápido.
+Podemos fazer validações simplesmente através de
+condiçõesou utilizar expressões regulares.
+Como o javascript roda diretamente no navegador,
+não devemos validar dados de usuário ou do sistema,
+mas apenas se os dados foram inseridos e se foram
+inseridos de forma correta.<br /><br />
+
+<div class="cody2"><xmp>if (valor < 0 || valor > 9000 || isNaN(valor)){
+alert("Este valor está muito alto!")
+}else{
+alert("Vamos mandar seu pedido para análise!")
+}
+</xmp></div><br />
+
+Perceba que o valor não pode ser negativo, não pode
+ser maior que 9000 e tem que ser um número.
+<u>isNaN( )</u> = é uma função que verifica se seu conteúdo
+não é um número.<br /><br />
+
+<div class="cody2"><xmp><label id="Nome" for="nome">Nome</label>
+<input type="text" name="nome" id="idNome" onblur="validarNome(this);">
+
+function validarNome(tag){
+var nome = tag.value;
+var validacao = /^[A-Za-záàâãéèêíïóôõöüúçñÁÀÂÃÉÈÍÏÓÔÕÖÜÚÇÑ' ]+$/;
+if (!validacao.test(nome)){
+alert("Por favor digite somente o seu nome!");
+}else{
+alert("Obrigado por preencher nosso cadastro!!");
+} }
+</xmp></div><br />
+
+<div class="cody2">
+    <div class="arruma">
+  <label id="Nome" for="nome">Nome: </label><br /><br />
+  <input type="text" name="nome" id="idNome" onblur="validarNome(this);" class="barrinhas"></div>
+</div><br /><br />
+
+Test( ) = utilizado para verificar se um valor é valido
+quando usamos regex.<br /><br />
+Ex: regex.Test(variável); retorna true ou false!<br /><br />
+
+Validando preenchimento de número (rm):<br /><br />
+
+<div class="cody2"><xmp><label id="Nome" for="nome">Nome</label>
+<input type="text" name="nome" id="idNome" onblur="validarNome(this);">
+function validarRm(tag){
+var rm = parseInt(tag.value);
+var validacao = /^\d{5}$/;
+if (!validacao.test(rm)){
+alert("Por favor digite seu RM com 5 digitos!");
+}else{
+alert("RM digitado com sucesso!");
+}}
+
+<label id="Rm" for="rm">RM</label>
+<input type="text" name="rm" id="idRm" class="barrinhas" onblur="validarRm(this)"></div>
+</xmp></div><br />
+
+<div class="cody2">
+    <div class="arruma">
+      <label id="Rm" for="rm">RM</label><br /><br />
+      <input type="text" name="rm" id="idRm" class="barrinhas" onblur="validarRm(this)"></div>
+</div><br />
+
+<br /><h1>Exercicios</h1>
+<br><div class="cody2">
+<a href="../exercicios/exercicio2.html">Exercicios-1.html</a><br>
+</div><br>
+
+<h1>Expressões regulares</h1><br />
+
+<div class="codigo2">
+<table>
+<tr>
+
+<th>Descrição</th> <th>Tag</th></tr>
+<tr><td>Máscara de cep</td> <td> \d{5}-\d{3} </td></tr>
+<tr><td>Nome</td> <td>/^[A-Za-záàâãéèêíïóôõöüúçñÁÀÂÃÉÈÍÏÓÔÕÖÜÚÇÑ' ]+$/</td></tr>
+<tr><td>Placas de automóveis no brasil</td> <td>[A-Z]{3}-\d{4}</td></tr>
+<tr><td>Formato de horas</td> <td>[012]\d:[0-5]\d </td></tr>
+<tr><td>CPF</td> <td>/^([\d]{2,3})\.?([\d]{3})\.?([\d]{3})\-?([\d]{2})$/ </td></tr>
+</table><br /><br />
+
+<h1>Especificadores</h1><br />
+Especificam o conjunto de caracteres a casar em uma posição.<br /><br />
+
+<table>
+<tr>
+
+
+<th>Descrição</th> <th>Tag</th></tr>
+<tr><td>Qualquer caractere, exceto a quebra de linha \n (ver flag_dotall)</td> <td>.</td></tr>
+<tr><td>Qualquer caractere incluído no conjunto</td> <td>[...]</td></tr>
+<tr><td>Qualquer caractere não incluído no conjunto</td> <td>[^...]</td></tr>
+<tr><td>O mesmo que [0-9]</td> <td>\d</td></tr>
+<tr><td>O mesmo que [^0-9]</td> <td>\D</td></tr>
+<tr><td>Espaço, quebra de linha, tabs etc.; o mesmo que [ \t\n\r\f\v]</td> <td>\s</td></tr>
+<tr><td>O mesmo que [^ \t\n\r\f\v]</td> <td>\S</td></tr>
+<tr><td>O mesmo que [a-za-z0-9_] (mas pode incluir caracteres unicode; ver flag_unicode)</td> <td>\w</td></tr>
+<tr><td>O complemento de \w</td> <td>\W</td></tr>
+<tr><td>Anula o significado especial do metacaractere seguinte; por exemplo, \. Representa apenas um ponto, e não o curinga</td> <td>\</td></tr>
+</table><br /><br />
+
+<h1>Quantificadores</h1><br />
+Definem o número permitido repetições da expressão regular precedente.<br /><br />
+
+<table>
+<tr>
+
+<th>Descrição</th> <th>Tag</th></tr>
+<tr><td>Exatamente n ocorrências</td> <td>{n}</td></tr>
+<tr><td>No mínimo n ocorrências e no máximo m</td> <td>{n,m}</td></tr>
+<tr><td>No mínimo n ocorrências</td> <td>{n,}</td></tr>
+<tr><td>No máximo n ocorrências</td> <td>{,n}</td></tr>
+<tr><td>0 ou 1 ocorrência; o mesmo que {,1}</td> <td>?</td></tr>
+<tr><td>1 ou mais ocorrência; o mesmo que {1,}</td> <td>+</td></tr>
+<tr><td>0 ou mais ocorrência</td> <td>*</td></tr>
+<tr><td>Modera qualquer um dos quantificadores acima</td> <td>«q»?</td></tr>
+</table><br /><br />
+
+<h1>Âncoras</h1><br />
+Estabelecem posições de referência para o casamento do restante da regex.
+Note que estes metacaracteres não casam com caracteres no texto, mas sim com posições antes, depois ou entre os caracteres.<br /><br />
+
+<table>
+<tr>
+
+<th>Descrição</th> <th>Tag</th></tr>
+<tr><td>Início do texto, ou de uma linha com o flag re.Multiline</td> <td>^</td></tr>
+<tr><td>Início do texto</td> <td>\A</td></tr>
+<tr><td>Fim do texto, ou de uma linha com o flag re.Multiline; não captura o \n no fim do texto ou da linha</td> <td>$</td></tr>
+<tr><td>Fim do texto</td> <td>\Z</td></tr>
+<tr><td>Posição de borda, logo antes do início de uma palavra, ou logo depois do seu término; o mesmo que a posição entre \w e \w ou vice-versa</td> <td>\b</td></tr>
+<tr><td>Posição de não-borda</td> <td>\B</td></tr>
+</table><br /><br />
+
+<h1>Agrupamento</h1><br />
+Definem ou grupos ou alternativas.
+<br /><br />
+
+<table>
+<tr>
+
+<th>Descrição</th> <th>Tag</th></tr>
+<tr><td>Define um grupo, para efeito de aplicação de quantificador, alternativa ou de posterir extração ou re-uso</td> <td>(...)</td></tr>
+<tr><td>Alternativa; casa a regex à direita ou à esquerda</td> <td>...|...</td></tr>
+<tr><td>Recupera o texto casado no n-ésimo grupo</td> <td>\«n»</td></tr>
+
+</table>
+</div><br /><br />
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="aula2.html"><p> Aula 2</p></a></li>
+  <li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+  <li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+  <li><a href="#"><p> Aula 4.3</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

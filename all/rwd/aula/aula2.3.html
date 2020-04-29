@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 2.3</title>
+</head>
+<body onload="marcar()"><dl>
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+  <h1>Aula 2.3</h1>
+  <p>(HTML5)</p>
+  <br><br>
+
+⫺ Formulários com HTML5<br>
+⫺ Lista de Tags<br>
+⫺ Novas Tags<br>
+⫺ Novos Atributos<br>
+⫺ Áudio e Vídeo<br><br>
+
+Formulários - Mounth<br />
+
+* Define um campo para mês e ano;<br />
+* Usa timepicker ou uso de seletores para navegar entre meses e
+anos;<br /><br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form>
+<div>
+<div>
+Informe o Mês: <input type="month"/>
+</div>
+</div>
+<div>
+<input type="submit"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<form>
+<div>
+<div>
+Informe o Mês:<br /> <input type="month"/>
+</div><br /><br /><br />
+</div>
+<div>
+<input type="submit"/>
+</div><br /><br />
+</form>
+</div><br />
+
+
+Formulários - Week<br />
+
+* Define um campo para a semana;<br />
+* Usa timepicker ou uso de seletores para navegar entre as semanas
+do ano;<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form>
+<div>
+<div>
+Informe a semana: <input type="week"/>
+</div>
+</div>
+<div>
+<input type="submit"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<form>
+<div>
+<div>
+Informe a semana:<br /> <input type="week"/>
+</div><br /><br /><br />
+</div>
+<div>
+<input type="submit"/>
+</div><br /><br />
+</form>
+</div><br />
+
+
+Formulários - Time<br />
+* Define um campo para um dado e tempo;<br />
+* Possibilidade de inserção através de digitação ou seletores;<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form>
+<div>
+<div>
+Informe o Horário: <input type="time"/>
+</div>
+</div>
+<div>
+<input type="submit"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<form>
+<div>
+<div>
+Informe o Horário:<br /> <input type="time"/>
+</div><br /><br /><br />
+</div>
+<div>
+<input type="submit"/>
+</div><br /><br />
+</form>
+</div><br />
+
+
+Formulários - Range<br />
+* Define um campo com slider para escala de valores;<br />
+* O desenho do slider ainda depende do Browser;<br />
+* Propriedades min e max para definir a escala de valores;<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form>
+<div>
+<div>
+Range: <input type="range"/>
+</div>
+</div>
+<div>
+<input type="submit"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<form>
+<div>
+<div>
+Range:<br /> <input class="meneee" type="range"/>
+</div><br /><br /><br />
+</div>
+<div>
+<input type="submit"/>
+</div><br /><br />
+</form>
+</div><br />
+
+Formulários - Color<br />
+* Define um campo para seleção de cor;<br />
+* Abertura de um wizard para seleção de cor;<br />
+* < input type="color"><br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><form>
+<div>
+<div>
+Defina a cor: <input type="color"/>
+</div>
+</div>
+<div>
+<input type="submit"/>
+</div>
+</form>
+</xmp></div><br />
+
+Resultado:<br />
+<br><div class="codigo">
+<form>
+<div>
+<div>
+Defina a cor:<br /> <input class="meneee" type="color"/>
+</div><br /><br /><br />
+</div>
+<div>
+<input type="submit"/>
+</div><br /><br />
+</form>
+</div><br />
+
+<h1>Novas Tags</h1><br />
+⪖ Existe uma quantidade muito grande de novas tags;<br />
+⪖ Elas são divididas em grupos com o seu intuito de utilização;<br />
+• Tabulação de dados;<br />
+• Semântica;<br />
+• Formulários;<br />
+• Conteúdo embutido;<br />
+• Agrupando conteúdos;<br />
+• Seções;<br />
+• Scripting<br /><br />
+
+Mas por que Semântica nos elementos do HTML5?<br /><br />
+Com HTML4, os desenvolvedores usavam seus próprios nomes de atributos para os
+elementos da página de estilos:<br /><br />
+header, top,bottom, footer, menu, nav, main, container, content, artcle, sidebar,
+topnav, ...<br /><br />
+Isso tornou impossível para os robôs de busca identificar o conteúdo correto das
+páginas web.<br /><br />
+Com elementos HTML5 como: < header> < footer> < nav> < section> < article>, isso se
+torna mais fácil.<br /><br />
+De acordo com o W3C, a Web Semântica:<br /><br />
+"Permite que os dados sejam compartilhados e reutilizados em aplicações, empresas
+e comunidades."<br /><br />
+
+
+• <b>< section></b>: seção do documento;<br /><br />
+• <b>< nav></b>: links de navegação;<br /><br />
+• <b>< aside></b>: define um conteúdo sem relevância para o contexto da página. Ou seja, se
+ele for removido o sentido da página não perde valor(ex: biografias,avisos etc);<br /><br />
+• <b>< header></b>: cabeçalho de uma página ou seção;<br /><br />
+• <b>< footer></b>: rodapé de uma página ou seção:ex:Normalmente um rodapé contém o
+autor das informações do documento, copyright, links para termos de uso,
+informações de contato, etc.<br /><br />
+
+• <b>< main></b>: define o conteúdo principal da página. Tem apenas um main em toda a
+página.<br /><br />
+• <b>< article></b>: conteúdo independente da página;<br /><br />
+
+
+
+
+<h1>Video</h1><br />
+
+•  Utilização da tag video com definição das fontes de mídia;<br />
+•  As possíveis fontes e seus respectivos tipos de dados são encapsulados em uma tag source;<br />
+•  Alguns dos principais atributos:<br />
+•  Controls: adiciona os principais controle de mídia no player;<br />
+•  Autoplay: assim que a página é carregada o vídeo já começa a ser tocado;<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><video width="400" controls>
+  <source src="https://www.w3schools.com/htmL/mov_bbb.mp4" type="video/mp4">
+  <source src="https://www.w3schools.com/htmL/mov_bbb.mp4" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<p>
+Video courtesy of
+<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+</p>
+</xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+  <video  controls>
+    <source src="https://www.w3schools.com/htmL/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/htmL/mov_bbb.mp4" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <p>
+  Video courtesy of
+  <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+  </p>
+</div><br />
+
+<h1>Audio</h1><br />
+
+• Utilização da tag audio com definição das fontes de mídia;<br />
+• As possíveis fontes e seus respectivos tipos de dados são encapsulados em uma<br />
+tag source;<br />
+• Alguns dos principais atributos:<br />
+• Controls: adiciona os principais controle de mídia no player;<br />
+• Autoplay: assim que a página é carregada o audio já começa a ser tocado;<br />
+• Extremamente semelhante ao uso da tag video<br />
+
+<br />Codigo:<br />
+<br><div class="cody">
+<xmp><audio controls>
+<source src="https://vocaroo.com/media_command.php?media=s1Qc1dmm5zs1&command=download_mp3" type="audio/ogg">
+<source src="https://vocaroo.com/media_command.php?media=s1Qc1dmm5zs1&command=download_mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></xmp></div><br />
+Resultado:<br />
+<br><div class="codigo">
+  <audio controls>
+  <source src="https://vocaroo.com/media_command.php?media=s1Qc1dmm5zs1&command=download_mp3" type="audio/ogg">
+  <source src="https://vocaroo.com/media_command.php?media=s1Qc1dmm5zs1&command=download_mp3" type="audio/mpeg">
+
+</audio><br />
+
+
+</div><br />
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+  <li><a href="aula1.html" ><p> Aula 1</p></a></li>
+  <li><a href="aula2.html"><p> Aula 2</p></a></li>
+  <li><a href="#"><p> Aula 2.2</p></a></li>
+  <li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+  <li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+  <li><a href="aula3.html"><p> Aula 3</p></a></li>
+  <li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+  <li><a href="aula4.html"><p> Aula 4</p></a></li>
+  <li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+  <li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+  <label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicio 1</title>
+</head>
+<body onload="marcar2();">
+
+<script type="text/javascript">
+
+  //EXERCICIO 1 ----------------------------------------------------------------
+  function erro(tag){
+
+  //VERIFICAÇÃO DE NOTAS CASO SEJA LETRAS OU NUMEROS INVALIDOS (1) time();-------------
+
+  var nota = parseFloat(tag.value);
+
+  if(nota < 0 || nota > 10 || isNaN(nota)){
+  tag.style.borderColor = 'red';
+  tag.value = "-1";}
+
+  else{
+  tag.style.borderColor = 'white';
+  }}
+
+  //VERIFICAÇÃO DE NOTAS CASO SEJA LETRAS OU NUMEROS INVALIDOS (1) -------------
+
+  //ONCLICK (1) ----------------------------------------------------------------
+
+  function calcularMedia(){
+
+  //PEGANDO OS VALORES E TRANSFORMANDO EM VARIAVEIS (1) ------------------------
+
+  var nota1 = parseFloat(document.getElementById('nac1').value);
+  var nota2 = parseFloat(document.getElementById('nac2').value);
+  var nota3 = parseFloat(document.getElementById('nac20').value);
+  var nota4 = parseFloat(document.getElementById('am').value);
+  var nota5 = parseFloat(document.getElementById('ps').value);
+
+  var resp = document.getElementById('media');
+  var barra = document.getElementById('barramedia');
+
+  //PEGANDO OS VALORES E TRANSFORMANDO EM VARIAVEIS (1) ------------------------
+
+
+  //VALIDACAO CASO AS NOTAS NAO SEJAM VALIDAS (1) ------------------------------
+
+  var nota = [nota1,nota2,nota3,nota4,nota5];
+  var validation = [1,2,3,4,5];
+  var validationFinal = true;
+
+  for(i = 0; i<5; i++){
+  if(nota[i]=="-1"||nota[i]==""){
+  validation[i] = 10;
+  }}
+
+  for(i = 0; i<5; i++){
+  if(validation[i]=="10"){
+  validationFinal = false;
+  }}
+
+  //VALIDACAO CASO AS NOTAS NAO SEJAM VALIDAS (1) ------------------------------
+
+  if(validationFinal==true){
+
+  //VERIFICANDO A NOTA MAIOR (1) -----------------------------------------------
+
+  var notaMaior;
+
+  if(nota1 > nota2){
+  notaMaior = nota1;}
+  else{
+  notaMaior = nota2;}
+
+  var mediaNAC = (notaMaior + nota3*2)/3;
+  var mediaFinal = (mediaNAC*0.2)+(nota4*0.3)+(nota5*0.5);
+
+  //VERIFICANDO A NOTA MAIOR (1) -----------------------------------------------
+
+  //INFORMANDO AO USUARIO (1) --------------------------------------------------
+
+  if(mediaFinal > 6){
+  media.innerHTML = "4P/R0V?DO"
+  barra.style.borderColor = "green";}
+
+  else if(mediaFinal >= 4){
+  media.innerHTML = "3X4M//E"
+  barra.style.borderColor = "orange";}
+
+  else{
+  media.innerHTML = "R3E/TID00"
+  barra.style.borderColor = "red";}
+
+
+  }else{media.innerHTML = "3RR0R"; barra.style.borderColor = "red";}}
+
+  //INFORMANDO AO USUARIO (1) --------------------------------------------------
+
+  //EXERCICIO 1 ----------------------------------------------------------------
+
+
+  //EXERCICIO 2 ----------------------------------------------------------------
+  function vNome(tag){
+  var nome = tag.value;
+  var vaNome = /^[A-Za-záàâãéèêíïóôõöüúçñÁÀÂÃÉÈÍÏÓÔÕÖÜÚÇÑ' ]+$/;
+
+  if(!vaNome.test(nome)){
+  tag.style.borderColor = "red";
+  tag.value = '';
+  }
+  else{
+  tag.style.borderColor = "Green";
+  }}
+
+
+  function vCPF(tag){
+  var nome = tag.value;
+  var vaNome = 	/^([\d]{2,3})\.?([\d]{3})\.?([\d]{3})\-?([\d]{2})$/;
+
+
+  if(!vaNome.test(nome)){
+  tag.style.borderColor = "red";
+  tag.value = '';
+  }
+  else{
+  tag.style.borderColor = "Green";
+  var cpfFormat = tag.value.replace(vaNome, '$1.$2.$3-$4');
+  cpf.value = cpfFormat;
+  }}
+
+
+  function vRM(tag){
+  var nome = tag.value;
+  var vaNome = 	/^\d{5}$/;
+
+
+  if(!vaNome.test(nome)){
+  tag.style.borderColor = "red";
+  tag.value = '';
+  }
+  else{
+  tag.style.borderColor = "Green";
+  }}
+
+
+  function realiza(){
+  var a = document.getElementById('nome').value;
+  var b = document.getElementById('cpf').value;
+  var c = document.getElementById('rm').value;
+
+  var barra2 = document.getElementById('barrarealizar');
+  var resp = document.getElementById('idKappa');
+
+
+  if(a=='-0' || a=='' || b=='-0'|| b==''|| c=='-0'|| c==''){
+  barra2.style.borderColor = "red";
+  resp.innerHTML = "3RR0R";
+  }else{
+  barra2.style.borderColor = "Green";
+  resp.innerHTML = "C0RR3T0/?!";
+  }}
+
+  //EXERCICIO 2 ----------------------------------------------------------------
+
+  function cicloNome(tag,idErro){
+  var nome = tag.value;
+  var validation = /^[A-Za-záàâãéèêíïóôõöüúçñÁÀÂÃÉÈÍÏÓÔÕÖÜÚÇÑ' ]+$/;
+  var spanErro = document.getElementById(idErro);
+  if(!validation.test(nome)){
+  tag.style.borderColor = "red";
+  spanErro.innerHTML = 'error';
+  }else{
+  tag.style.borderColor = "green";
+  spanErro.innerHTML = "ok";
+  }}
+
+
+  function cicloTelefone(tag,idErro){
+  var telefone = tag.value;
+  var spanErro = document.getElementById(idErro);
+  if(telefone < 1000000000 || telefone > 9999999999 || isNaN(telefone)){
+  tag.style.borderColor = "red";
+  spanErro.innerHTML = 'error';
+  }else{
+  tag.style.borderColor = "green";
+  spanErro.innerHTML = 'ok';
+  }}
+
+  function cicloEmail(tag,idErro){
+  var email = tag.value;
+  var validation = /^[a-z0-9]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+  var spanErro = document.getElementById(idErro);
+  if(!validation.test(email)){
+  tag.style.borderColor = "red";
+  spanErro.innerHTML = 'error';
+  }else{
+  tag.style.borderColor = "green";
+  spanErro.innerHTML = 'ok';
+  }}
+
+  function cicloIdade(tag,idErro){
+  var idade = parseInt(tag.value);
+  var spanErro = document.getElementById(idErro);
+  if(idade > 200 || idade < 1 || isNaN(idade)){
+  tag.style.borderColor = "red";
+  spanErro.innerHTML = 'error';
+  }else{
+  tag.style.borderColor = "green";
+  spanErro.innerHTML = 'ok';
+  }}
+
+
+  function cicloAltura(tag,idErro){
+  var altura = tag.value;
+  var spanErro = document.getElementById(idErro);
+  if(altura > 999 || altura < 1 || isNaN(altura)){
+  tag.style.borderColor = "red";
+  spanErro.innerHTML = 'error';
+  }else{
+  tag.style.borderColor = "green";
+  spanErro.innerHTML = 'ok';
+  }}
+
+  function cicloPeso(tag,idErro){
+  var peso = tag.value;
+  var spanErro = document.getElementById(idErro);
+  if(peso > 999 || peso < 1 || isNaN(peso)){
+  tag.style.borderColor = "red";
+  spanErro.innerHTML = 'error';
+  }else{
+  tag.style.borderColor = "green";
+  spanErro.innerHTML = 'ok';
+
+  }}
+
+  function totrolando(){
+  var f = document.getElementById('sexoF').checked;
+  var m = document.getElementById('sexoM').checked;
+
+  var nome = document.getElementById('xdNome').value;
+  var telefone = document.getElementById('xdTelefone').value;
+  var email = document.getElementById('xdEmail').value;
+  var peso = parseFloat(document.getElementById('xdPeso').value);
+  var altura = parseFloat(document.getElementById('xdAltura').value);
+
+  var barra2 = document.getElementById('barrarealizar3');
+  var barra3 = document.getElementById('barrarealizar4');
+  var resp = document.getElementById('idKappa3');
+  var resp2 = document.getElementById('idKappa2');
+
+  testErro = document.getElementsByTagName('span')
+
+  var result = true;
+  var result2 = "";
+
+  var conta = peso/(altura*altura);
+
+  var conta2 = conta.toString();
+
+  var conta3 = conta2.slice(0,2);
+
+  if(conta < 18.5){
+  result2 = "ab4ssxo do pes0";
+  }
+  else if (conta > 18.5 && conta < 24.9){
+  result2 = "c0m o pe0s id34l";}
+  else if (conta > 25.0 && conta < 29.9){
+  result2 = "c0m so?br3 p%%so";}
+  else if (conta > 30.0 && conta < 34.9){
+  result2 = "c0m o obesid44?e nv? I";}
+  else if (conta > 35.0 && conta < 39.9){
+  result2 = "c0m o obesid44?e nv? II";}
+  else{
+  result2 = "c0m o obesid44?e nv? III";}
+
+  for(i = 0; i < 6; i++){
+  if(testErro[i].innerHTML != "ok"){
+  result = false;
+  }}
+
+  if(f == false && m == false || result == false){
+  barra2.style.borderColor = "red";
+  barra3.style.borderColor = "red";
+  resp.innerHTML = "3RR0R";
+  resp2.innerHTML = "3RR0R";
+  }else{
+  barra2.style.borderColor = "green";
+  barra3.style.borderColor = "green";
+  if(f == true){
+  resp.innerHTML = ""+'<br>'+"Your n#am%: "+nome+'<br />'+" Y0ur nnusmb!!er: "+telefone+'<br />'+" Your eRR0r: "+email+'<br />'+" ??????: Feminino";
+  resp2.innerHTML = ""+'<br>'+"Your ?@@$%: "+altura+'<br />'+" You<private#: "+peso+'<br />'+" S44@u IMC: "+conta3+'<br />'+" Vo@!c\ est?a :"+result2+"";
+  }else{
+  resp.innerHTML = ""+'<br>'+"Your n#am%: "+nome+'<br />'+" Y0ur nnusmb!!er: "+telefone+'<br />'+" Your eRR0r: "+email+'<br />'+" ??????: Masculino";
+  resp2.innerHTML = ""+'<br>'+"Your ?@@$%: "+altura+'<br />'+" Yourprivate#: "+peso+'<br />'+" S44@u IMC: "+conta3+'<br />'+" Vo@!c\ est?a :"+result2+"";
+  }}}
+
+
+
+
+
+
+</script>
+
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed"><br><br>
+
+1. Escrever um programa que permita receber as notas
+de todas as NAC`s, AM e PS e calcular o resultado
+do semestre.
+<br /><br />
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="nac1">Nac 1:</label><br /><br />
+  <input type="text" id="nac1" class="barrinhas" onblur="erro(this)" value="-0"></input>
+  <br /><br />
+
+  <label for="nac2">Nac 2:</label><br /><br />
+  <input type="text" id="nac2" class="barrinhas" onblur="erro(this)" value="-0"></input>
+  <br /><br />
+
+  <label for="nac20">Nac 20</label><br /><br />
+  <input type="text" id="nac20" onblur="erro(this)" class="barrinhas" value="-0"></input>
+  </div>
+
+  <div class="arruma2">
+  <label for="am">AM: </label><br /><br />
+  <input type="text" id="am" onblur="erro(this)" class="barrinhas" value="-0"></input>
+  <br /><br />
+
+  <label for="ps">PS: </label><br /><br />
+  <input type="text" id="ps" onblur="erro(this)" class="barrinhas" value="-0"></input>
+
+  </div>
+
+
+
+  <br /><br /><br /><br /><br />
+  <div class="barradaresp" id="barramedia">
+  <p6> C:/> </p6><p6 id="media"></p6></div><br />
+
+    <button class="button3" onclick='calcularMedia()'>Button</button>
+
+</div><br /><br />
+
+
+
+
+2. Utilizando o projeto “validacaoaluno” que será
+disponibilizado, crie o projeto abaixo com os códigos
+que virão a seguir
+<br /><br />
+  <div class="cody2">
+  <div class="arruma1">
+  <label for="nome">Nome:</label><br /><br />
+  <input type="text" id="nome" class="barrinhas" onblur="vNome(this)" value="-0"></input>
+  <br /><br />
+
+  <label for="rm">RM:</label><br /><br />
+  <input type="text" id="rm" class="barrinhas" onblur="vRM(this)" value="-0"></input>
+  <br /><br />
+
+  </div>
+
+  <div class="arruma2">
+  <label for="cpf">CPF: </label><br /><br />
+  <input type="text" id="cpf" onblur="vCPF(this)" class="barrinhas" value="-0"></input>
+
+
+
+
+  </div>
+
+
+
+  <br /><br /><br /><br /><br />
+  <div class="barradaresp" id="barrarealizar">
+  <p6> C:/> </p6><p6 id="idKappa"></p6></div><br />
+
+    <button class="button3" onclick='realiza()'>Button</button>
+
+</div><br /><br />
+
+
+Para nosso projeto a ideia é criar uma página para os usuários avaliarem seu indice de
+massa corporal (IMC).<br /><br />
+▪ Os Requisitos São:<br />
+▪ Informações do usuário: Nome, Telefone, email, idade e sexo;<br />
+▪ Dados do Cálculo: peso e altura;<br />
+▪ Complemento: Botão Calculo e DIV com os dados dos campos e o resultado;<br />
+▪ Além do Resultado do Calculo, ele deverá indicar em qual a faixa das abaixo ele se<br />
+encontra.<br />
+▪ Abaixo do peso ideal: menor que 18.5<br />
+▪ Peso ideal: entre 18.5 e 24,9<br />
+▪ Sobrepeso: entre 25.0 e 29.9<br />
+▪ Obesidade I: entre 30.0 e 34.9<br />
+▪ Obesidade II: entre 35.0 e 39.9<br />
+▪ Obesidade III: maior que 40.0<br /><br />
+
+
+<div class="cody2">
+<div class="arruma1">
+<div>
+<label for="xdNome">Nome:</label><br /><br />
+<input type="text" id="xdNome" class="barrinhas" onblur="cicloNome(this,'erroxdNome');"></input>
+<span class="erro" id="erroxdNome"></span>
+</div>
+<div>
+<label for="xdTelefone">Telefone:</label><br /><br />
+<input type="text" id="xdTelefone" class="barrinhas" onblur="cicloTelefone(this,'erroxdTelefone');"></input>
+<span class="erro" id="erroxdTelefone"></span>
+</div>
+<div>
+<label for="xdEmail">Email:</label><br /><br />
+<input type="text" id="xdEmail" class="barrinhas" onblur="cicloEmail(this,'erroxdEmail');"></input>
+<span class="erro" id="erroxdEmail"></span>
+</div>
+<div>
+<label for="xdIdade">Idade:</label><br /><br />
+<input type="text" id="xdIdade" class="barrinhas" onblur="cicloIdade(this,'erroxdIdade');"></input>
+<span class="erro" id="erroxdIdade"></span>
+</div>
+<br />
+</div>
+<div class="arruma2">
+<div>
+<label for="xdSexo">Sexo:</label><br /><br />
+<input type="radio" name="sexo" value="F" id="sexoF"/>  F</input>
+<input type="radio" name="sexo" value="M" id="sexoM"/>  M</input><br /><br />
+</div>
+<div>
+<label for="xdAltura">Altura:</label><br /><br />
+<input type="text" id="xdAltura" class="barrinhas" onblur="cicloAltura(this,'erroxdAltura');"></input>
+<span class="erro" id="erroxdAltura"></span>
+</div>
+<div>
+<label for="xdPeso">Peso:</label><br /><br />
+<input type="text" id="xdPeso" class="barrinhas" onblur="cicloPeso(this,'erroxdPeso');"></input>
+<span class="erro" id="erroxdPeso"></span>
+</div>
+</div>
+
+
+<div class="barradaresp" id="barrarealizar3">
+<p6> C:/> </p6><p6 id="idKappa3"></p6></div><br />
+<div class="barradaresp" id="barrarealizar4">
+<p6> C:/> </p6><p6 id="idKappa2"></p6></div><br />
+
+  <button class="button3" onclick='totrolando()'>Button</button>
+
+</div><br /><br />
+
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorret.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula4.2.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 1</title>
+</head>
+<body onload="marcar()">
+
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+  <h1>Aula 1</h1>
+  <p>(PADRÕES WEB - (WEB STANDARDS))</p>
+  <br><br>
+
+  Web Standards<br><br>
+  ᛃ Problemas e Resultados<br>
+  ᛃ O que são Web Standards<br>
+  ᛃ O que é W3C<br>
+  ᛃ Apresentar comparativos<br>
+  ᛃ Estudo de casos e etc.<br><br>
+
+  O objetivo desta aula é apresentar Web Standard e as recomendações dos órgãos
+regulamentadores.<br><br>
+ᛃ Abordaremos os padrões Web ou Web Standards baseado nas recomendações do
+consórcio W3C.<br><br>
+
+Na década de 80, com a chegada da Web, o objetivo era somente a publicação e
+distribuição de textos científicos e acadêmicos, usava-se como padrão:<br><br>
+– Uniform Resource Locator(URL)<br>
+– Hyper Text Markup Language (HTML)<br>
+– Hyper Text Transfer Protocol (HTTP)<br><br>
+ᛃ Tecnologias gratuitas e de padrão aberto.<br><br>
+
+A limitação do HTML:<br>
+– A web invade o mundo dos negócios;<br>
+– Centenas de sites publicados (Alta produção);<br>
+– Péssima aderências aos padrões (Baixa qualidade);<br><br>
+ᛃ Baixa ou nenhuma aderência aos Browsers:<br>
+– Guerra dos browsers;<br>
+– Padrões proprietários;<br>
+– Bagunça gerenalizada;<br><br>
+ᛃ E para ajudar a alta produtividade e a bagunça:<br>
+– Editores HTML “WYSIWYG”<br><br>
+» What you see is what you get ou O que você vê é o que você tem.<br><br>
+
+» UMA BAGUNÇA TOTAL:<br>
+• Emaranhado de TAGs;<br>
+• Tabelas, formatações, textos, scripts e etc. Tudo junto misturado;<br><br>
+
+» Código incompreensível;<br>
+• Péssima organização;<br>
+• Falta ou nenhum padrão estabelecido;<br>
+• Dificuldade para manutenção e desenvolvimento.<br><br>
+O que são os Web Standards<br>
+» Web Standards são normas, diretrizes, recomendações, artigos, notas e tutoriais;<br>
+» São documentos de caráter técnico produzidos pela W3C;<br>
+» O objetivo destes documentos é orientar fabricantes e desenvolvedores para a
+criação de uma Web acessível a todos.<br><br>
+
+
+» O Consórcio World Wide Web (W3C) é um conjunto internacional no qual organizações
+filiadas, equipes em tempo integral e o público trabalham juntos para desenvolver
+padrões para a Web. A missão do W3C é:<br><br>
+– “Conduzir a World Wide Web para que atinja todo seu potencial, desenvolvendo
+protocolos e diretrizes que garantam seu crescimento a longo prazo.”<br><br>
+» Desde 1994, quando criado por Tim Berners-Lee, hoje Diretor do W3C, já publicaram
+mais de 100 padrões denominados recomendações do W3C.<br><br>
+– HTML<br>
+– CSS<br>
+– XML<br>
+– WSDL e etc.<br><br>
+
+O novo conceito indica que devemos dividir a Web em 3 camadas<br><br>
+<div class="codigo">
+Java Script - Comportamento
+</div><br>
+<div class="codigo">
+Css - Apresentação
+</div><br>
+<div class="codigo">
+Html - Estrutura dos Dados (Conteúdo)
+</div><br>
+
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/jscsht.svg">
+</object>
+</div>
+</div><br>
+
+
+Camadas independentes, porém inter-relacionadas, ou seja, uma
+camada completará a outra<br><br><br>
+
+• Reaproveitamento de código<br><br>
+Em programação muita repetição de código significa que
+algo não está sendo feito da melhor maneira possível.
+Uma construção modular, com CSS e JavaScript externos,
+permite que muito código seja reaproveitado.
+Por que separar o desenvolvimento em camadas?<br><br>
+• Organização da equipe<br><br>
+A separação das camadas facilita a divisão de tarefas. Mais de uma pessoa
+trabalhando em paralelo no mesmo projeto agiliza o processo, desde que a ação de
+um não impacte negativamente o que foi desenvolvido pelos outros.<br><br>
+• Limpeza do Código<br><br>
+Um código limpo facilita a leitura e manutenção. Além disso um HTML semântico e
+limpo é bom para os sites de busca, pois os robôs interpretarão de uma forma correta
+e lhe trarão bom posicionamento.<br><br>
+
+⪖ Sites sem padrões:<br><br>
+• Extensão da Mídia Impressa;<br>
+• Layout baseado em Tabelas;<br>
+• Conteúdo, Apresentação e Comportamento “misturados” ;<br>
+• Código Incompreensível.<br><br>
+⪖ Sites com padrões:<br><br>
+• Acessível de qualquer dispositivo;<br>
+• Layout baseado em CSS;<br>
+• Separação entre Conteúdo, Apresentação e Comportamento;<br>
+• Código Acessível.<br><br>
+
+Antigamente..
+
+<br><br />
+Codigo:<br>
+<br><div class="cody">
+<xmp><TABLE CELLSPACING=1 CELLPADDING=1 BORDER=0 WIDTH=400>
+<TBODY>
+<TR>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=item1.html>Item 1</A></B></FONT>
+</TD>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=item2.html>Item 2</A></B></FONT>
+</TD>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=item3.html>Item 3</A></B></FONT>
+</TD>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=item4.html>Item 4</A></B></FONT>
+</TD>
+</TR>
+</TBODY>
+</table></xmp></div><br />
+
+Resultado:<br />
+
+<br><div class="codigo">
+<TABLE CELLSPACING=1 CELLPADDING=1 BORDER=0 WIDTH=400>
+<TBODY>
+<TR>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=#>Item 1</A></B></FONT>
+</TD>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=#>Item 2</A></B></FONT>
+</TD>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=#>Item 3</A></B></FONT>
+</TD>
+<TD VALIGN=MIDDLE ALIGN=CENTER BGCOLOR=#006600 WIDTH=100>
+<FONT FACE=VERDANA SIZE=1><B><A HREF=#>Item 4</A></B></FONT>
+</TD>
+</TR>
+</TBODY>
+</table></div><br />
+
+Hoje: <br><br />
+
+Codigo:<br />
+<br><div class="cody">
+<xmp><ul>
+<li><a href="item1.html" title="Página 1">Item 1</a></li>
+<li><a href="item2.html" title="Página 2">Item 2</a></li>
+<li><a href="item3.html" title="Página 3">Item 3</a></li>
+<li><a href="item4.html" title="Página 4">Item 4</a></li>
+</ul></xmp></div><br />
+
+Resultado:<br>
+<br><div class="codigo">
+<ul>
+<li><a href="#" title="Página 1">Item 1</a></li>
+<li><a href="#" title="Página 2">Item 2</a></li>
+<li><a href="#" title="Página 3">Item 3</a></li>
+<li><a href="#" title="Página 4">Item 4</a></li>
+</ul>
+</div><br>
+
+Segundo o dicionário Aurélio,<br>
+– se.mân.ti.ca<br><br>
+sf (gr semantiké, de sema) 1 Ling Estudo da evolução do sentido das palavras
+através do tempo e do espaço;<br><br>
+⪖ Quando a marcação é utilizada para o que ela realmente foi criada, estamos
+construindo um “Código Semântico”.<br><br>
+
+Tabelas somente para dados tabulares: <br /> <br />
+
+Codigo:<br />
+<br><div class="cody">
+<xmp><table>
+<tr>
+<th>Produto</th>
+<th>Preço Unitário</th>
+<th>Quantidade em estoque</th>
+</tr>
+<tr>
+<td>HD SATA 80 GB</td>
+<td>R$ 85,00</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Pen Drive 2GB</td>
+<td>R$15,00</td>
+<td>150</td>
+</tr>
+</table></xmp></div><br />
+
+Resultado:<br>
+
+<br><div class="codigo">
+<table>
+<tr>
+<th><p>Produto</p></th>
+<th><p>Preço Unitário</p></th>
+<th><p>Quantidade em estoque</p></th>
+</tr>
+<tr>
+<td>HD SATA 80 GB</td>
+<td>R$ 85,00</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Pen Drive 2GB</td>
+<td>R$15,00</td>
+<td>150</td>
+</tr>
+</table>
+</div><br>
+⪖ Titulo utilizar as marcações corretas<br>
+⪖ Marcações para Listas Ordenadas e Listas Não Ordenadas<br><br>
+
+Codigo:<br>
+<br><div class="cody">
+<xmp><h1>Cabeçalho/ Título</h1>
+<ol>
+<li>Lista Ordenada 1</li>
+<li>Lista Ordenada 2</li>
+<li>Lista Ordenada 3</li>
+</ol>
+<ul>
+<li>Lista Não Ordenada 1</li>
+<li>Lista Não Ordenada 2</li>
+<li>Lista Não Ordenada 3</li>
+</ul></xmp></div><br />
+
+Resultado:<br>
+
+<br><div class="codigo">
+<h1>Cabeçalho/ Título</h1>
+<ol>
+<li>Lista Ordenada 1</li>
+<li>Lista Ordenada 2</li>
+<li>Lista Ordenada 3</li>
+</ol>
+<ul>
+<li>Lista Não Ordenada 1</li>
+<li>Lista Não Ordenada 2</li>
+<li>Lista Não Ordenada 3</li>
+</ul>
+</div><br><br>
+
+
+⪖ Algumas vantagens da padronização :<br><br>
+– Carregamento mais rápido;<br>
+– Menores custos com hospedagem (sites de grande porte);<br>
+– Melhor Consistência Visual;<br>
+– Redesign mais barato e eficiênte;<br>
+– Maior acessibilidade e interoperabilidade;<br>
+– Páginas com menos código;<br>
+– Redução de largura de banda;<br>
+– Melhores resultados nos Mecanismos de Buscas,<br><br>
+
+⪖ Relevância das páginas é um fator considerado importante nos sistemas de buscas
+para ordenar os resultados.<br>
+⪖ Usar corretamente as TAGs HTML aumenta a chance do seu web site ser melhor
+posicionado nos sistemas de buscas.<br>
+⪖  A Camada de Conteúdo (HTML) bem estruturada e ordenada, possibilita o acesso
+através de Leitores de Tela.<br>
+⪖ Criando Camadas de Apresentação separadas, podemos fornecer acesso ao site
+através de TVs, Celulares, Tablets e etc..<br>
+⪖ Páginas mais leves facilitam o acesso de conexões mais lentas (Dial Up).<br /><br />
+
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="#" ><p> Aula 1</p></a></li>
+<li><a href="aula2.html"><p> Aula 2</p></a></li>
+<li><a href="aula2.2.html"><p> Aula 2.2</p></a></li>
+<li><a href="aula2.3.html"><p> Aula 2.3</p></a></li>
+<li><a href="aula2.4.html"><p> Aula 2.4</p></a></li>
+<li><a href="aula3.html"><p> Aula 3</p></a></li>
+<li><a href="aula3.2.html"><p> Aula 3.2</p></a></li>
+<li><a href="aula4.html"><p> Aula 4</p></a></li>
+<li><a href="aula4.2.html"><p> Aula 4.2</p></a></li>
+<li><a href="aula4.3.html"><p> Aula 4.3</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>
