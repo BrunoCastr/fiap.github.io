@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 2</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+<h1>Aula 2</h1>
+<p>(Orientação a objetos)</p><br />
+
+Paradigmas de linguagens de programação<br />
+
+<br><div class="cody2">
+<div class="case2">
+<object>
+<embed src="../../../svg/ddd1.svg">
+</object>
+</div>
+</div><br />
+
+<h1>Paradigma declarativo</h1><br />
+
+O programador não precisa saber como o computador é implementado<br /><br />
+Preocupa-se em dizer ao computador "O QUE“ precisa ser feito e não
+“COMO” fazer, ou seja, é baseado em soluções já prontas.<br /><br />
+Os programas são especificações de relações e funções<br /><br />
+Não existem atribuições a variáveis<br /><br />
+Exemplo: XML e SQL.<br /><br />
+
+<h1>Paradigma imperativo</h1><br />
+O foco dos programas é especificar como um processamento deve ser
+feito no computador<br /><br />
+Conceitos fundamentais: variável, valor e atribuição<br /><br />
+Esse paradigma é subdividido em: estruturado, orientado a objetos e
+concorrente<br /><br />
+
+<h1>Paradigma imperativo estruturado</h1><br />
+Baseado na ideia de desenvolvimento de programas por refinamento
+sucessivos (top-down)<br /><br />
+Programas divididos em subprogramas e em blocos aninhados<br /><br />
+Exemplos de LPs: Pascal e C<br /><br />
+
+<br><div class="cody2">
+<div class="case">
+<object>
+<embed src="../../../svg/ddd2.svg">
+</object>
+</div>
+</div><br />
+
+<h1>Paradigma imperativo concorrente</h1><br />
+
+Ocorre quando vários processos executam simultaneamente e concorrem
+por recursos<br /><br />
+As variáveis são compartilhadas.<br /><br />
+Exemplo de LPs: Ada e Java<br /><br />
+
+<h1>Momento flash back…</h1><br />
+
+Informalmente, um objeto representa uma entidade, seja física,
+conceitual ou de software<br /><br />
+
+
+<div class="cody2">
+<div class="flutua">
+  Entidade fisíca:<br /><br />
+  <div class="icon2">
+  <object>
+  <embed src="../../../svg/ddd3.svg">
+  </object>
+  </div>
+</div>
+<div class="flutua">
+  Entidade conceitual:<br /><br />
+  <div class="icon2">
+  <object>
+  <embed src="../../../svg/ddd4.svg">
+  </object>
+  </div>
+</div>
+<div class="flutua">
+  Entidade de software:<br /><br />
+  <div class="icon2">
+  <object>
+  <embed src="../../../svg/ddd5.svg">
+  </object>
+  </div>
+</div>
+</div><br /><br />
+
+Um objeto é uma entidade com fronteira e identidade bem
+definidas que encapsulam o estado e o comportamento<br /><br />
+– O estado é representado pelos atributos e relacionamentos<br />
+– O comportamento é representado pelas operações, métodos e
+máquinas de estado<br /><br />
+
+<br><div class="cody2">
+<div class="case">
+<object>
+<embed src="../../../svg/ddd6.svg">
+</object>
+</div>
+</div><br />
+
+<h1>Estado dos objetos</h1><br />
+
+Estado é condição ou situação durante a vida de um objeto,
+que satisfaz alguma condição, realiza alguma atividade ou
+aguarda algum evento. O estado de um objeto normalmente
+é alterado ao longo do tempo<br />
+
+<br><div class="cody2">
+<div class="case">
+<object>
+<embed src="../../../svg/ddd7.svg">
+</object>
+</div>
+</div><br />
+
+<h1>Comportamento dos objetos</h1><br />
+
+O comportamento determina como uma objeto age ou reage
+a uma requisição de outro objeto. O comportamento de um
+objeto é representado pelas operações que ele pode realizar<br />
+
+<br><div class="cody2">
+<div class="case">
+<object>
+<embed src="../../../svg/ddd8.svg">
+</object>
+</div>
+</div><br />
+
+<h1>Identidade dos objetos</h1><br />
+Cada objeto tem uma identidade única, mesmo se o estado é
+idêntico ao de outro objeto<br /><br />
+
+<h1>Classes</h1><br />
+
+Uma classe deve conter apenas os elementos necessários
+para resolver um aspecto bem definido do sistema
+A classe é uma descrição nomeada para um grupo de
+entidades (chamadas de objetos ou instâncias de classe) que
+têm as mesmas características<br /><br />
+
+Definir uma classe significa formalizar um tipo de dado e as operações
+associadas a esse tipo. Uma classe estabelece o comportamento de seus
+objetos através de métodos e os estados possíveis destes objetos através
+de atributos<br /><br />
+
+<br><div class="cody2">
+<div class="case3">
+<object>
+<embed src="../../../svg/ddd9.svg">
+</object>
+</div>
+</div><br />
+
+A diferença fundamental entre classes e objetos está no fato de que um
+objeto constitui uma entidade concreta com tempo e espaço de
+existência, enquanto a classe é somente uma abstração - tipo de dado
+definido pelo programador.<br /><br />
+
+<br><div class="cody2">
+<div class="case3">
+<object>
+<embed src="../../../svg/ddd10.svg">
+</object>
+</div>
+</div><br />
+
+<h1>Tipo de atributo</h1><br />
+
+<div class="codigo3">
+<table>
+<tr>
+<th>Tipo</th><th>Descrição</th><th>Valores de exemplos</th>
+<tr><td>boolean</td><td>Valor verdadeiro ou falso</td><td>true ou false</td></tr>
+<tr><td>char</td><td>Caracter</td><td>a, b, c, 1, 2, 3, @, !, #</td></tr>
+<tr><td>int</td><td>Número inteiro</td><td>1, 2, 3, 1000, 5687</td></tr>
+<tr><td>double</td><td>Número real </td><td>45.78, 0.5, 8.9324, 0.00089</td></tr>
+<tr><td>String</td><td>Texto de qualquer tamanho</td><td>João Paulo, 09985-361, 28@</td></tr>
+</table>
+</div><br /><br />
+
+<h1>Mais sobre metodos</h1><br />
+Os parâmetros de uma operação correspondem a informações que esta
+recebe quando é executada.
+Uma operação pode ter zero ou mais parâmetros, e para cada parâmetro
+é necessário definir também o seu tipo
+Os parâmetros são separados por vírgula e seguem a sintaxe:<br /><br />
+
+<div class="cody2">
+<a href="../exercicios/exercicio2.html">Exercicios-2.html</a><br>
+</div><br>
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto2.svg">
+</object>
+</div>
+
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="aula1.html" ><p> Aula 1</p></a></li>
+<li><a href="#"><p> Aula 2</p></a></li>
+<li><a href="Aula3.html"><p> Aula 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="Aula6.html"><p> Aula 6</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

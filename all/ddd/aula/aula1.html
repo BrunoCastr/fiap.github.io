@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 1</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+<h1>Aula 1</h1>
+<p>(Orientação a objetos)</p><br />
+
+<h1>O que é Programação Orientada a Objetos?</h1><br />
+⇝ Programação<br /><br />
+– Uma linguagem de programação é um método padronizado para
+expressarinstruções para um computador.<br />
+– É um conjunto de regras sintáticas (gramatical) e semânticas
+(significado) usadas para definir um programa de computador.<br /><br />
+⇝ Objeto<br /><br />
+– Um objeto representa uma entidade que pode ser física, conceitual
+ou de software.<br /><br />
+⇝ Programação Orientada a Objetos<br /><br />
+– É um paradigma de análise, projeto e programação de sistemas de
+informação, baseado na composição e interação entre diversas
+unidades de software chamadas de objetos<br /><br />
+
+Exemplos do cotidiano...<br /><br />
+<div class="codigo3">
+
+<div class="flutua">
+<table>
+<tr>
+<th>Bola: Futebol</th>
+<tr><td>material: couro<br />
+formato: redonda<br />
+tamanho: 40cm<br />
+cor: branca</td></tr>
+</table>
+</div>
+
+<div class="flutua">
+<table>
+<tr>
+<th>Bola: Tênis</th>
+<tr><td>material: tecido<br />
+formato: redonda<br />
+tamanho: 5cm<br />
+cor: amarela</td></tr>
+</table>
+</div>
+
+<div class="flutua">
+<table>
+<tr>
+<th>Bola: Ping-Pong</th>
+<tr><td>material: pvc<br />
+formato: tecido<br />
+tamanho: 1,5cm<br />
+cor: amarela</td></tr>
+</table>
+</div>
+
+<div class="flutua">
+<table>
+<tr>
+<th>Bola: Fut-Americ</th>
+<tr><td>material: couro<br />
+formato: oval<br />
+tamanho: 50cm<br />
+cor: marrom</td></tr>
+</table><br />
+</div>
+</div>
+
+<h1>Analogia com informática</h1><br />
+
+<div class="codigo3">
+
+<div class="flutua">
+<table>
+<tr>
+<th>Objeto: Produto</th>
+<tr><td>Nome<br />
+Descrição<br />
+Valor</td></tr>
+</table>
+</div>
+
+<div class="flutua">
+<table>
+<tr>
+<th>Objeto: Estoque</th>
+<tr><td>Produto<br />
+Descrição<br />
+Quantidade</td></tr>
+</table>
+</div>
+
+<div class="flutua">
+<table>
+<tr>
+<th>Objeto: Cliente</th>
+<tr><td>Cadastro<br />
+Senha do Cadastro<br />
+Nome<br />
+Endereço<br />
+CPF<br />
+RG</td></tr>
+</table>
+</div>
+
+</div><br /><br />
+
+<h1>O que é uma classe?</h1><br />
+
+Estas características são os
+atributos(propriedades, campos de
+dados) e as operações(comportamentos,
+métodos, funções) que podem ser
+executadas nestes objetos.<br /><br />
+Em outros termos, uma classe descreve
+os serviços providos por seus objetos e
+quais informações eles podem
+armazenar.<br /><br />
+Na programação orientada a objetos a
+classe é a unidade básica de
+programação.<br /><br />
+Todos os programas são escritos como
+um conjunto de classes, e todos os
+códigos que você escrever devem fazer
+parte de uma classe.<br /><br />
+
+Uma classe é a descrição de um conjunto de objetos que
+compartilham os mesmos atributos, operações, relações, e
+semânticas<br /><br />
+– Um objeto é uma instância de uma classe<br />
+• Uma classe é uma abstração, uma vez que:<br />
+– Enfatiza características relevantes<br />
+– Suprime outras características<br /><br />
+
+<div class="codigo3">
+<div class="flutua">
+  Classe:<br /><br />
+  <div class="icon2">
+  <object>
+  <embed src="../../../svg/interior-design.svg">
+  </object>
+  </div>
+</div>
+<div class="flutua">
+  Instaciação:<br /><br />
+  <div class="icon2">
+  <object>
+  <embed src="../../../svg/improvement.svg">
+  </object>
+  </div>
+</div>
+<div class="flutua">
+  Objeto:<br /><br />
+  <div class="icon2">
+  <object>
+  <embed src="../../../svg/economic-arc.svg">
+  </object>
+  </div>
+</div><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+<h1>Representação gráfica de uma classe?</h1><br />
+
+• É possível representar graficamente uma classe através de um
+diagrama de classes (UML), este diagrama é uma representação da
+estrutura e relações das classes que servem de modelo para objetos.<br /><br />
+• Uma classe é representada através de um retângulo com três
+compartimentos.<br /><br />
+
+<div class="codigo3">
+
+<div class="flutua">
+<table>
+<tr>
+<th>Classe: Professor</th>
+<tr><td>Professor</td></tr>
+<tr><td>- nome : String<br />
+- matricula : int<br />
+- admissao : Date<br />
+- cargo : String<br />
+- displina : String<br />
+- cargaHoraria : double
+</td></tr>
+<tr><td>+ aceitarCursoOferecido() : void<br />
++ atualizarCargaHoraria() : void<br />
++ lancerGradeFinal() : void<br />
++ iniciarCurso() : void</td></tr>
+</table><br />
+
+</div>
+
+<div class="flutua">
+<table>
+<tr>
+<th><br /></th>
+<tr><td>Nome da Classe</td></tr>
+<tr><td><br /><br />
+Atributos<br />
+<br /><br /><br />
+</td></tr>
+<tr><td><br />Operações<br /><br /><br /></td></tr>
+</table><br />
+
+</div>
+
+
+
+</div><br />
+
+<h1>O que é um atributo?</h1><br />
+
+• Um atributo é o nome que se dá à propriedade de uma classe<br /><br />
+• O atributo descreve o tipo de valores que a propriedade possui
+– Um classe pode ter qualquer número de atributos ou nenhum
+atributo<br /><br />
+
+<h1>O que é uma operação?</h1><br />
+
+Uma operação tem uma assinatura, que pode restringir os parâmetros reais que são possíveis<br /><br />
+• Um classe pode ter qualquer número de operações ou nenhuma
+operação<br /><br />
+
+<h1>Relação entre classes e objetos</h1><br />
+
+• Uma classe é uma definição abstrata de um objeto<br /><br />
+– Ela define a estrutura e comportamento de cada objeto da classe<br />
+– Ela serve como um modelo para a criação de objetos<br /><br />
+
+<h1>Definição – orientação à objetos</h1><br />
+
+Um conjunto de princípios (abstração,
+encapsulamento, polimorfismo) guiando a
+construção do software, em conjunto com
+linguagens, bancos de dados e outras ferramentas
+que suportam esses princípios.<br /><br />
+(Object Technology - A Manager’s Guide, Taylor,
+1997.)<br /><br />
+
+<h1>História – orientação à objetos</h1><br />
+
+1966 Simula 67 ➦ 1972 Smalltalk ➦ 1983 C++ ➦ 1995 Java ➦ 1997 UML ➦ 2000 C# ➦ 2005 UML2<br /><br />
+
+
+<h1>O que é um modelo visual?</h1><br />
+
+Um modelo é simplificação da realidade.<br /><br />
+
+<h1>Por que precisamos de um modelo visual?</h1><br />
+
+• Modelagem atinge quatro objetivos:<br /><br />
+– Ajuda a visualizar um sistema como deseja que ele seja<br />
+– Permite especificar a estrutura ou o comportamento de um sistema<br />
+– Disponibiliza um modelo que orienta na construção de um sistema<br />
+– Documenta as decisões realizadas<br /><br />
+• Os modelos de sistemas são construídos porque não é possível
+compreender o sistema em sua totalidade<br /><br />
+• Os modelos são construídos para melhor entendimento do sistema
+que está sendo desenvolvido<br /><br />
+• Analogia:<br /><br />
+– É possível construir um prédio sem a maquete, as plantas, a estruturação total de
+elétrica, gás e hidráulica?<br />
+– É possível viajar sem nenhum mapa do local do qual irá?<br /><br />
+
+<div class="cody2">
+<a href="../exercicios/exercicio1.html">Exercicios-1.html</a><br>
+</div><br>
+
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto2.svg">
+</object>
+</div>
+
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="#" ><p> Aula 1</p></a></li>
+<li><a href="Aula2.html"><p> Aula 2</p></a></li>
+<li><a href="Aula3.html"><p> Aula 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="Aula6.html"><p> Aula 6</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>
