@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 5</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+<h1>Aula 5</h1>
+<p>(Switch e Laços de Repetição)</p>
+<br><br>
+
+<h1>Comando	CASO</h1><br>
+<p>
+• O comando caso é útil em situações onde há necessidade de se
+testar uma mesma variável (ou expressão) que possa conter diversos valores –
+ Cada valor exige a execução de comandos diferentes.<br><br>
+ • Uma expressão é comparada a diversos valores de acordo com a ordem definida.<br><br>
+ • Ao encontrar uma ocorrência do valor correto, o comando relativo
+ é executado e o algoritmo segue para o fim do CASO.<br><br>
+ • Se nenhum dos valores for igual ao conteúdo da variável, poderá
+  ser executado um outro comando através do complemento SENÃO.</p>
+
+<br><br><h1>SWITCH</h1><br>
+<div class="codigo">
+switch (expressão)<br>
+{<br>
+case constante1: expressões;<br>
+break;<br>
+case constante2: expressões;<br>
+break;<br>
+default: expressões;<br>
+break;<br>
+}<br>
+</div>
+
+<br><br><h1>Estruturas de Repetição</h1><br>
+<p>
+Diferente do ser humano, o computador não se cansa de realizar operações repetitivas.<br>
+Diante disto, podemos incluir nos algoritmos as estruturas de repetição.<br><br>
+
+• O que é uma repetição?<br><br>
+– Também chamada a laço ou loop;<br>
+– É uma instrução que permite a execução de um trecho de algoritmo várias vezes seguidas.<br>
+– Repetição com teste no início (comando Enquanto);<br>
+– Repetição com teste no final (comando Repita);<br>
+– Repetição com variável de controle (comando Para).</p>
+
+<br><br><h1>Comando Enquanto</h1><br>
+<p>• Implementado	com	a	instrução	while<br><br>
+• instrução	que	efetua	o	teste	antes	da execução	do	corpo	do	loop.<br>
+– O	corpo	do	loop	pode	nunca	ser	executado.</p>
+<br>
+<div class="codigo">
+while (condição){<br>
+instrução<br>
+}<br>
+int contador;	//	declara	a	variável	de	controle<br>
+contador	=	1;	//	inicializa	a	variável	de controle<br>
+while	(contador	<=	10)	{	//	condição	de	parada do	loop<br>
+//	incrementa	a	variável	de	controle por	1<br>
+System.out.println(	“Contador	=	”	+ contador);<br>
+contador	=	contador	+1;<br>
+}
+</div>
+
+
+<br><br><h1>Comando Repita</h1><br>
+
+<p>• O mais próximo do REPITA em java é a instrução do...while <br><br>
+• Teste realizado após a execução do corpo do loop. <br>
+– O corpo do loop sempre executa ao menos uma vez.
+– Diferente do repita, o código continuará sendo executado enquanto a instrução for VERDADEIRA.</p>
+
+<br>
+<div class="codigo">
+do { instrução } while ( condição );<br>
+Comando Repita <br>
+int contador = 1;  //declara e inicializa o contador do <br>
+{ // Imprime e incrementa o contador <br>
+System.out.println( “Contador = ” +contador); <br>
+contador = contador + 1; <br>
+} while (contador <= 10); // testa a condição de parada<br>
+</div>
+
+<br><br><h1>Comando	Para</h1><br>
+<p>• Instrução de repetição for foi criada para repetição ultizando variável contadora<br>
+– Especifica os detalhes da repetição controlada por uma variável contadora em uma única linha</p><br>
+<div class="codigo">
+for(int i = 0; i>10; i++){};
+</div>
+
+<br><br><h1>Exercicios</h1>
+
+<br><div class="codigo">
+<a href="../exercicios/exercicio5.html">Exercicios-Parte-1.html</a><br>
+<a href="../exercicios/exercicio5(2).html">Exercicios-Parte-2.html</a><br>
+</div><br>
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/q.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="Aula123.html" ><p> Aula 1 2 e 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="#"><p> Aula 5</p></a></li>
+<li><a href="Aula6.html"><p> Aula 6</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

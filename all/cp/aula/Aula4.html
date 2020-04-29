@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 4</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<div class="Guardador">
+<h1>Aula 4</h1>
+<p>(Lógica,	Sequencia	lógica,	Instrução,	Lógica	de
+Programação, Algoritmo	e	Programa, Entrada,	processamento	e	saída, 	Descrição	Narrativa,	Diagrama	de
+blocos,	Pseudocódigo, Variáveis	e	Constantes.)</p>
+<br><br>
+
+<p>Em	Java	é	possível	comentar	código	de	três	formas
+diferentes:</p><br>
+<div class="codigo">
+//	comentários	de	uma	linha<br><br>
+/*	comentários	de	várias linhas	*/<br><br>
+/**	comentários	para documentação	*/</div><br><br>
+
+<h1>Java	possui	oito	tipos	primitivos	de
+dados:</h1><br>
+<p>
+• Lógico:	boolean<br>
+• Texto	(1	caractere):	char<br>
+• Inteiros:	byte,	short,	int	e	long<br>
+• Reais:	double	e	float</p><br><br>
+
+<h1>Operadores	Booleanos:	</h1><br>
+
+<table>
+
+<tr>
+<th>Operação</th>
+<th>Pseudocódigo</th>
+</tr>
+
+<tr>
+<td>Não</td>
+<td>!</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td>&</td>
+</tr>
+
+<tr>
+<td>Ou</td>
+<td>|</td>
+</tr>
+
+<tr>
+<td>Ou Exclusivo </td>
+<td>^</td>
+</tr>
+</table>
+<br><br>
+<h1>Comando de entrada de dados</h1><br>
+
+<p>Normalmente precisamos de dados de entrada para serem processados pelo programa.
+Desta forma, precisamos de um comando para solicitar e obter dados fornecidos
+pelo usuário.</p><br>
+<div class="codigo">
+Scanner scn = new Scanner(System.in);<br><br>
+Double nota1 = scn.nextDouble();
+</div><br>
+
+<p>Quando	um	computador	encontra	um	comando	de
+entrada	de	dados,	ele	suspende	a	execução	do
+programa	até	que	os	dados	sejam	fornecidos.
+Para	isso	ultlizaremos	o	Scanner.</p>
+
+
+<br><br>
+<h1>Comando de saída de dados</h1><br>
+
+<p>Da mesma forma que precisamos receber dados externos, precisamos fornecer
+dados e instruções para os usuários. Desta forma, precisamos de um comando para
+retornar dados e/ou mensagens em um dispositivo de saída.</p><br>
+<div class="codigo">
+System.out.println(var ou expressão ou mensagem);
+</div>
+
+<br><br>
+<h1>Exemplos: </h1><br>
+
+<div class="codigo">
+System.out.println(“O saldo atual é” + saldo); <br>
+System.out.println(soma);
+</div><br><br>
+
+<div class="codigo">
+import java.util.Scanner;<br><br>
+public class Atividade01 {<br><br>
+public static void main(String[] args) {<br><br>
+// Variáveis: nota1, nota2 e média do aluno<br>
+double nota1 = 0, nota2 = 0, media = 0;<br><br>
+Scanner scn = new Scanner(System.in);<br><br>
+System.out.println("Entre com a primeira e a segunda nota do aluno:");<br><br>
+// entrada de dados<br>
+nota1 = scn.nextDouble();<br>
+nota2 = scn.nextDouble();<br><br>
+// cálculo da média<br>
+media = (nota1 + nota2)/2;<br>
+System.out.println("A média é : "+media);<br>
+}}
+
+</div><br><br>
+
+<h1>Estruturas de Seleção:</h1>	<br>
+
+<p>
+• Para alterarmos o fluxo de execução de um programa escrito em Java, temos o comando if. <br>
+• Situações onde há vários caminhos de execução que dependem da avaliação de uma variável inteira, o comando switch.<br>
+• Para validar mais de uma sentença podemos utilizar o comando elseif<br></p><br><br>
+
+<h1>Comando SE:</h1>	<br>
+<div class="codigo">
+if (condição)	//	onde	condição	pode	ser	uma expressão<br>
+{<br>
+			Declarações	ou	blocos<br>
+}<br>
+else	//	caso	a	condição	anterior	não	seja satisfeita<br>
+{<br>
+			Declarações	ou	blocos<br>
+}</div><br><br>
+
+<h1>Comando SE NÃO:</h1>	<br>
+<div class="codigo">
+if (condição)	//	onde	condição	pode	ser	uma expressão<br>
+{<br>
+			Declarações	ou	blocos<br>
+}<br>
+else if	(condição)	//	onde	condição	pode	ser	uma	expressão		<br>
+{		<br>
+	Declarações	ou	blocos		<br>
+}<br>
+else	//	caso	a	condição	anterior	não	seja satisfeita<br>
+{<br>
+			Declarações	ou	blocos<br>
+}</div>
+
+<br><br>
+
+<h1>Exercicios:</h1>	<br>
+<div class="codigo">
+  <a href="../exercicios/exercicio4.html">Exercicios.html</a><br>
+</div><br>
+
+
+
+
+</div>
+
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/q.svg">
+</object>
+</div>
+
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+
+<div id="menu">
+
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="Aula123.html" ><p> Aula 1 2 e 3</p></a></li>
+<li><a href="#"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="Aula6.html"><p> Aula 6</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

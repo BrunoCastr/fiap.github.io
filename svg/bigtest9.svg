@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1365 767" style="enable-background:new 0 0 1365 767;" xml:space="preserve">
+	 <defs>
+ 	 <style>
+ 	 #Camada_9{
+ 	 fill:rgba(255,255,255,0);
+ 	 stroke:rgba(255, 255, 255,1);
+ 	 stroke-dasharray:1300;
+ 	 stroke-dashoffset:0;
+ 	 -webkit-animation: dash 4s linear forwards;
+ 	 -o-animaiton: dash 4s linear forwards;
+ 	 -moz-animation: dash 4s linear forwards;
+ 	 animation: dash 5s linear backwards;
+ 	 }
+
+ 	 @-webkit-keyframes dash{
+ 	 from{
+ 	 stroke-dashoffset: 1300;
+
+ 	 }
+ 	 to{
+ 	 stroke-dashoffset: 0;
+ 	 fill:rgba(255, 255, 255, 1);
+ 	 }}
+
+ 	</style>
+ 	</defs>
+	 <style type="text/css">
+	 .st0{fill:none;stroke-width:2;stroke-miterlimit:10;}
+	 </style>
+<g id="Camada_9">
+	<path class="st1" d="M1539.8,770.6"/>
+	<path class="st1" d="M1506.7,771.6"/>
+	<path class="st1" d="M1473.2,772.1"/>
+	<path class="st1" d="M1440.7,772.7"/>
+	<path class="st1" d="M1408.2,772.7"/>
+	<path class="st0" d="M1375.7,773.2"/>
+	<line class="st0" x1="1347.1" y1="-17" x2="1348.1" y2="773.7"/>
+	<path class="st0" d="M1341.8-18"/>
+	<line class="st0" x1="1318.7" y1="-16.9" x2="1319.7" y2="773.8"/>
+	<path class="st0" d="M1308.2-17.5"/>
+	<line class="st0" x1="1282.2" y1="-16.4" x2="1283.2" y2="774.3"/>
+	<path class="st0" d="M1275.7-16.9"/>
+	<line class="st0" x1="1249.7" y1="-15.9" x2="1250.7" y2="774.8"/>
+	<line class="st0" x1="1219.6" y1="-19.1" x2="1220.6" y2="771.6"/>
+</g>
+</svg>

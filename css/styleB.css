@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+
+*{
+margin: 0;
+}
+
+body, html{
+width: 100%;
+height: 100%;
+}
+
+html{
+
+background: linear-gradient(to right, rgba(21,93,144,1) 0%,rgba(243,54,165,1) 20%,rgba(13,3,64,1) 100%);
+background-attachment: fixed;
+}
+
+a:link{
+text-decoration: none;
+}
+
+
+.logo2{
+position: fixed;
+width: 69%;
+height: 69%;
+z-index: -2;
+padding-left: 15%;
+  user-select: none;
+}
+
+.logo3{
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: -1;
+padding-top: 5%;
+  user-select: none;
+}
+
+.logo5{
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: -2;
+user-select: none;
+}
+
+#toggle-2 {
+display:none;
+}
+
+
+#casca1{
+background: rgba(000, 000, 000, 0.2);
+width: 100%;
+height:100%;
+z-index: 1;
+position: fixed;
+}
+
+#casca2{
+transition: 2s;
+background: rgba(000, 000, 000, 0.5);
+width: 50%;
+height:100%;
+z-index: 1;
+float: right;
+}
+
+#casca3{
+transition: 2s;
+background: rgba(000, 000, 000, 0.5);
+width: 50%;
+height:100%;
+z-index: 1;
+float:left;
+}
+
+.case{
+width: 80%;
+height: 80%;
+padding-left: 10%;
+user-select: none;
+}
+
+
+#toggle-2:checked ~ #casca2 {
+width: 0%;
+}
+
+#toggle-2:checked ~ #casca3 {
+width: 0%;
+}
+
+/* FIXME:  */
+#toggle-2:checked ~ .Guardador {
+
+}
+
+.Guardador{
+margin-left: 15%;
+margin-right: 15%;
+padding-top: 2%;
+z-index: 2;
+font-family: 'Poiret One', cursive;
+color: #fff;
+font-size: 1.3vw;
+text-align: justify;
+font-weight: bold;
+overflow: hidden;
+}
+
+
+.codigo{
+padding: 0.5%;
+color: #fff;
+font-family: 'Share Tech Mono', monospace;
+font-size: 1.1vw;
+
+font-weight: normal;
+background-color: rgba(34,40,54,0.3);
+}
+
+
+h1{
+font-family: 'Poiret One', cursive;
+color: #fff;
+font-size: 1.8vw;
+}
+
+p{
+
+}
+
+#iconmenu input{
+font-size: 3vw;
+}
+
+#iconmenu{
+position: fixed;
+border-top: 1px solid;
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-color: #999999;
+margin-top: 20%;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+padding: 0.8%;
+display: block;
+z-index: 2;
+}
+#iconmenu h1{
+cursor: pointer;
+font-size: 2vw;
+}
+
+.arruma select{
+background-color: rgba(255, 0, 0, 0.0);
+border: 1px solid;
+border-color: #fff;
+color: #fff;
+font-size: 1.3vw;
+}
+
+
+.barrinhas{
+font-family: 'Share Tech Mono', monospace;
+color: #fff;
+border-bottom: 1px solid;
+border-left: 1px solid;
+border-top: none;
+border-right: none;
+border-color: #fff;
+width: 60%;
+background-color: rgba(255, 0, 0, 0.0);
+margin-bottom: 5%;
+}
+
+.barrinha2{
+font-family: 'Share Tech Mono', monospace;
+color: #000;
+border-bottom: 1px solid;
+border-left: 1px solid;
+border-color: #fff;
+width: 60%;
+background-color: rgba(255, 0, 0, 0.0);
+font-size: 1.3vw;
+}
+
+.arruma2{
+margin-top: 2%;
+width: 25%;
+height: 50%;
+float: left;
+}
+
+.cody2{
+padding: 0.5%;
+color: #fff;
+font-family: 'Share Tech Mono', monospace;
+font-size: 1.1vw;
+background-color: rgba(34,40,54,0.3);
+overflow: hidden;
+font-weight: normal;
+}
+
+.arruma{
+margin-left: 29%;
+margin-top: 2%;
+}
+
+.arruma1{
+
+  margin-top: 2%;
+width: 25%;
+height: 50%;
+float: left;
+margin-left: 31%;
+}
+
+.button3{
+  transition: 1s;
+  border-radius: 4px;
+  border: 1px solid;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3vw;
+  width: 40%;
+  cursor: pointer;
+  margin: 2%;
+  margin-left: 31%;
+  background-color: rgba(255,255,255,0);
+
+}
+
+.button3:hover{
+background-color: rgba(255,255,255,0.2);
+}
+
+h2{
+font-family: "Calibri";
+font-size: 1.2vw;
+text-align: center;
+}
+
+p5{background-color: rgba(0, 0, 0, 0.2);
+margin-left: 43%;
+}
+
+p6{
+
+}
+
+.barradaresp{
+  font-family: 'Share Tech Mono', monospace;
+  margin-left: 31%;
+  font-size: 1.2vw;
+  border-bottom: 1px solid;
+  width: 40%;
+  clear: both;
+padding-top: 3%;
+}
+
+span{
+/*display: none;*/
+}
+
+.codigo3 table{
+width: 100%;
+border: 0px solid;
+border-color: rgba(255,255,255,0.5);
+}
+
+.codigo3 th{
+border: 0px solid;
+border-color: rgba(255,255,255,0.5);
+font-family: 'Poiret One', cursive;
+color: #fff;
+font-size: 1.8vw;
+
+}
+
+.codigo3 td{
+background-color: rgba(255, 0, 0, 0.08);
+width: 1%;
+font-family: 'Poiret One', cursive;
+color: #fff;
+font-size: 1.3vw;
+border: 0px solid;
+border-color: rgba(255,255,255,0.2);
+padding: 1%;
+
+}
+
+.codigo3{
+height: 100%;
+overflow: hidden;
+}
+
+.flutua{
+float:left;
+width: 25%;
+margin-left: 6%;
+}

@@ -1,0 +1,92 @@
+============================================================================
+===================================AULA 5.1===================================
+============================================================================
+Scanner sc = new Scanner(System.in);
+double num1,num2,num3,result;	
+System.out.println("Informe o numero 1: ");
+num1 = sc.nextDouble();
+System.out.println("Informe o numero 2: ");
+num2= sc.nextDouble();
+System.out.println("Informe o numero 3: ");
+num3= sc.nextDouble();
+result = num1 + num2 + num3;
+System.out.println(result);
+}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int result=0;
+int x[] = new int[4];
+for(int i=0; i<4; i++){
+System.out.println("Informe o numero "+(i+1)+": ");
+x[i] = sc.nextInt();}
+for(int i=0; i<4; i++){
+if(x[i]%2==0){
+result += x[i];}}
+System.out.println("Soma dos numeros pares: "+result);
+}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int result=0;
+int x[] = new int[5];
+for(int i=0; i<4; i++){
+System.out.println("Informe o numero "+(i+1)+": ");
+x[i] = sc.nextInt();}
+for(int i=0; i<4; i++){
+if(x[i]<0){
+result += x[i];}}
+System.out.println("Soma dos numeros negativos: "+result);
+}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int result=0;
+for(int i=1;i<11;i++){
+System.out.println(5+" x "+i+": "+(i*5));
+}}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int result=0, i = 0;
+int x[] = new int[5];
+do {
+for(i=0; i<5; i++){
+System.out.println("Informe a idade: "+(i+1)+": ");
+x[i] = sc.nextInt();
+if(x[i]<0) {
+System.out.println("idade Anulada");
+i -=1;
+}}
+}while(i!=5);
+for(i=0; i<5; i++){
+result += x[i];
+result = result / 5;
+}System.out.println("Média: "+result);
+}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num1, aux, aux2=0, aux3=1;
+do {
+System.out.println("Informe um numero maior que 0: ");
+num1 = sc.nextInt();
+if(num1>0){
+aux3 = -1;}
+}while(aux3>0);
+aux = num1 / 2;
+for(int i=aux; i<num1; i++){
+System.out.println((aux2=aux2+2));
+}}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num1, aux, aux3=1;
+do {
+System.out.println("Informe um numero maior que 0: ");
+num1 = sc.nextInt();
+if(num1>0){
+aux3 = -1;}
+}while(aux3>0);
+aux = num1-1;
+for(int i=aux; i>0; i--){
+num1 = num1 * i;
+}
+System.out.println("Fatorial: "+num1);}}
+============================================================================
+
+============================================================================

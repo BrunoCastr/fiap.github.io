@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicios 6</title>
+</head>
+<body onload="marcar2();time();">
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed">
+
+<!--______________________________________________________________________-->
+<h1>1. Cópia</h1>
+Faça um algoritmo em JAVA que copie o conteúdo de um vetor de 10 posições
+do tipo inteiro em um segundo vetor. Observação: O usuário deve entrar com os
+valores.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10];<br>
+  int vetor2[] = new int [10];<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  vetor[i] = sc.nextInt();}<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  vetor2[i] = vetor[i];}<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  System.out.println(vetor2[i]);}}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>2. Soma vetores</h1>
+Faça um algoritmo em JAVA que some o conteúdo de dois vetores do tipo float e
+armazene o resultado em um terceiro vetor. Observação: O usuário entrará com
+os números.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10];<br>
+  int vetor2[] = new int [10];<br>
+  int vetor3[] = new int [10];<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  vetor[i] = sc.nextInt();<br>
+  vetor2[i] = sc.nextInt();}<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  vetor3[i] = vetor[i]+vetor2[i];}<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  System.out.println(vetor3[i]);<br>
+  }}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>3. Multi de vetores</h1>
+Faça um algoritmo em JAVA que receba do usuário 10 números inteiros e os
+guarde em um vetor. Mostre na tela o conteúdo de cada elemento multiplicado
+por 2.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10];<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  vetor[i] = sc.nextInt();}<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  System.out.println(vetor[i]*2);<br>
+  }}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>4. Tabuada</h1>
+Faça um algoritmo em JAVA que guarde em um vetor a tabuada do 2.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10];<br>
+  for(int i = 1 ; i < 11;i++) {<br>
+  vetor[i-1] = i * 2;<br>
+  }<br>
+  for(int i = 0 ; i < 10;i++) {<br>
+  System.out.println("2 x "+(i+1)+" : "+vetor[i]);<br>
+  }}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>5. Vetor pares</h1>
+Faça	 um	 algoritmo	 em	 JAVA	 que	 carregue	 um	 vetor	 de	 5	 posições	 após	 o
+carregamento	 exiba	 a	 quanKdade	 de	 número	 pares	 e	 a	 quantidade	 de	 números
+ímpares.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [5], par=0,impar=0;<br>
+  for(int i = 0 ; i < 5;i++) {<br>
+  vetor[i] = i+1;<br>
+  if(vetor[i]%2==0) {<br>
+  par+=1;}<br>
+  if(vetor[i]%2!=0) {<br>
+  impar+=1;}<br>
+  }System.out.println(par+" "+impar);}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>6. Vetor verificar</h1>
+Faça	um	algoritmo	em	JAVA	que	receba	do	usuário	7	números	reais	e	os	guarde	em
+um	vetor.	 Percorrer	 o	vetor	e	verificar	 se	existe	 número	igual	a	 18.	Se	existirem,
+escrever	a	posição	em	que	está	armazenado.	(Pode	ter	números	repeKdos).
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  double vetor[] = new double [7];<br>
+  int posicao[] = new int [7];<br>
+  for(int i = 0; i< 7;i++){<br>
+  vetor[i] = sc.nextDouble();<br>
+  if(vetor[i]==18){<br>
+  posicao[i]= i;}<br>
+  if(vetor[i]!=18) {<br>
+  posicao[i] = -1;<br>
+  }}<br>
+  for(int i = 0; i< 7;i++){<br>
+  if(posicao[i]==-1){<br>
+  System.out.println("não possui.");}<br>
+  if(posicao[i]!=-1) {<br>
+  System.out.println("Posição: "+(i+1));}}}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>7. Vetor verificar 2.0</h1>
+Faça	 um	 algoritmo	 em	 JAVA	 que	 receba	 do	 usuário	 10	 números	 inteiros	 e	 os
+guarde	em	um	vetor.	Percorrer	o	vetor	e	verificar	se	existe	número	igual	a	20.	Se
+encontrar,	somar	quantos	existem.	(Pode	ter	números	repetidos).
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10],soma = 0;<br>
+  int posicao[] = new int [10];<br>
+  for(int i = 0; i< 10;i++){<br>
+  vetor[i] = sc.nextInt();<br>
+  if(vetor[i]==20){<br>
+  soma+=1;}}<br>
+  System.out.println(soma);}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>8. Encontrar maior</h1>
+Faça	 um	 algoritmo	 em	 JAVA	 que	 carregue	 um	 vetor	 de	 5	 posições	 e	 determine	 e
+exiba	o	MAIOR	valor	encontrado.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10], aux[] = new int[1];<br>
+  for(int i = 0; i < 10; i++) {<br>
+  vetor[i]=sc.nextInt();}<br>
+  for(int x = 0; x < 10; x++){<br>
+  for(int i =1; i < 10; i++){<br>
+  if(vetor[i]>vetor[i-1]){<br>
+  aux[0]=vetor[i-1];<br>
+  vetor[i-1]=vetor[i];<br>
+  vetor[i]=aux[0];}}}<br>
+  System.out.println("Maior valor: "+vetor[0]);}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>9. Idade</h1>
+Faça	 um	 algoritmo	 em	 JAVA	 que	 receba	 o	 nome	 e	 a	 idade	 de	 100	 estudantes.
+Mostrar	na	tela	o	nome	e	a	idade	somente	dos	maiores	de	25	anos.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int idade[] = new int [100];<br>
+  String nome[] = new String [100];<br>
+  for(int i = 0; i < 100; i++) {<br>
+  System.out.println("Informe o nome: ");<br>
+  nome[i] = sc.next();<br>
+  System.out.println("Informe a idade");<br>
+  idade[i] = sc.nextInt();<br>
+  }<br>
+  for(int i = 0; i < 100; i++){<br>
+  if(idade[i]>=27) {<br>
+  System.out.println("Nome: "+nome[i]+" Idade: "+idade[i]);<br>
+  }}}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>10. Ordenação decrescente</h1>
+Faça	 um	 algoritmos	 em	 JAVA	 que	 preencha	 um	 vetor	 com	 10	 números	 inteiros
+digitados	 pelo	 usuário.	 Calcule	 	 e	 mostre	 o	 vetor	 resultante	 de	 uma	 ordenação
+decrescente.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int vetor[] = new int [10], aux[] = new int[1];<br>
+  for(int i = 0; i < 10; i++) {<br>
+  vetor[i]=sc.nextInt();}<br>
+  for(int x = 0; x < 10; x++){<br>
+  for(int i =1; i < 10; i++){<br>
+  if(vetor[i]>vetor[i-1]){<br>
+  aux[0]=vetor[i-1];<br>
+  vetor[i-1]=vetor[i];<br>
+  vetor[i]=aux[0];}}}<br>
+  for(int i =0; i < 10; i++){<br>
+  System.out.println("Ordem: "+vetor[i]);}}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>11. 5 maiores médias</h1>
+Faça	um	algoritmo	em	JAVA	que	receba	a	média	bimestral	dos	35	alunos	da	turma
+e	os	guarde	em	um	vetor.	Mostrar	na	tela	as	5	melhores	médias.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int i = 0;<br>
+  float a1[] = new float [10];<br>
+  float c1[] = new float [1];<br>
+  for (i = 0; i < 10; i++) {<br>
+  System.out.print("Digite a "+(i+1)+ "º média: " );<br>
+  a1[i]=sc.nextInt();<br>
+  }<br>
+  for (int a = 0; a < 10; a++) {<br>
+  for (i = 1; i < 10; i++) {<br>
+  if(a1[i]>a1[i-1]) {<br>
+  c1[0] = a1[i-1];<br>
+  a1[i-1] = a1[i];<br>
+  a1[i] = c1[0];}}}<br>
+  System.out.println("As 5 melhores médias são: ");<br>
+  for (i = 0; i < 5; i++) {<br>
+  System.out.println(+a1[i]);	}sc.close();<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>DESAFIO</h1>
+Faça um algoritmo em JAVA que solicite ao usuário a senha para acesso ao programa. O
+algoritmo deve ser apresentado ao usuário em forma de menu da seguinte maneira.<br>
+1 – Cadastrar produto<br>
+2 – Alterar produto<br>
+3 – Visualizar produto<br>
+4 – Excluir produto<br>
+5 – Sair<br>
+Caso escolha 1, o usuário cadastrará o código do produto (que deverá ser sequencial
+iniciando em 1 sem interferência do usuário), a descrição do produto e a quantidade em
+estoque.<br>
+Caso escolha 2, o usuário deverá digitar o código do produto (validar se o código existe) e
+poderá alterar a descrição e a quantidade em estoque.<br>
+Caso escolha 3, o usuário deverá digitar o código do produto (validar se o código existe) e
+o programa mostrará na tela, o código, a descrição e a quantidade em estoque.<br>
+Caso escolha 4, o usuário deverá digitar o código do produto (validar se o código existe) e
+o programa excluirá o produto.<br>
+Caso escolha 5, sair do programa.<br>
+Observações:<br>
+a) Utilizar vetor para guardar os códigos, descrição e quantidade em estoque.<br>
+b) Limite de produtos que podem ser cadastrados: 10<br>
+c) Se um produto for excluído, libera um espaço nos 3 vetores. <br>
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br><br>
+
+  Scanner sc = new Scanner(System.in);<br>
+  String desc[] = new String[100], descaux[] = new String[1];<br>
+  int selecione=0, cod[] = new int [100],codaux[] = new int[1], aux=0,aux2=0;<br>
+  int aux3=0,aux4=0, qtde[] = new int[100],qtdeaux[] = new int[1], limite = 100;<br><br>
+
+  do{<br><br>
+
+  System.out.println(" \n \n Usuário: DekoSotc"<br>
+  + "\n Limite de cadastros: "+limite+""<br>
+  + "\n\n Selecione: "<br>
+  + "\n 1 - Cadastrar produto"<br>
+  + "\n 2 - Alterar produto"<br>
+  + "\n 3 - Visualizar produto"<br>
+  + "\n 4 - Excluir produto"<br>
+  + "\n 5 - Sair");<br>
+  selecione =sc.nextInt();<br><br>
+
+  switch(selecione) {<br><br>
+
+  case 1:<br>
+  limite = limite - 1;<br>
+  System.out.println(" Informe a descrição do produto: ");<br>
+  desc[aux]=sc.next();<br>
+  System.out.println(" Informe a quantidade do produto em estoque: ");<br>
+  qtde[aux]=sc.nextInt();<br>
+  System.out.println("\n Cadastro efetuado com sucesso");<br>
+  aux = aux + 1;<br>
+  break;<br><br>
+
+  case 2:<br>
+  System.out.println(" Informe o código para alterar: ");<br>
+  aux2 =sc.nextInt();<br>
+  aux2 = aux2-1;<br>
+  if(desc[aux2]==null||aux2 > 100||aux2 < 0){<br>
+  System.out.println(" Código inválido ou produto inexistente");}<br>
+  else{<br>
+  System.out.println(" Informe a nova descrição: ");<br>
+  desc[aux2] = sc.next();<br>
+  System.out.println(" Informe a nova quantidade: ");<br>
+  qtde[aux2] = sc.nextInt();}<br>
+  break;<br><br>
+
+  case 3:<br>
+  System.out.println(" Informe o código: ");<br>
+  aux3 =sc.nextInt();<br>
+  aux3 -= 1;<br>
+  if(desc[aux3]==null||aux2 > 100||aux2 < 0){<br>
+  System.out.println(" Código inválido ou produto inexistente");}<br>
+  else {<br>
+  System.out.println("\n Informações:"<br>
+  + "\n Codigo: "+ (aux3+1)<br>
+  + "\n Descrição: "+ desc[aux3]<br>
+  + "\n Quantidade: "+ qtde[aux3]);}<br>
+  break;<br><br><br>
+
+  case 4:<br>
+  System.out.println(" Informe o código para excluir: ");<br>
+  aux4 =sc.nextInt();<br>
+  aux4 = aux4-1;<br>
+  if(desc[aux2]==null||aux2 > 100||aux2 < 0){<br>
+  System.out.println(" Código inválido ou produto inexistente");}<br>
+  else {<br>
+  cod[aux4]=101;<br>
+  desc[aux4]=null;<br>
+  qtde[aux4]=0;<br>
+  for(int x = 0; x < 100; x++) {<br>
+  for(int i = 1; i < 100; i++) {<br>
+  if(cod[i]< cod[i-1]){<br>
+  codaux[0] = cod[i-1];<br>
+  cod[i-1]= cod[i];<br>
+  cod[i]=codaux[0];<br><br>
+
+  descaux[0]=desc[i-1];<br>
+  desc[i-1]=desc[i];<br>
+  desc[i]=descaux[0];<br><br>
+
+  qtdeaux[0]=qtde[i-1];<br>
+  qtde[i-1]=qtde[i];<br>
+  qtde[i]=qtdeaux[0];<br>
+  }}}<br>
+  limite = limite + 1;<br>
+  aux=aux-1;<br>
+  for(int i = 0; i < 100;i++){cod[i]=i;}<br>
+  System.out.println(" Concluído com sucesso.");}<br>
+  break;<br><br>
+
+  case 5:<br>
+  System.out.println("Finalizado.");<br>
+  break;<br><br>
+
+  default:<br>
+  System.out.println(" Seleção inválida.");<br>
+  break;<br><br>
+
+  }}while(selecione!=5);}}
+</div><br>
+<!--______________________________________________________________________-->
+<br><br><div class="codigo"></div><br><br>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula6.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

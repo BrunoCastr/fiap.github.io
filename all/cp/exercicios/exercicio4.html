@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicios 4</title>
+</head>
+<body onload="marcar2();time();">
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed">
+
+<h1>1. Empréstimo</h1>
+A prefeitura de Recife criou um programa de empréstimo para seus
+funcionários com desconto em folha. O valor da prestação não
+pode ultrapassar 30% do salário bruto do funcionário. Faça um
+programa que solicite o valor do salário bruto, o valor da prestação
+e informe se o empréstimo pode ou não ser concedido.
+
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  double salario,prestacao, auxiliar;<br>
+  Scanner sc = new Scanner(System.in);<br>
+  System.out.println("Informe o valor do salário: ");<br>
+  salario = sc.nextDouble();<br>
+  System.out.println("Informe o valor da prestação: ");<br>
+  prestacao= sc.nextDouble();<br>
+  auxiliar = salario * 0.3;<br>
+  if(prestacao > auxiliar) {<br>
+  System.out.println("Empréstimo não pode ser concedido");<br>
+  }<br>
+  else {<br>
+  System.out.println("Empréstimo pode ser concedido");<br>
+  }}}<br>
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>2. Passagens</h1>
+Uma	 companhia	 aérea	 define	 os	 preços	 de	 suas	 passagens	 a	 partir	 da
+informação	do	destino	bem	como	do	número	de	passagens	(se	é	apenas	ida
+ou	se	inclui	 também	a	volta).	Faça	um	programa	que	solicite	o	desMno	bem
+como	se	o	cliente	deseja	ida	e	volta	e	informe	o	preço	de	acordo	com	a	tabela
+abaixo	(PS:	a	empresa	não	trabalha	nos	trechos	sul	e	sudeste):
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  String destino;<br>
+  int IouV;<br>
+  Scanner sc = new Scanner(System.in);<br>
+  System.out.println("Informe o destino: ");<br>
+  destino = sc.next();<br>
+  System.out.println("Digite '1' para ida "<br>
+  				 + "\nDigite '2' para ida e volta");<br>
+  IouV = sc.nextInt();<br>
+  switch (destino) {<br>
+  case "Norte":<br>
+  if(IouV==1) {<br>
+  System.out.println("Você irá pagar RS 100");<br>
+  }else {System.out.println("Você irá pagar RS 180");}<br>
+  break;<br>
+  case "Nodeste":<br>
+  if(IouV==1) {<br>
+  System.out.println("Você irá pagar RS 205");<br>
+  }else {System.out.println("Você irá pagar RS 307");}<br>
+  break;<br>
+  case "Centro-oeste":<br>
+  if(IouV==1) {<br>
+  System.out.println("Você irá pagar RS 548");<br>
+  }else {System.out.println("Você irá pagar RS 1007");}<br>
+  break;<br>
+  default:<br>
+  System.out.println("Inválido");
+  }}}
+
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>3. Validação</h1>
+Uma instituição bancária utiliza um dígito verificador para validar o
+número da conta (com 3 dígitos) de seus clientes. Faça um programa
+que solicite o número da conta e calcule o dígito verificador. Os passos
+para calcular o dígito verificador são:<br><br>
+Ex: Número da conta = 235.<br><br>
+1) somar o número da conta com o seu inverso. Ex: 235 + 532 =<br>
+767<br><br>
+2) Multiplicar cada digito do número obtido no passo anterior pela
+sua ordem posicional e somar esses resultados. O último digito do
+número obtido é o dígito verificador.<br>
+– Ex: 7 x 1 + 6 x 2 + 7 x 3 = 40 (dígito verificador à 0).<br><br>
+• PS: Use o operador % e a divisão inteira para obter o dígito
+verificador.
+<br><br><div class="codigo">
+  public static void main(String[]args) {<br>
+  Scanner sc = new Scanner(System.in);<br>
+  int digito, auxiliar, i = 0, soma, mult;<br>
+  System.out.println("Informe o digito: ");<br>
+  digito = sc.nextInt();<br>
+  auxiliar = digito;<br>
+  while(auxiliar > 0 ) {<br>
+  i *= 10;<br>
+  i += (auxiliar %10);<br>
+  auxiliar /=10;<br>
+  }<br>
+  soma = i + digito;<br>
+  mult = (soma%10) * 3;<br>
+  mult = mult + ((soma/10)%10)* 2;<br>
+  mult = mult + (((soma/10)/10%10)%10) * 1;<br>
+  mult = mult % 10;<br>
+  System.out.println("Digito: " + mult);<br>
+  }}
+</div><br><br>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula4.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

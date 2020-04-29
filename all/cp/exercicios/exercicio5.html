@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicios 5</title>
+</head>
+<body onload="marcar2();time();">
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed">
+
+<h1>1. Ler</h1>
+Ler 3 números inteiros e mostrar na tela a soma dos números digitados.
+
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  double num1,num2,num3,result;<br>
+  System.out.println("Informe o numero 1: ");<br>
+  num1 = sc.nextDouble();<br>
+  System.out.println("Informe o numero 2: ");<br>
+  num2= sc.nextDouble();<br>
+  System.out.println("Informe o numero 3: ");<br>
+  num3= sc.nextDouble();<br>
+  result = num1 + num2 + num3;<br>
+  System.out.println(result);<br>
+  }
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>2. Soma dos pares</h1>
+Ler 4 números inteiros e mostrar na tela a soma somente dos números
+pares.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int result=0;<br>
+  int x[] = new int[4];<br>
+  for(int i=0; i< 4; i++){<br>
+  System.out.println("Informe o numero "+(i+1)+": ");<br>
+  x[i] = sc.nextInt();}<br>
+  for(int i=0; i< 4; i++){<br>
+  if(x[i]%2==0){<br>
+  result += x[i];}}<br>
+  System.out.println("Soma dos numeros pares: "+result);<br>
+  }
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>3. Soma dos negativos</h1>
+Ler 5 números inteiros e mostrar na tela a soma somente dos números
+negativos.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int result=0;<br>
+  int x[] = new int[5];<br>
+  for(int i=0; i< 4; i++){<br>
+  System.out.println("Informe o numero "+(i+1)+": ");<br>
+  x[i] = sc.nextInt();}<br>
+  for(int i=0; i < 4; i++){<br>
+  if(x[i] < 0){<br>
+  result += x[i];}}<br>
+  System.out.println("Soma dos numeros negativos: "+result);<br>
+  }}
+</div><br><br>
+
+<!--______________________________________________________________________-->
+<h1>4. Tabuada</h1>
+Mostrar na tela a tabuada do 5.
+<br><br><div class="codigo">
+Scanner sc = new Scanner(System.in);<br>
+int result=0;<br>
+for(int i=1;i< 11;i++){<br>
+System.out.println(5+" x "+i+": "+(i*5));<br>
+}}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>5. Idades</h1>
+Ler 5 idades e mostrar na tela a média simples das idades digitadas. Não
+aceitar números negativos.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int result=0, i = 0;<br>
+  int x[] = new int[5];<br>
+  do {<br>
+  for(i=0; i< 5; i++){<br>
+  System.out.println("Informe a idade: "+(i+1)+": ");<br>
+  x[i] = sc.nextInt();<br>
+  if(x[i]< 0) {<br>
+  System.out.println("idade Anulada");<br>
+  i -=1;<br>
+  }}<br>
+  }while(i!=5);<br>
+  for(i=0; i< 5; i++){<br>
+  result += x[i];<br>
+  result = result / 5;<br>
+  }System.out.println("Média: "+result);<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>6. Sequencia</h1>
+Solicitar ao usuário um número inteiro maior que 0 (zero). Mostrar na tela a
+sequência de números pares entre o número 1 e o número digitado.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num1, aux, aux2=0, aux3=1;<br>
+  do {<br>
+  System.out.println("Informe um numero maior que 0: ");<br>
+  num1 = sc.nextInt();<br>
+  if(num1>0){<br>
+  aux3 = -1;}<br>
+  }while(aux3>0);<br>
+  aux = num1 / 2;<br>
+  for(int i=aux; i< num1; i++){<br>
+  System.out.println((aux2=aux2+2));<br>
+  }}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>7. Fatorial </h1>
+Solicitar um numero inteiro maior que zero e mostrar na tela o fatorial desse
+número.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num1, aux, aux3=1;<br>
+  do {<br>
+  System.out.println("Informe um numero maior que 0: ");<br>
+  num1 = sc.nextInt();<br>
+  if(num1>0){<br>
+  aux3 = -1;}<br>
+  }while(aux3>0);<br>
+  aux = num1-1;<br>
+  for(int i=aux; i>0; i--){<br>
+  num1 = num1 * i;<br>
+  }<br>
+  System.out.println("Fatorial: "+num1);}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1> </h1>
+
+<br><br><div class="codigo">
+
+</div><br><br>
+<!--______________________________________________________________________-->
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula5.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

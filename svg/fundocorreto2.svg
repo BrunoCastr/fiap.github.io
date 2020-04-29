@@ -1,0 +1,128 @@
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1245 598" style="enable-background:new 0 0 1245 598;" xml:space="preserve">
+
+	 <defs>
+ <style>
+
+
+ #Camada_1{
+
+ fill:rgba(255, 255, 255, 0);
+ stroke-dasharray:2300;
+ stroke-dashoffset:0;
+ -webkit-animation: dash 4s linear forwards;
+ -o-animaiton: dash 4s linear forwards;
+ -moz-animation: dash 4s linear forwards;
+ animation: dash 4s linear forwards;
+ }
+
+ @-webkit-keyframes dash{
+ from{
+ stroke-dashoffset: 2300;
+ }
+ to{
+ stroke-dashoffset: 0;
+ }}
+
+
+
+ </style>
+ </defs>
+
+	<style type="text/css">
+		.st0{fill:none;stroke:rgba(255, 255, 255, 0.2);stroke-miterlimit:10;}
+	</style>
+
+<line class="st0" x1="-39" y1="334" x2="1302" y2="334"/>
+<line class="st0" x1="365" y1="609" x2="554" y2="334"/>
+<line class="st0" x1="473" y1="609" x2="585" y2="334"/>
+<line class="st0" x1="578" y1="609" x2="621" y2="334"/>
+<line class="st0" x1="261" y1="609" x2="519" y2="334"/>
+<line class="st0" x1="151" y1="609" x2="490" y2="334"/>
+<line class="st0" x1="50" y1="609" x2="450" y2="334"/>
+<line class="st0" x1="-22" y1="589" x2="419" y2="334"/>
+<line class="st0" x1="-21" y1="538" x2="380" y2="334"/>
+<line class="st0" x1="-24" y1="501" x2="340" y2="334"/>
+<line class="st0" x1="-29" y1="471" x2="301" y2="334"/>
+<line class="st0" x1="-30" y1="446" x2="265" y2="334"/>
+<line class="st0" x1="-31" y1="425" x2="227" y2="334"/>
+<line class="st0" x1="-34" y1="402" x2="189" y2="334"/>
+<line class="st0" x1="-45" y1="384" x2="146" y2="334"/>
+<line class="st0" x1="-46" y1="368" x2="98" y2="334"/>
+<line class="st0" x1="-50" y1="351" x2="50" y2="334"/>
+<polyline class="st0" points="-16,554 586,555 677,555 1279,554 "/>
+<polyline class="st0" points="-16,518 592,517 671,517 1279,518 "/>
+<polyline class="st0" points="-16,486 597,485 666,485 1279,486 "/>
+<path class="st0" d="M599,461H-16c226.7,0,453.3,0,680,0c205,0,410,0,615,0"/>
+<path class="st0" d="M604,440l-627-4c227.3,2.8,454.7,4.1,682,4c209-0.1,418-1.4,627-4"/>
+<path class="st0" d="M607,422l-633,1c227.3-0.7,454.7-1,682-1c211,0,422,0.4,633,1"/>
+<path class="st0" d="M610,402H-20c224.3,0,448.7,0,673,0c210,0,420,0,630,0"/>
+<path class="st0" d="M613,386H-20c223.3,0,446.7,0,670,0c211,0,422,0,633,0"/>
+<line class="st0" x1="615" y1="368" x2="-14" y2="368"/>
+<path class="st0" d="M617,354H-17c221,0,442,0,663,0c211.3,0,422.7,0,634,0"/>
+<path class="st0" d="M-31,342h652c7,0,14,0,21,0c217.3,0,434.7,0,652,0"/>
+<line class="st0" x1="1302" y1="334" x2="-39" y2="334"/>
+<line class="st0" x1="898" y1="609" x2="709" y2="334"/>
+<line class="st0" x1="790" y1="609" x2="678" y2="334"/>
+<line class="st0" x1="685" y1="609" x2="642" y2="334"/>
+<line class="st0" x1="1002" y1="609" x2="744" y2="334"/>
+<line class="st0" x1="1112" y1="609" x2="773" y2="334"/>
+<line class="st0" x1="1213" y1="609" x2="813" y2="334"/>
+<line class="st0" x1="1285" y1="589" x2="844" y2="334"/>
+<line class="st0" x1="1284" y1="538" x2="883" y2="334"/>
+<line class="st0" x1="1287" y1="501" x2="923" y2="334"/>
+<line class="st0" x1="1292" y1="471" x2="962" y2="334"/>
+<line class="st0" x1="1293" y1="446" x2="998" y2="334"/>
+<line class="st0" x1="1294" y1="425" x2="1036" y2="334"/>
+<line class="st0" x1="1297" y1="402" x2="1074" y2="334"/>
+<line class="st0" x1="1308" y1="384" x2="1117" y2="334"/>
+<line class="st0" x1="1309" y1="368" x2="1165" y2="334"/>
+<line class="st0" x1="1313" y1="351" x2="1213" y2="334"/>
+<path class="st0" d="M615,368c11,0,22,0,33,0c209.7,0,419.3,0,629,0"/>
+<line class="st0" x1="-39" y1="266" x2="1302" y2="266"/>
+<line class="st0" x1="365" y1="-9" x2="554" y2="266"/>
+<line class="st0" x1="473" y1="-9" x2="585" y2="266"/>
+<line class="st0" x1="578" y1="-9" x2="621" y2="266"/>
+<line class="st0" x1="261" y1="-9" x2="519" y2="266"/>
+<line class="st0" x1="151" y1="-9" x2="490" y2="266"/>
+<line class="st0" x1="50" y1="-9" x2="450" y2="266"/>
+<line class="st0" x1="-22" y1="11" x2="419" y2="266"/>
+<line class="st0" x1="-21" y1="62" x2="380" y2="266"/>
+<line class="st0" x1="-24" y1="99" x2="340" y2="266"/>
+<line class="st0" x1="-29" y1="129" x2="301" y2="266"/>
+<line class="st0" x1="-30" y1="154" x2="265" y2="266"/>
+<line class="st0" x1="-31" y1="175" x2="227" y2="266"/>
+<line class="st0" x1="-34" y1="198" x2="189" y2="266"/>
+<line class="st0" x1="-45" y1="216" x2="146" y2="266"/>
+<line class="st0" x1="-46" y1="232" x2="98" y2="266"/>
+<line class="st0" x1="-50" y1="249" x2="50" y2="266"/>
+<polyline class="st0" points="-16,46 586,45 677,45 1279,46 "/>
+<polyline class="st0" points="-16,82 592,83 671,83 1279,82 "/>
+<polyline class="st0" points="-16,114 597,115 666,115 1279,114 "/>
+<path class="st0" d="M599,139H-16c226.7,0,453.3,0,680,0c205,0,410,0,615,0"/>
+<path class="st0" d="M604,160l-627,4c227.3-2.8,454.7-4.1,682-4c209,0.1,418,1.4,627,4"/>
+<path class="st0" d="M607,178l-633-1c227.3,0.7,454.7,1,682,1c211,0,422-0.4,633-1"/>
+<path class="st0" d="M610,198H-20c224.3,0,448.7,0,673,0c210,0,420,0,630,0"/>
+<path class="st0" d="M613,214H-20c223.3,0,446.7,0,670,0c211,0,422,0,633,0"/>
+<line class="st0" x1="615" y1="232" x2="-14" y2="232"/>
+<path class="st0" d="M617,246H-17c221,0,442,0,663,0c211.3,0,422.7,0,634,0"/>
+<path class="st0" d="M-31,258h652c7,0,14,0,21,0c217.3,0,434.7,0,652,0"/>
+<line class="st0" x1="1302" y1="266" x2="-39" y2="266"/>
+<line class="st0" x1="898" y1="-9" x2="709" y2="266"/>
+<line class="st0" x1="790" y1="-9" x2="678" y2="266"/>
+<line class="st0" x1="685" y1="-9" x2="642" y2="266"/>
+<line class="st0" x1="1002" y1="-9" x2="744" y2="266"/>
+<line class="st0" x1="1112" y1="-9" x2="773" y2="266"/>
+<line class="st0" x1="1213" y1="-9" x2="813" y2="266"/>
+<line class="st0" x1="1285" y1="11" x2="844" y2="266"/>
+<line class="st0" x1="1284" y1="62" x2="883" y2="266"/>
+<line class="st0" x1="1287" y1="99" x2="923" y2="266"/>
+<line class="st0" x1="1292" y1="129" x2="962" y2="266"/>
+<line class="st0" x1="1293" y1="154" x2="998" y2="266"/>
+<line class="st0" x1="1294" y1="175" x2="1036" y2="266"/>
+<line class="st0" x1="1297" y1="198" x2="1074" y2="266"/>
+<line class="st0" x1="1308" y1="216" x2="1117" y2="266"/>
+<line class="st0" x1="1309" y1="232" x2="1165" y2="266"/>
+<line class="st0" x1="1313" y1="249" x2="1213" y2="266"/>
+<path class="st0" d="M615,232c11,0,22,0,33,0c209.7,0,419.3,0,629,0"/>
+</svg>

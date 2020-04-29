@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicio 1</title>
+</head>
+<body onload="marcar2();time();">
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed">
+<h1>1. PROGRAMA QUADRADO</h1>
+O usuário digita um número e o programa retorna o quadrado deste número (o número multiplicado por ele mesmo).
+
+<br><br><div class="codigo">
+Algoritmo "QUADRADO"<br>
+Var<br>
+numero, resultado:inteiro<br>
+Inicio<br>
+escreval("Informe um número")<br>
+leia(numero)<br>
+resultado < - numero * numero<br>
+escreva("O numero quadrado é:", resultado)<br>
+Fimalgoritmo<br>
+</div><br><br>
+
+<h1>2. PROGRAMA QUADRADO 2.0</h1>
+O usuário informa três números inteiros, o programa soma esses três valores e depois mostra o quadrado do resultado obtido.
+
+<br><br><div class="codigo">
+Var<br>
+numero1, numero2, numero3, resultado:inteiro<br>
+Inicio<br>
+escreval("Informe o primeiro número")<br>
+leia(numero1)<br>
+escreval("Informe o segundo número")<br>
+leia(numero2)<br>
+escreval("Informe o terceiro número")<br>
+leia(numero3)<br>
+resultado < - numero1 + numero2 + numero3<br>
+resultado < - resultado * resultado<br>
+escreva("O numero quadrado é:", resultado)<br>
+Fimalgoritmo<br>
+</div><br><br>
+
+<h1>3. PROGRAMA CALCULOS</h1>
+O usuário informa quatro valores. O programa mostra o resultado da mulQplicação do primeiro pelo terceiro e o resultado da soma do segundo com o quarto.
+
+<br><br><div class="codigo">
+Var<br>
+numero1, numero2, numero3, numero4, resultado1, resultado2:inteiro<br>
+Inicio<br>
+escreval("Informe o primeiro número")<br>
+leia(numero1)<br>
+escreval("Informe o segundo número")<br>
+leia(numero2)<br>
+escreval("Informe o terceiro número")<br>
+leia(numero3)<br>
+escreval("Informe o terceiro número")<br>
+leia(numero4)<br>
+resultado1 < - numero1 * numero3<br>
+resultado2 < - numero2 + numero4<br>
+escreval("A mult do primeiro com o terceiro é de:", resultado1)<br>
+escreva("A soma do segundo com o quarto é de:", resultado2)<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>4. PROGRAMA COTAÇÃO</h1>
+O usuário digita quanto está valendo o dólar e quanto em reais ele possui. O programa exibe quantos dólares vale os reais que o usuário informou.
+
+<br><br><div class="codigo">
+Var<br>
+numero1, numero2, resultado:real<br>
+Inicio<br>
+escreval("Informe o valor do dólar")<br>
+leia(numero1)<br>
+escreval("Informe quantos reais você possui")<br>
+leia(numero2)<br>
+resultado < - numero2 / numero1<br>
+escreva("Você possui: ",resultado," dólares")<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>5. PROGRAMA ABASTECIMENTO</h1>
+Deve ser informado o preço do litro do combusnvel e o valor em dinheiro que se deseja abastecer. O programa mostra quantos litros serão comprados.
+(Ex. a gasolina custa R$ 2,70 e o motorista quer abastecer R$ 50,00).
+
+<br><br><div class="codigo">
+Var<br>
+numero1, numero2, resultado:real<br>
+Inicio<br>
+escreval("Informe o valor do litro")<br>
+leia(numero1)<br>
+escreval("Informe quantos reais você possui")<br>
+leia(numero2)<br>
+resultado < - numero2 / numero1<br>
+escreva("Você adquire: ",resultado," litros")<br>
+Fimalgoritmo
+</div><br><br>
+
+
+<h1>6. PROGRAMA TEMPERATURA</h1>
+O usuário digita a temperatura em graus Célsius e o programa exibe o valor em graus Fahrenheit. A conversão é dada pela seguinte fórmula: F = (9 * C + 160) / 5
+
+<br><br><div class="codigo">
+Var<br>
+numero, resultado:real<br>
+Inicio<br>
+escreval("Informe a temperatura")<br>
+leia(numero)<br>
+resultado < - (9 * numero + 160) / 5<br>
+escreva(resultado," F")<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>7. PROGRAMA VOLUME</h1>
+Calcula o volume cúbico de uma lata de óleo. O usuário informa a altura e o valor de r. O programa calcula através da fórmula VOLUME = 3.14 * R * R * ALTURA.
+
+<br><br><div class="codigo">
+Var<br>
+numero1, numero2, resultado:real<br>
+Inicio<br>
+escreval("Informe a altura")<br>
+leia(numero1)<br>
+escreval("Informe o valor de r")<br>
+leia(numero2)<br>
+resultado < - 3.14*numero2*numero2*numero1<br>
+escreva("Volume: ",resultado)<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>8. PROGRAMA PRESTAÇÃO</h1>
+O usuário informa o valor de um boleto, o percentual de juros cobrado e o numero de dias em atraso.
+ O programa calcula o novo valor a ser pago através da fórmula PRESTACAO VALOR + (VALOR * (JUROS/100)) * DIAS
+
+<br><br><div class="codigo">
+Var<br>
+numero1, numero2, numero3, resultado:real<br>
+Inicio<br>
+escreval("Informe o valor do boleto")<br>
+leia(numero1)<br>
+escreval("Informe o percentual de juros")<br>
+leia(numero2)<br>
+escreval("Informe o numero de dias em atraso")<br>
+leia(numero3)<br>
+resultado < - numero1+(numero1*(numero2/100))*numero3<br>
+escreva("Valor a ser pago: RS",resultado)<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>9. PROGRAMA APURAÇÃO</h1>
+Três candidatos concorreram a uma eleição (A, B, C). O usuário deve informar quantos votos cada candidato
+ recebeu, quantos foram os votos brancos e quantos foram os votos nulos. O programa deve calcular e
+  informar: o número total de eleitores, o percentual de votos que cada candidato recebeu
+   (em relação ao número total de eleitores), o percentual de brancos e o percentual de nulos.
+
+<br><br><div class="codigo">
+Var<br>
+a, b, c, nulo, branco, eleitores, p1, p2, p3, p4, p5:real<br>
+Inicio<br>
+escreval("Quantos votos o cadidato A recebeu?")<br>
+leia(a)<br>
+escreval("Quantos votos o cadidato B recebeu?")<br>
+leia(b)<br>
+escreval("Quantos votos o cadidato C recebeu?")<br>
+leia(c)<br>
+escreval("Quantos votos em branco?")<br>
+leia(branco)<br>
+escreval("Quantos votos nulos?")<br>
+leia(nulo)<br>
+eleitores < - a + b + c + branco + nulo<br>
+p1 < - (a*100)/eleitores<br>
+p2 < - (b*100)/eleitores<br>
+p3 < - (c*100)/eleitores<br>
+p4 < - (branco*100)/eleitores<br>
+p5 < - (nulo*100)/eleitores<br>
+escreval("Total eleitores: ",eleitores)<br>
+escreval("Percentual Candidato A: ",p1)<br>
+escreval("Percentual Candidato B: ",p2)<br>
+escreval("Percentual Candidato C: ",p3)<br>
+escreval("Percentual votos em Branco: ",p4)<br>
+escreval("Percentual votos Nulos: ",p5)<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>10. IDADE</h1>
+Faça um algoritmo que solicite o nome e a idade do usuário. Mostre na tela o nome somente dos usuários com 18 anos ou mais.
+
+<br><br><div class="codigo">
+Var<br>
+idade:inteiro<br>
+nome:caractere<br>
+Inicio<br>
+escreval("Digite seu nome:")<br>
+leia(nome)<br>
+escreval("Digite sua idade")<br>
+leia(idade)<br>
+se(idade>=18)entao<br>
+escreva("Você é maior de idade ", nome)<br>
+senao<br>
+escreval("Você é menor de idade")<br>
+fimse<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>11. CALCULADORA</h1>
+Vamos simular uma calculadora simples de 4 operações? O
+algoritmo deve solicitar 2 números e o operador (* / + -).
+Mostrar na tela o resultado.
+
+<br><br><div class="codigo">
+num1, num2, resultado:real<br>
+operador:caractere<br>
+Inicio<br>
+escreval("Digite o primeiro numero:")<br>
+leia(num1)<br>
+escreval("Digite o segundo numero:")<br>
+leia(num2)<br>
+escreval("Escolha um operador (+ / - *):")<br>
+leia(operador)<br>
+se(operador="+")entao<br>
+resultado < - num1 + num2<br>
+escreva("Resultado: ", resultado)<br>
+senao<br>
+se(operador="-")entao<br>
+resultado < - num1 - num2<br>
+escreva("Resultado: ", resultado)<br>
+senao<br>
+se(operador="*")entao<br>
+resultado < - num1 * num2<br>
+escreva("Resultado: ", resultado)<br>
+senao<br>
+se(operador="/")entao<br>
+resultado < - num1 / num2<br>
+escreva("Resultado: ", resultado)<br>
+fimse<br>
+fimse<br>
+fimse<br>
+fimse<br>
+Fimalgoritmo
+</div><br><br>
+
+<h1>12. ORDEM</h1>
+Faça um algoritmo que solicite 3 números inteiros. Mostrar
+na tela os números em ordem crescente.
+
+
+<br><br><div class="codigo">
+  Var<br>
+  num1,num2,num3:inteiro<br>
+  Inicio<br>
+  escreval("Informe o primeiro número")<br>
+  leia(num1)<br>
+  escreval("Informe o segundo número")<br>
+  leia(num2)<br>
+  escreval("Informe o terceiro número")<br>
+  leia(num3)<br>
+  se(num1>num2) e (num2>num3)entao<br>
+  escreval("Ordem 1 2 e 3")<br>
+  senao<br>
+  se(num1>num3) e (num3>num2)entao<br>
+  escreval("Ordem 1 3 e 2")<br>
+  senao<br>
+  se(num2>num1) e (num1>num3)entao<br>
+  escreval("Ordem 2 1 e 3")<br>
+  senao<br>
+  se(num2>num3) e (num3>num1)entao<br>
+  escreval("Ordem 2 3 e 1")<br>
+  senao<br>
+  se(num3>num1) e (num1 > num2)entao<br>
+  escreval("Ordem 3 1 e 2")<br>
+  senao<br>
+  se(num3>num2) e (num2 > num1)entao<br>
+  escreval("Ordem 3 2 e 1")<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>13. MENOR</h1>
+Faça um algoritmo que solicite 4 números inteiros. Mostrar
+na tela o menor número.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1,num2,num3,num4:inteiro<br>
+  Inicio<br>
+  escreval("Informe o primeiro número")<br>
+  leia(num1)<br>
+  escreval("Informe o segundo número")<br>
+  leia(num2)<br>
+  escreval("Informe o terceiro número")<br>
+  leia(num3)<br>
+  escreval("Informe o quarto número")<br>
+  leia(num4)<br>
+  se(num1< num2) e (num1< num3) e (num1< num4)entao<br>
+  escreval("Menor numero é: ",num1)<br>
+  senao<br>
+  se(num2< num1) e (num2< num3) e (num2< num4)entao<br>
+  escreval("Menor numero é: ",num2)<br>
+  senao<br>
+  se(num3< num1) e (num3< num2) e (num3< num4)entao<br>
+  escreval("Menor numero é: ",num3)<br>
+  senao<br>
+  se(num4< num1) e (num4< num2) e (num4< num3)entao<br>
+  escreval("Menor numero é: ",num4)<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>14. TROCA</h1>
+Faça um algoritmo que atribua o valor 5 em uma variável e o
+valor 18 em outra variável. Troque os conteúdos das variáveis
+utilizando apenas atribuições fazendo com que o valor que está
+na primeira variável passe para a segunda e vice-versa. Mostrar
+os valores ficaram armazenados nas variáveis.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1,num2,tnum:inteiro<br>
+  Inicio<br>
+  num1 < - 18<br>
+  num2 < - 5<br>
+  tnum < - num1<br>
+  num1 < - num2<br>
+  num2 < - tnum<br>
+  escreva(num1," ", num2)<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>15. INVÁLIDO</h1>
+Faça um algoritmo que solicite um número maior ou igual a 0
+(zero). Se o usuário digitar um número negativo mostrar na tela
+número inválido.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1:inteiro<br>
+  Inicio<br>
+  escreval("Digite um numero maior ou igual a 0")<br>
+  leia(num1)<br>
+  se(num1>=0)entao<br>
+  escreval("Obrigado")<br>
+  senao<br>
+  escreval("Numero inválido")<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>16. MESES</h1>
+Faça um algoritmo que solicite um número inteiro. O usuário
+deve receber uma mensagem solicitando que ele digite um
+número correspondente a um mês do ano.
+Exemplo: mês = 3 - Março
+
+<br><br><div class="codigo">
+  Var<br>
+  num1:inteiro<br>
+  Inicio<br>
+  escreval("Digite um numero de 1 a 12")<br>
+  leia(num1)<br>
+  se(num1=1)entao<br>
+  escreval("Janeiro")<br>
+  senao<br>
+  se(num1=2)entao<br>
+  escreval("Marco")<br>
+  //resto<br>
+  //validacao<br>
+  senao<br>
+  se(num1>12)ou(num1<=0)<br>
+  escreval("Inválido")<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>17. CALC CASE</h1>
+Vamos refazer o algoritmo da calculadora? Agora utilize
+Seleção Múltipla.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1,num2,resultado:inteiro<br>
+  operador:caractere<br>
+  Inicio<br>
+  escreval("Digite o primeiro numero:")<br>
+  leia(num1)<br>
+  escreval("Digite o segundo numero:")<br>
+  leia(num2)<br>
+  escreval("Escolha um operador (+ / - *):")<br>
+  leia(operador)<br>
+  escolha operador<br>
+  caso "+"<br>
+  resultado < - num1 + num2<br>
+  caso "-"<br>
+  resultado < - num1 - num2<br>
+  caso "*"<br>
+  resultado < - num1 * num2<br>
+  caso "/"<br>
+  resultado < - num1 / num2<br>
+  outrocaso<br>
+  escreva("Inválido")<br>
+  fimescolha<br>
+  escreva("Resultado: ", resultado)<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>18. DIVISIVEL</h1>
+Escreva um algoritmo que receba do usuário um número inteiro e verifique se o número digitado é maior que 0 (zero).
+ Se o número digitado for divisível por 4 e 5 mostrar na tela: Número informado é divisível por 4 e por 5.
+  Caso contrário mostrar na tela Número não divisível por 4 e 5.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1:inteiro<br>
+  Inicio<br>
+  escreval("Digite o primeiro numero:")<br>
+  leia(num1)<br>
+  se(num1<=0)entao<br>
+  escreva("Numero inválido")<br>
+  senao<br>
+  se(num1%5=0)e(num1%4=0)entao<br>
+  escreva("Divisivel por 4 e 5")<br>
+  senao<br>
+  escreva("Nao divisivel")<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>19. PAR/IMPAR</h1>
+Escreva	um	algoritmo	que	receba	do	usuário	um	número	inteiro	e
+verifique	se	o	número	digitado	é	maior	que	0	(zero).
+Mostrar	na	tela	se	o	número	digitado	é	par	ou	ímpar.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1:inteiro<br>
+  Inicio<br>
+  escreval("Digite o primeiro numero:")<br>
+  leia(num1)<br>
+  se(num1%2=0)entao<br>
+  escreva("Par")<br>
+  senao<br>
+  escreva("Impar")<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+<h1>20. DIFERENCA</h1>
+Faça	um	algoritmo	que	leia	dois	valores	inteiros	e	mostre	na	tela	a
+diferença	do	maior	para	o	menor.
+Observação:	Se	números	iguais	mostrar	na	tela	–	Números	iguais!
+
+<br><br><div class="codigo">
+  Var<br>
+  num1,num2,resultado:inteiro<br>
+  Inicio<br>
+  escreval("Digite o primeiro numero:")<br>
+  leia(num1)<br>
+  escreval("Digite o segundo numero:")<br>
+  leia(num2)<br>
+  se(num1>num2)entao<br>
+  resultado < - num1 - num2<br>
+  escreva("Diferença: ",resultado)<br>
+  senao<br>
+  se(num2>num1)entao<br>
+  resultado < - num2 - num1<br>
+  escreva("Diferença: ",resultado)<br>
+  senao<br>
+  escreva("Numeros iguais")<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+
+<h1>21. PAR/IMPAR 2.0</h1>
+Faça	 um	 algoritmo	 que	 leia	 um	 número	 inteiro	 informado	 pelo
+usuário	e	some	10	caso	seja	par	ou	some	20	caso	seja	ímpar.	Mostrar
+na	tela	o	resultado	desta	operação.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1:inteiro<br>
+  Inicio<br>
+  escreval("Digite o primeiro numero:")<br>
+  leia(num1)<br>
+  se(num1%2=0)entao<br>
+  num1 < - num1 +10<br>
+  senao<br>
+  num1 < - num1 +20<br>
+  fimse<br>
+  escreval(num1)<br>
+  Fimalgoritmo
+</div><br><br>
+
+
+
+<h1>22. ORDEM DEC</h1>
+Escreva	um	algoritmo	que	leia	 três	valores	inteiros	e	diferentes	e
+mostre-os	em	ordem	decrescente.
+
+<br><br><div class="codigo">
+  Var<br>
+  num1,num2,num3,num4:inteiro<br>
+  Inicio<br>
+  escreval("Informe o primeiro número")<br>
+  leia(num1)<br>
+  escreval("Informe o segundo número")<br>
+  leia(num2)<br>
+  escreval("Informe o terceiro número")<br>
+  leia(num3)<br>
+  se(num1 < num2) e (num1 < num3) e (num2 < num3)entao<br>
+  escreval("Ordem: ",num3,num2," e",num1)<br>
+  senao<br>
+  se(num1 < num2) e (num1 < num3) e (num3 < num2)entao<br>
+  escreval("Ordem: ",num2,num3," e",num1)<br>
+  senao<br>
+  se(num2 < num1) e (num2 < num3) e (num1 < num3)entao<br>
+  escreval("Ordem: ",num3,num1," e",num2)<br>
+  senao<br>
+  se(num2 < num1) e (num2 < num3) e (num3 < num1)entao<br>
+  escreval("Ordem: ",num1,num3," e",num2)<br>
+  senao<br>
+  se(num3 < num1) e (num3 < num2) e (num2 < num1)entao<br>
+  escreval("Ordem: ",num1,num2," e",num3)<br>
+  senao<br>
+  se(num3 < num1) e (num3 < num2) e (num1 < num2)entao<br>
+  escreval("Ordem: ",num2,num1,"e",num3)<br>
+  senao<br>
+  se(num1=num2)ou(num1=num3)ou(num2=num3)entao<br>
+  escreval("Numeros repetidos")<br>
+  fimse<br>
+  fimse<br>
+  fimse
+</div><br><br>
+
+
+
+<h1>23. MENOR/MAIOR</h1>
+Faça	um	algoritmo	que	leia	os	valores	A,	B,	C	e	mostre	na	tela	se	a
+soma	de	A	+	B	é	menor	que	C,	maior	que	C	ou	igual	a	C.
+
+<br><br><div class="codigo">
+  Algoritmo "Menor/Maior"<br>
+  Var<br>
+  num1,num2,num3,auxiliar:inteiro<br>
+  Inicio<br>
+  escreval("Informe o primeiro número")<br>
+  leia(num1)<br>
+  escreval("Informe o segundo número")<br>
+  leia(num2)<br>
+  escreval("Informe o terceiro número")<br>
+  leia(num3)<br>
+  auxiliar < - num1 + num2<br>
+  se(auxiliar>num3)entao<br>
+  escreval("Maior")<br>
+  senao<br>
+  se(auxiliar=num3)entao<br>
+  escreval("Igual")<br>
+  senao<br>
+  escreval("menor")<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+
+
+
+<h1>24. CASADA</h1>
+Faça	um	algoritmo	que	leia	o	nome,	o	sexo	e	o	estado	civil	de	uma
+pessoa.	 Caso	 sexo	 seja	 “F”	 e	 estado	 civil	 seja	 “CASADA”,	 solicitar	 o
+tempo	de	casada	(anos).
+
+<br><br><div class="codigo">
+  Var<br>
+  nome,sexo,civil:caractere<br>
+  tempos:inteiro<br>
+  Inicio<br>
+  escreval("Informe o nome: ")<br>
+  leia(nome)<br>
+  escreval("Informe o sexo: ")<br>
+  leia(sexo)<br>
+  escreval("Informe o estado civil: ")<br>
+  leia(civil)<br>
+  se(sexo="F")e(civil="CASADA")entao<br>
+  escreval("Informe o tempo")<br>
+  leia(tempos)<br>
+  senao<br>
+  escreval("OK")<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+
+<h1>25. H/M</h1>
+Tendo como	 dados	 de	entrada	 a	 altura	e	 o	sexo	 de	uma pessoa,
+construa	 um	 algoritmo que calcule seu	 peso	 ideal,	 ublizando	 as
+seguintes fórmulas:<br>
+●	para homens:	(72.7	*	h)	–	58<br>
+●	para mulheres:	(62.1	*	h)	–	44.7
+
+<br><br><div class="codigo">
+  Var<br>
+  sexo:caractere<br>
+  altura,ideal:real<br>
+  Inicio<br>
+  escreval("Informe a altura: ")<br>
+  leia(altura)<br>
+  escreval("Informe o sexo: ")<br>
+  leia(sexo)<br>
+  se(sexo="M")entao<br>
+  ideal < - (72.7 * altura) - 58<br>
+  senao<br>
+  se(sexo="F")entao<br>
+  ideal < - (62.1 * altura) - 44.7<br>
+  senao<br>
+  escreval("Inválido")<br>
+  fimse<br>
+  fimse<br>
+  Fimalgoritmo
+</div><br><br>
+
+
+<h1>26. PAGAMENTO</h1>
+Tendo como	 dados	 de	entrada	 a	 altura	e	 o	sexo	 de	uma pessoa,
+construa	 um	 algoritmo que calcule seu	 peso	 ideal,	 ublizando	 as
+seguintes fórmulas:<br>
+●	para homens:	(72.7	*	h)	–	58<br>
+●	para mulheres:	(62.1	*	h)	–	44.7
+
+<br><br><div class="codigo">
+  Var<br>
+  produto,condicao:caractere<br>
+  preco,desc:real<br>
+  Inicio<br>
+  escreval("Informe o produto")<br>
+  leia(produto)<br>
+  escreval("Informe o preco")<br>
+  leia(preco)<br>
+  escreval("Informe a cond. de pagamento")<br>
+  leia(condicao)<br>
+  escolha condicao<br>
+  caso "DINHEIRO"<br>
+  desc < - preco * 0.1<br>
+  preco < - preco - desc<br>
+  escreval("Você recebe 10% de desconto: ",preco, "RS total a pagar)<br>
+  caso "CARTÃO"<br>
+  desc < - preco * 0.15<br>
+  preco < - preco - desc<br>
+  escreval("Você recebe 15% de desconto: ",preco, "RS total a pagar)<br>
+  caso "2 VEZES"<br>
+  escreval("Você recebe 0% de desconto: ",preco, "RS total a pagar)<br>
+  caso "CARTÃO"<br>
+  desc < - preco * 0.1<br>
+  preco < - preco + desc<br>
+  escreval("Você recebe 10% de juros: ",preco, "RS total a pagar)<br>
+  outrocaso<br>
+  escreva("Inválido")<br>
+  fimescolha<br>
+  Fimalgoritmo
+</div><br><br>
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula123.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

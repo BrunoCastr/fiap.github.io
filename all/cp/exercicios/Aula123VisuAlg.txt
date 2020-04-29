@@ -1,0 +1,568 @@
+============================================================================
+================================AULA 1 2 E 3================================
+============================================================================
+
+Algoritmo "QUADRADO"
+Var
+numero, resultado:inteiro
+Inicio
+escreval("Informe um número")
+leia(numero)
+resultado <- numero * numero
+escreva("O numero quadrado é:", resultado)
+Fimalgoritmo
+
+===================================1========================================
+
+Algoritmo "QUADRADO 2.0"
+Var
+numero1, numero2, numero3, resultado:inteiro
+Inicio
+escreval("Informe o primeiro número")
+leia(numero1)
+escreval("Informe o segundo número")
+leia(numero2)
+escreval("Informe o terceiro número")
+leia(numero3)
+resultado <- numero1 + numero2 + numero3
+resultado <- resultado * resultado
+escreva("O numero quadrado é:", resultado)
+Fimalgoritmo
+
+===================================2========================================
+
+Algoritmo "CALCULOS"
+Var
+numero1, numero2, numero3, numero4, resultado1, resultado2:inteiro
+Inicio
+escreval("Informe o primeiro número")
+leia(numero1)
+escreval("Informe o segundo número")
+leia(numero2)
+escreval("Informe o terceiro número")
+leia(numero3)
+escreval("Informe o terceiro número")
+leia(numero4)
+resultado1 <- numero1 * numero3
+resultado2 <- numero2 + numero4
+escreval("A mult do primeiro com o terceiro é de:", resultado1)
+escreva("A soma do segundo com o quarto é de:", resultado2)
+Fimalgoritmo
+
+===================================3========================================
+
+Algoritmo "COTAÇÃO"
+Var
+numero1, numero2, resultado:real
+Inicio
+escreval("Informe o valor do dólar")
+leia(numero1)
+escreval("Informe quantos reais você possui")
+leia(numero2)
+resultado <- numero2 / numero1
+escreva("Você possui: ",resultado," dólares")
+Fimalgoritmo
+
+===================================4========================================
+
+Algoritmo "ABASTECIMENTO"
+Var
+numero1, numero2, resultado:real
+Inicio
+escreval("Informe o valor do litro")
+leia(numero1)
+escreval("Informe quantos reais você possui")
+leia(numero2)
+resultado <- numero2 / numero1
+escreva("Você adquire: ",resultado," litros")
+Fimalgoritmo
+
+===================================5========================================
+
+Algoritmo "TEMPERATURA"
+Var
+numero, resultado:real
+Inicio
+escreval("Informe a temperatura")
+leia(numero)
+resultado <- (9 * numero + 160) / 5
+escreva(resultado," F")
+Fimalgoritmo
+
+===================================6========================================
+
+Algoritmo "VOLUME"
+Var
+numero1, numero2, resultado:real
+Inicio
+escreval("Informe a altura")
+leia(numero1)
+escreval("Informe o valor de r")
+leia(numero2)
+resultado <- 3.14*numero2*numero2*numero1
+escreva("Volume: ",resultado)
+Fimalgoritmo
+
+===================================7========================================
+
+Algoritmo "PRESTACAO"
+Var
+numero1, numero2, numero3, resultado:real
+Inicio
+escreval("Informe o valor do boleto")
+leia(numero1)
+escreval("Informe o percentual de juros")
+leia(numero2)
+escreval("Informe o numero de dias em atraso")
+leia(numero3)
+resultado <- numero1+(numero1*(numero2/100))*numero3
+escreva("Valor a ser pago: RS",resultado)
+Fimalgoritmo
+
+===================================8========================================
+
+Algoritmo "APURACAO"
+Var
+a, b, c, nulo, branco, eleitores, p1, p2, p3, p4, p5:real
+Inicio
+escreval("Quantos votos o cadidato A recebeu?")
+leia(a)
+escreval("Quantos votos o cadidato B recebeu?")
+leia(b)
+escreval("Quantos votos o cadidato C recebeu?")
+leia(c)
+escreval("Quantos votos em branco?")
+leia(branco)
+escreval("Quantos votos nulos?")
+leia(nulo)
+eleitores <- a + b + c + branco + nulo
+p1 <- (a*100)/eleitores
+p2 <- (b*100)/eleitores
+p3 <- (c*100)/eleitores
+p4 <- (branco*100)/eleitores
+p5 <- (nulo*100)/eleitores
+escreval("Total eleitores: ",eleitores)
+escreval("Percentual Candidato A: ",p1)
+escreval("Percentual Candidato B: ",p2)
+escreval("Percentual Candidato C: ",p3)
+escreval("Percentual votos em Branco: ",p4)
+escreval("Percentual votos Nulos: ",p5)
+Fimalgoritmo
+
+===================================9========================================
+
+Algoritmo "IDADE"
+Var
+idade:inteiro
+nome:caractere
+Inicio
+escreval("Digite seu nome:")
+leia(nome)
+escreval("Digite sua idade")
+leia(idade)
+se(idade>=18)entao
+escreva("Você é maior de idade ", nome)
+senao
+escreval("Você é menor de idade")
+fimse
+Fimalgoritmo
+
+===================================10========================================
+
+Algoritmo "CALC"
+Var
+num1, num2, resultado:real
+operador:caractere
+Inicio
+escreval("Digite o primeiro numero:")
+leia(num1)
+escreval("Digite o segundo numero:")
+leia(num2)
+escreval("Escolha um operador (+ / - *):")
+leia(operador)
+se(operador="+")entao
+resultado <- num1 + num2
+escreva("Resultado: ", resultado)
+senao
+se(operador="-")entao
+resultado <- num1 - num2
+escreva("Resultado: ", resultado)
+senao
+se(operador="*")entao
+resultado <- num1 * num2
+escreva("Resultado: ", resultado)
+senao
+se(operador="/")entao
+resultado <- num1 / num2
+escreva("Resultado: ", resultado)
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+===================================11========================================
+
+Algoritmo "ORDEM"
+Var
+num1,num2,num3:inteiro
+Inicio
+escreval("Informe o primeiro número")
+leia(num1)
+escreval("Informe o segundo número")
+leia(num2)
+escreval("Informe o terceiro número")
+leia(num3)
+se(num1>num2) e (num2>num3)entao
+escreval("Ordem 1 2 e 3")
+senao
+se(num1>num3) e (num3>num2)entao
+escreval("Ordem 1 3 e 2")
+senao
+se(num2>num1) e (num1>num3)entao
+escreval("Ordem 2 1 e 3")
+senao
+se(num2>num3) e (num3>num1)entao
+escreval("Ordem 2 3 e 1")
+senao
+se(num3>num1) e (num1 > num2)entao
+escreval("Ordem 3 1 e 2")
+senao
+se(num3>num2) e (num2 > num1)entao
+escreval("Ordem 3 2 e 1")
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+===================================12========================================
+
+Algoritmo "MENOR"
+Var
+num1,num2,num3,num4:inteiro
+Inicio
+escreval("Informe o primeiro número")
+leia(num1)
+escreval("Informe o segundo número")
+leia(num2)
+escreval("Informe o terceiro número")
+leia(num3)
+escreval("Informe o quarto número")
+leia(num4)
+se(num1<num2) e (num1<num3) e (num1<num4)entao
+escreval("Menor numero é: ",num1)
+senao
+se(num2<num1) e (num2<num3) e (num2<num4)entao
+escreval("Menor numero é: ",num2)
+senao
+se(num3<num1) e (num3<num2) e (num3<num4)entao
+escreval("Menor numero é: ",num3)
+senao
+se(num4<num1) e (num4<num2) e (num4<num3)entao
+escreval("Menor numero é: ",num4)
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+===================================13========================================
+
+Algoritmo "TROCA"
+Var
+num1,num2,tnum:inteiro
+Inicio
+num1 <- 18
+num2 <- 5
+tnum <- num1
+num1 <- num2
+num2 <- tnum
+escreva(num1," ", num2)
+Fimalgoritmo
+
+===================================14========================================
+
+Algoritmo "INVÁLIDO"
+Var
+num1:inteiro
+Inicio
+escreval("Digite um numero maior ou igual a 0")
+leia(num1)
+se(num1>=0)entao
+escreval("Obrigado")
+senao
+escreval("Numero inválido")
+fimse
+Fimalgoritmo
+
+===================================15========================================
+
+Algoritmo "Meses"
+Var
+num1:inteiro
+Inicio
+escreval("Digite um numero de 1 a 12")
+leia(num1)
+se(num1=1)entao
+escreval("Janeiro")
+senao
+se(num1=2)entao
+escreval("Marco")
+//resto
+//validacao
+senao
+se(num1>12)ou(num1<=0)
+escreval("Inválido")
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+===================================16========================================
+
+Algoritmo "CALC CASE"
+Var
+num1,num2,resultado:inteiro
+operador:caractere
+Inicio
+escreval("Digite o primeiro numero:")
+leia(num1)
+escreval("Digite o segundo numero:")
+leia(num2)
+escreval("Escolha um operador (+ / - *):")
+leia(operador)
+escolha operador
+caso "+"
+resultado <- num1 + num2
+caso "-"
+resultado <- num1 - num2
+caso "*"
+resultado <- num1 * num2
+caso "/"
+resultado <- num1 / num2
+outrocaso
+escreva("Inválido")
+fimescolha
+escreva("Resultado: ", resultado)
+Fimalgoritmo
+
+===================================17========================================
+
+Algoritmo "DIVISIVEL"
+Var
+num1:inteiro
+Inicio
+escreval("Digite o primeiro numero:")
+leia(num1)
+se(num1<=0)entao
+escreva("Numero inválido")
+senao
+se(num1%5=0)e(num1%4=0)entao
+escreva("Divisivel por 4 e 5")
+senao
+escreva("Nao divisivel")
+fimse
+fimse
+Fimalgoritmo
+
+===================================18========================================
+
+Algoritmo "Par/Impar"
+Var
+num1:inteiro
+Inicio
+escreval("Digite o primeiro numero:")
+leia(num1)
+se(num1%2=0)entao
+escreva("Par")
+senao
+escreva("Impar")
+fimse
+Fimalgoritmo
+
+===================================19========================================
+
+Algoritmo "DIFERENCA"
+Var
+num1,num2,resultado:inteiro
+Inicio
+escreval("Digite o primeiro numero:")
+leia(num1)
+escreval("Digite o segundo numero:")
+leia(num2)
+se(num1>num2)entao
+resultado <- num1 - num2
+escreva("Diferença: ",resultado)
+senao
+se(num2>num1)entao
+resultado <- num2 - num1
+escreva("Diferença: ",resultado)
+senao
+escreva("Numeros iguais")
+fimse
+fimse
+Fimalgoritmo
+
+===================================20========================================
+
+Algoritmo "Par/Impar 2.0"
+Var
+num1:inteiro
+Inicio
+escreval("Digite o primeiro numero:")
+leia(num1)
+se(num1%2=0)entao
+num1 <- num1 +10
+senao
+num1 <- num1 +20
+fimse
+escreval(num1)
+Fimalgoritmo
+
+===================================21========================================
+
+Algoritmo "ORDEM DEC"
+Var
+num1,num2,num3,num4:inteiro
+Inicio
+escreval("Informe o primeiro número")
+leia(num1)
+escreval("Informe o segundo número")
+leia(num2)
+escreval("Informe o terceiro número")
+leia(num3)
+se(num1<num2) e (num1<num3) e (num2<num3)entao
+escreval("Ordem: ",num3,num2," e",num1)
+senao
+se(num1<num2) e (num1<num3) e (num3<num2)entao
+escreval("Ordem: ",num2,num3," e",num1)
+senao
+se(num2<num1) e (num2<num3) e (num1<num3)entao
+escreval("Ordem: ",num3,num1," e",num2)
+senao
+se(num2<num1) e (num2<num3) e (num3<num1)entao
+escreval("Ordem: ",num1,num3," e",num2)
+senao
+se(num3<num1) e (num3<num2) e (num2<num1)entao
+escreval("Ordem: ",num1,num2," e",num3)
+senao
+se(num3<num1) e (num3<num2) e (num1<num2)entao
+escreval("Ordem: ",num2,num1,"e",num3)
+senao
+se(num1=num2)ou(num1=num3)ou(num2=num3)entao
+escreval("Numeros repetidos")
+fimse
+fimse
+fimse
+
+===================================22========================================
+
+Algoritmo "Menor/Maior"
+Var
+num1,num2,num3,auxiliar:inteiro
+Inicio
+escreval("Informe o primeiro número")
+leia(num1)
+escreval("Informe o segundo número")
+leia(num2)
+escreval("Informe o terceiro número")
+leia(num3)
+auxiliar <- num1 + num2
+se(auxiliar>num3)entao
+escreval("Maior")
+senao
+se(auxiliar=num3)entao
+escreval("Igual")
+senao
+escreval("menor")
+fimse
+fimse
+Fimalgoritmo
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+===================================23========================================
+
+Algoritmo "CASADA"
+Var
+nome,sexo,civil:caractere
+tempos:inteiro
+Inicio
+escreval("Informe o nome: ")
+leia(nome)
+escreval("Informe o sexo: ")
+leia(sexo)
+escreval("Informe o estado civil: ")
+leia(civil)
+se(sexo="F")e(civil="CASADA")entao
+escreval("Informe o tempo")
+leia(tempos)
+senao
+escreval("OK")
+fimse
+Fimalgoritmo
+
+===================================24========================================
+
+Algoritmo "Menor/Maior"
+Var
+sexo:caractere
+altura,ideal:real
+Inicio
+escreval("Informe a altura: ")
+leia(altura)
+escreval("Informe o sexo: ")
+leia(sexo)
+se(sexo="M")entao
+ideal <- (72.7 * altura) - 58
+senao
+se(sexo="F")entao
+ideal <- (62.1 * altura) - 44.7
+senao
+escreval("Inválido")
+fimse
+fimse
+Fimalgoritmo
+
+===================================25========================================
+
+Algoritmo "PAGAMENTO"
+Var
+produto,condicao:caractere
+preco,desc:real
+Inicio
+escreval("Informe o produto")
+leia(produto)
+escreval("Informe o preco")
+leia(preco)
+escreval("Informe a cond. de pagamento")
+leia(condicao)
+escolha condicao
+caso "DINHEIRO"
+desc <- preco * 0.1
+preco <- preco - desc
+escreval("Você recebe 10% de desconto: ",preco, "RS total a pagar)
+caso "CARTÃO"
+desc <- preco * 0.15
+preco <- preco - desc
+escreval("Você recebe 15% de desconto: ",preco, "RS total a pagar)
+caso "2 VEZES"
+escreval("Você recebe 0% de desconto: ",preco, "RS total a pagar)
+caso "CARTÃO"
+desc <- preco * 0.1
+preco <- preco + desc
+escreval("Você recebe 10% de juros: ",preco, "RS total a pagar)
+outrocaso
+escreva("Inválido")
+fimescolha
+Fimalgoritmo
+
+============================================================================
+================================AULA 1 2 E 3================================
+============================================================================

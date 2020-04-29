@@ -1,0 +1,55 @@
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 1300 351" style="enable-background:new 0 0 1300 351;" xml:space="preserve">
+
+<defs>
+<style>
+
+
+#Camada_1{
+
+fill:rgba(255, 255, 255, 0);
+stroke-dasharray:1800;
+stroke-dashoffset:0;
+-webkit-animation: dash 4s linear forwards;
+-o-animaiton: dash 4s linear forwards;
+-moz-animation: dash 4s linear forwards;
+animation: dash 4s linear forwards;
+}
+
+@-webkit-keyframes dash{
+from{
+stroke-dashoffset: 1800;
+
+}
+to{
+stroke-dashoffset: 0;
+fill:rgba(255, 255, 255, 1);
+}}
+
+
+
+</style>
+</defs>
+
+
+
+<style type="text/css">
+.st0{stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g id="Camada_1">
+<polygon class="st0" points="826.5,258.5 883.5,346.425 910.5,346.425 854.5,258.5 	"/>
+<path class="st0" d="M1082.5,216.5h90.52c-0.372-1.286-0.733-2.575-1.087-3.866c-3.401-5.886-6.843-11.748-10.23-17.634H1082.5
+V216.5z"/>
+<path class="st0" d="M1294,106c-0.126-12.37-2.327-31.019-13.213-49.522C1249.735,3.697,1178.78,4.401,1174.833,4.501H965
+l-1,341.924h25V27h185.833c2.951-0.087,58.86-0.868,83.167,40.5c8.432,14.35,10.154,28.826,10.25,38.5
+c0.699,9.97,0.006,23.725-6.398,37.933c-14.407,31.967-47.752,44.11-67.355,48.586c4.404,6.087,8.172,12.718,11.675,19.538
+c25.117-6.062,58.937-20.37,76.703-54.122C1293.23,138.262,1294.529,118.829,1294,106z"/>
+<polygon class="st0" points="673,4.501 462.5,346.425 488.5,346.425 685,29 790,195 816,195 698,4.501 	"/>
+<g>
+<path d="M816,195"/>
+	</g>
+<rect x="377" y="4.501" class="st0" width="25" height="341"/>
+<rect x="107" y="169" class="st0" width="123" height="23"/>
+<polygon class="st0" points="36,4.501 11,4.501 11,345.501 36,345.501 36,27 300,27 300,4.501 	"/>
+</g>
+</svg>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1365 767" style="enable-background:new 0 0 1365 767;" xml:space="preserve">
+	 <defs>
+	 	<style>
+	 	#Camada_8{
+	 	fill:rgba(255,255,255,0);
+	 	stroke:rgba(255, 255, 255,1);
+	 	stroke-dasharray:1300;
+	 	stroke-dashoffset:0;
+		-webkit-animation: dash 4s linear forwards;
+		-o-animaiton: dash 4s linear forwards;
+		-moz-animation: dash 4s linear forwards;
+		animation: dash 5s linear backwards;
+	 	}
+
+		@-webkit-keyframes dash{
+		from{
+		stroke-dashoffset: 1300;
+
+		}
+		to{
+		stroke-dashoffset: 0;
+		fill:rgba(255, 255, 255, 1);
+		}}
+
+	 </style>
+	 </defs>
+	 <style type="text/css">
+	 .st0{fill:none;stroke-width:2;stroke-miterlimit:10;}
+	 </style>
+<g id="Camada_8">
+	<line class="st0" x1="1379.7" y1="24.3" x2="985.7" y2="24.3"/>
+	<line class="st0" x1="1379.7" y1="54.6" x2="985.7" y2="54.6"/>
+	<path class="st0" d="M985.7,54.4"/>
+	<path class="st0" d="M1379.7,54.4"/>
+	<line class="st0" x1="1379.7" y1="84.7" x2="985.7" y2="84.7"/>
+	<path class="st0" d="M985.7,84.9"/>
+	<path class="st0" d="M1379.7,84.9"/>
+	<line class="st0" x1="1379.7" y1="115.2" x2="985.7" y2="115.2"/>
+	<path class="st0" d="M985.7,115"/>
+	<path class="st0" d="M1379.7,115"/>
+	<line class="st0" x1="1379.7" y1="145.3" x2="985.7" y2="145.3"/>
+	<path class="st0" d="M985.7,145.2"/>
+	<path class="st0" d="M1379.7,145.2"/>
+	<line class="st0" x1="1379.7" y1="175.5" x2="985.7" y2="175.5"/>
+	<path class="st0" d="M985.7,175.1"/>
+	<path class="st0" d="M1379.7,175.1"/>
+	<line class="st0" x1="1379.7" y1="205.4" x2="985.7" y2="205.4"/>
+	<path class="st0" d="M985.7,205.4"/>
+	<path class="st0" d="M1379.7,205.4"/>
+	<line class="st0" x1="1379.7" y1="235.7" x2="985.7" y2="235.7"/>
+	<path class="st0" d="M985.7,235.4"/>
+	<path class="st0" d="M1379.7,235.4"/>
+	<line class="st0" x1="1379.7" y1="265.7" x2="985.7" y2="265.7"/>
+	<path class="st0" d="M985.7,265.9"/>
+	<path class="st0" d="M1379.7,265.9"/>
+	<line class="st0" x1="1379.7" y1="296.2" x2="985.7" y2="296.2"/>
+	<path class="st0" d="M985.7,296"/>
+	<path class="st0" d="M1379.7,296"/>
+	<line class="st0" x1="1379.7" y1="326.3" x2="985.7" y2="326.3"/>
+	<path class="st0" d="M985.7,326.2"/>
+	<path class="st0" d="M1379.7,326.2"/>
+	<line class="st0" x1="1379.7" y1="356.5" x2="985.7" y2="356.5"/>
+	<path class="st0" d="M985.7,356.2"/>
+	<path class="st0" d="M1379.7,356.2"/>
+	<line class="st0" x1="1379.7" y1="386.5" x2="985.7" y2="386.5"/>
+	<path class="st0" d="M985.7,386.7"/>
+	<path class="st0" d="M1379.7,386.7"/>
+	<path class="st0" d="M985.7,386.5"/>
+	<path class="st0" d="M1379.7,386.5"/>
+	<line class="st0" x1="1379.7" y1="416.7" x2="985.7" y2="416.7"/>
+	<path class="st0" d="M985.7,417"/>
+	<path class="st0" d="M1379.7,417"/>
+	<line class="st0" x1="1379.7" y1="447.3" x2="985.7" y2="447.3"/>
+	<path class="st0" d="M985.7,447.1"/>
+	<path class="st0" d="M1379.7,447.1"/>
+	<line class="st0" x1="1379.7" y1="477.4" x2="985.7" y2="477.4"/>
+	<path class="st0" d="M985.7,477.3"/>
+	<path class="st0" d="M1379.7,477.3"/>
+	<line class="st0" x1="1379.7" y1="507.6" x2="985.7" y2="507.6"/>
+	<path class="st0" d="M985.7,507.2"/>
+	<path class="st0" d="M1379.7,507.2"/>
+	<line class="st0" x1="1379.7" y1="537.5" x2="985.7" y2="537.5"/>
+	<path class="st0" d="M985.7,537.7"/>
+	<path class="st0" d="M1379.7,537.7"/>
+	<path class="st0" d="M985.7,537.5"/>
+	<path class="st0" d="M1379.7,537.5"/>
+	<line class="st0" x1="1379.7" y1="567.8" x2="985.7" y2="567.8"/>
+	<path class="st0" d="M985.7,568"/>
+	<path class="st0" d="M1379.7,568"/>
+	<line class="st0" x1="1379.7" y1="598.3" x2="985.7" y2="598.3"/>
+	<path class="st0" d="M985.7,598.1"/>
+	<path class="st0" d="M1379.7,598.1"/>
+	<line class="st0" x1="1379.7" y1="628.4" x2="985.7" y2="628.4"/>
+	<path class="st0" d="M985.7,628.3"/>
+	<path class="st0" d="M1379.7,628.3"/>
+	<line class="st0" x1="1379.7" y1="658.6" x2="985.7" y2="658.6"/>
+	<path class="st0" d="M985.7,658.3"/>
+	<path class="st0" d="M1379.7,658.3"/>
+	<line class="st0" x1="1379.7" y1="688.5" x2="985.7" y2="688.5"/>
+	<path class="st0" d="M985.7,688.7"/>
+	<path class="st0" d="M1379.7,688.7"/>
+	<path class="st0" d="M985.7,688.4"/>
+	<path class="st0" d="M1379.7,688.4"/>
+	<line class="st0" x1="1379.7" y1="718.7" x2="985.7" y2="718.7"/>
+	<path class="st0" d="M985.7,719"/>
+	<path class="st0" d="M1379.7,719"/>
+	<line class="st0" x1="1379.7" y1="749.2" x2="985.7" y2="749.2"/>
+	<path class="st0" d="M985.7,749"/>
+	<path class="st0" d="M1379.7,749"/>
+	<path class="st0" d="M985.7,779.3"/>
+	<path class="st0" d="M1379.7,779.3"/>
+	<path class="st1" d="M985.7,809.5"/>
+	<path class="st1" d="M1379.7,809.5"/>
+	<path class="st1" d="M985.7,809.2"/>
+	<path class="st1" d="M1379.7,809.2"/>
+	<line class="st1" x1="1379.7" y1="839.5" x2="985.7" y2="839.5"/>
+	<path class="st0" d="M1333,786"/>
+	<path class="st0" d="M1300,787"/>
+	<path class="st0" d="M1299.5,786.5"/>
+	<path class="st0" d="M1266.5,787.6"/>
+	<path class="st0" d="M1267,787"/>
+	<path class="st0" d="M1233.9,788.1"/>
+	<path class="st0" d="M1234.4,787"/>
+	<path class="st0" d="M1201.4,788.1"/>
+	<path class="st1" d="M1168.9,788.6"/>
+	<path class="st1" d="M1141.4,789.1"/>
+	<path class="st0" d="M1136,788.2"/>
+	<path class="st1" d="M1113,789.2"/>
+	<path class="st1" d="M1076.4,789.7"/>
+	<path class="st1" d="M1043.9,790.3"/>
+	<path class="st0" d="M1013.8,787"/>
+</g>
+</svg>

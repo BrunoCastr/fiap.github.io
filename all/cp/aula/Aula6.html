@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 6</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+<h1>Aula 6</h1>
+(Vetor)
+<br><br>
+<h1>Definição: </h1>
+As variáveis compostas homogêneas unidimensionais (vetores) são
+variáveis capazes de armazenar vários valores. Cada um desses
+valores é identificado pelo mesmo nome (o nome dado ao vetor). Eles
+são diferenciados apenas por um índice.
+Os índices utilizados na linguagem JAVA para identificar as posições
+de um vetor começam sempre em 0 (zero) e vão até o tamanho do
+vetor menos uma unidade.
+
+<br><br><br>
+
+<table>
+<tr>
+<th> &#8198;</th>
+<th> &#8198;</th>
+<th> &#8198;</th>
+<th> &#8198;</th>
+</tr>
+</table>
+
+<br><br>
+
+<h1>Declaração de vetor: </h1>
+
+Os vetores em JAVA são definidos pela existência de colchetes vazios
+antes ou depois do nome da variável no momento da declaração. Logo
+depois, deve ser feito o dimensionamento do vetor.
+<br><br>
+
+<h1>Exemplos: </h1><br>
+
+<div class="codigo">
+int x[ ]; <p> /*Define que x será um vetor. O tipo int determina que todas as suas posições armazenarão
+valores inteiros.*/</p>
+<br><br>
+x = new int[5];  <p>/* determina que o vetor x terá tamanho 5 (ou seja, das posições 0 a 4).*/</p>
+<br><br>
+float [ ]x;  <p>/* os colchetes vazios antes do nome definem que x será um vetor. O tipo float determina o
+tipo do número que poderá ser armazenado em todas as suas posições.*/</p>
+<br><br>
+x = new float[5];  <p>/* determina que o vetor x terá tamanho 5 (ou seja, das posições 0 a 4).*/</p>
+<br><br>
+int x[ ] = new int[5];  <p>/* Forma condensada, onde a declaração e o dimensionamento de um vetor
+são feitos utilizando-se uma única linha. */</p>
+<br><br>
+char [ ]x = new char[5];  <p>/* Forma condensada, onde a declaração e o dimensionamento de um
+vetor são feitos utilizando-se uma única linha. */</p>
+</div><br>
+
+<h1>Vetor - Atribuindo valores: </h1><br>
+
+<div class="codigo">
+v[0] = 10;<br>
+V[4] = 5;<br>
+</div><br>
+
+<table>
+<tr>
+<th> <p>10</p> </th>
+<th> &#8198; &#8198;</th>
+<th> &#8198; &#8198;</th>
+<th> <p>&#8198;5</p> </th>
+</tr>
+</table><br><br>
+
+
+<h1>Como preencher um vetor: </h1><br>
+
+<div class="codigo">
+Scanner x = new Scanner(System.in);<br>
+for (i=0; i < 5;i++)<br>
+{<br>
+v[i] = x.nextInt();<br>
+}<br>
+</div><br>
+
+<table>
+<tr>
+<th> <p>10</p> </th>
+<th> <p>22</p> </th>
+<th> <p>38</p> </th>
+<th> <p>45</p> </th>
+<th> <p>18</p> </th>
+</tr>
+</table><br><br>
+
+
+<h1>Como mostrar elementos de um vetor: </h1><br>
+
+<div class="codigo">
+for (i=0; i< 5;i++)<br>
+{<br>
+  System.out.println(v[i]);<br>
+}
+</div>
+
+<br><br><h1>Exercicios</h1>
+<br><div class="codigo">
+<a href="../exercicios/exercicio6.html">Exercicios-6.html</a><br>
+</div><br>
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/q.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="Aula123.html" ><p> Aula 1 2 e 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="#"><p> Aula 6</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

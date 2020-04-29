@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleB.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Exercicios 5(2)</title>
+</head>
+<body onload="marcar2();time();">
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador" id="Guardador" style="position:fixed">
+
+<!--______________________________________________________________________-->
+<h1>1. </h1>
+Faça um programa que leia 15 números e informe quantos
+números maiores do que 30 foram digitados.
+<br><br><div class="codigo">
+  int num[] = new int[15];<br>
+  int aux = 0;<br>
+  System.out.println("Informe o número: ");<br>
+  for(int i=0;i< 15;i++) {<br>
+  num[i] = sc.nextInt();<br>
+  if(num[i]>30) {aux +=1;}<br>
+  }<br>
+  System.out.println("Foram digitados: "+aux+" maiores que 30");<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>2. </h1>
+Faça um programa que mostre na tela todos os números inteiros
+de 0 a 50.
+<br><br><div class="codigo">
+  int num = 50, aux;<br>
+  aux = num - num - num;<br>
+  for(int i=aux;i< num+1;i++) {<br>
+  System.out.print(" "+i+" ");<br>
+  }<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>3. </h1>
+Faça um programa que mostre na tela todos os números inteiros
+de 50 a 0.
+<br><br><div class="codigo">
+  for(int i=50;i>-1;i--) {<br>
+  System.out.print(" "+i+" ");<br>
+  }<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>4. </h1>
+Faça um programa que mostre na tela todos os números inteiros
+de 50 a 150.
+<br><br><div class="codigo">
+  for(int i=50;i< 151;i++) {<br>
+  System.out.print(" "+i+" ");<br>
+  }<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>5. </h1>
+Faça um programa que mostre na tela todos os números inteiros
+múltiplos de 5 entre 50 e 200, inclusive.
+<br><br><div class="codigo">
+  for(int i=50;i< 201;i++) {<br>
+  if(i%5==0) {<br>
+  System.out.print(i+" ");}<br>
+  }<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>6. </h1>
+Faça um programa que mostre na tela todos os números pares
+entre 10 e 50, inclusive.
+<br><br><div class="codigo">
+  for(int i=10;i< 51;i++) {<br>
+  if(i%2==0) {<br>
+  System.out.print(i+" ");}<br>
+  }<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>7. </h1>
+Faça um programa que receba do usuário 10 números inteiros e
+mostre na tela todos os números digitados multiplicados por 2.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num[] = new int[10];<br>
+  System.out.println("Informe o numero: ");<br>
+  for(int i=0;i< 10;i++) {<br>
+  num[i] = sc.nextInt();}<br>
+  for(int i=0;i< 10;i++) {<br>
+  System.out.println(num[i]*2);}}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>8. </h1>
+Faça um programa que receba 100 números digitados pelo
+usuário e mostre na tela a soma dos números digitados.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num[] = new int[100];<br>
+  int result = 0;<br>
+  System.out.println("Informe o numero: ");<br>
+  for(int i=0;i< 100;i++) {<br>
+  num[i] = sc.nextInt();<br>
+  result+=num[i];}<br>
+  System.out.println(result);}}<br>
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>9. </h1>
+Faça um programa que receba 100 números digitados pelo
+usuário e mostre na tela a soma dos números ímpares digitados.
+<br><br><div class="codigo">
+  int num[] = new int[100];<br>
+  int result = 0;<br>
+  System.out.println("Informe o numero: ");<br>
+  for(int i=0;i< 100;i++) {<br>
+  num[i] = sc.nextInt();<br>
+  if(num[i]%2!=0) {<br>
+  result+=num[i];}}<br>
+  System.out.println(result);<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>10. </h1>
+Faça um programa que receba 20 números informados pelo
+usuário e mostre na tela a média de todos eles.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num[] = new int[20];<br>
+  int result = 0;<br>
+  System.out.println("Informe o numero: ");<br>
+  for(int i=0;i< 20;i++) {<br>
+  num[i] = sc.nextInt();<br>
+  result+=num[i];}<br>
+  System.out.println(result/20);<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>11. </h1>
+Faça um programa que receba do usuário 10 números e mostre
+na tela o menor e o maior número.
+<br><br><div class="codigo">
+  int menor = 0, maior=0,numero=0;<br>
+Scanner sc = new Scanner(System.in);<br>
+System.out.println("Entre com 10 numeros:");<br>
+numero = sc.nextInt();<br>
+maior = numero;<br>
+menor = numero;<br>
+for(int i=0; i< 10;i++) {<br>
+numero= sc.nextInt();<br>
+if(numero < menor){<br>
+menor = numero;<br>
+}<br>
+else if(numero > maior){<br>
+maior = numero;<br>
+}}<br>
+System.out.println("Maior: "+maior+" Menor: "+menor);<br>
+}}
+
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>12. </h1>
+Faça um programa que receba um número digitado pelo usuário e
+então imprima os múltiplos de 3 no intervalo entre 1 e o número digitado
+pelo usuário.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num;<br>
+  System.out.println("Informe o numero: ");<br>
+  num = sc.nextInt();<br>
+  for(int i=0;i< num;i++) {<br>
+  if(i%3==0) {<br>
+  System.out.print(i+" ");}<br>
+  }}}<br>
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>13. </h1>
+Faça um programa que receba do usuário 15 números inteiros.
+Mostrar na tela quantos números positivos foram digitados.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int num, aux=0;<br>
+  System.out.println("Informe o numero: ");<br>
+  for(int i=0;i< 15;i++) {<br>
+  num = sc.nextInt();<br>
+  if(num>0){<br>
+  aux += 1;<br>
+  }<br>
+  }System.out.println("Foram digitados: "+aux+" numeros positivos.");}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>14. </h1>
+Faça um programa que realize a potência de A (número real) por B
+(número inteiro e positivo). Utilize a multiplicação sucessiva. O usuário
+fornecerá esses dois números.
+<br><br><div class="codigo">
+  int   inteiro = 0, i = 1;<br>
+  float r1=0,real = 0;<br>
+  Scanner scn = new Scanner(System.in);<br>
+  System.out.println("Entre com um numero base:");<br>
+  real = scn.nextFloat();<br>
+  System.out.println("Entre com um numero inteiro:");<br>
+  inteiro = scn.nextInt();<br>
+  r1 = real * real;<br>
+  inteiro = inteiro - 1;<br>
+  while(i< inteiro) {<br>
+  r1 = r1 * real;<br>
+  i++;<br>
+  System.out.println(+real+" a "+(inteiro+1)+" = "+r1);<br>
+  scn.close();}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>15. </h1>
+Faça um programa que receba a média bimestral dos 35 alunos da
+turma. Mostrar na tela as 5 melhores médias.
+<br><br><div class="codigo">
+  Scanner sc = new Scanner(System.in);<br>
+  int i = 0;<br>
+  float a1[] = new float [10];<br>
+  float c1[] = new float [1];<br>
+  for (i = 0; i < 10; i++) {<br>
+  System.out.print("Digite a "+(i+1)+ "º média: " );<br>
+  a1[i]=sc.nextInt();<br>
+  }<br>
+  for (int a = 0; a < 10; a++) {<br>
+  for (i = 1; i < 10; i++) {<br>
+  if(a1[i]>a1[i-1]) {<br>
+  c1[0] = a1[i-1];<br>
+  a1[i-1] = a1[i];<br>
+  a1[i] = c1[0];}}}<br>
+  System.out.println("As 5 melhores médias são: ");<br>
+  for (i = 0; i < 5; i++) {<br>
+  System.out.println(+a1[i]);	}sc.close();<br>
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>16. </h1>
+Um grupo de 100 pessoas respondeu um questionário no qual
+constava: Idade e opinião sobre o filme que havia lançado no cinema na
+semana passada, onde:<br><br>
+Nota -1 – Não sabe dizer<br>
+Nota 0 – Péssimo<br>
+Nota 1 – Ruim<br>
+Nota 2 – Regular<br>
+Nota 3 – Bom<br>
+Nota 4 – Ótimo<br><br>
+Mostrar na tela:<br><br>
+a) Quantas pessoas responderam Ótimo<br>
+b) A média de idade das pessoas que responderam Péssimo<br>
+c) Quantos % das pessoas Não sabem dizer
+<br><br><div class="codigo">
+  public static void main (String[] args) {<br>
+  int idade = 0, opniaoGuardar = 0, i = 0;<br>
+  int opNSDizer = 0;<br>
+  int opNSDizerSoma = 0;<br>
+  int opOtimo = 0;<br>
+  int opPessimoMedia = 0;<br>
+  int opPessimoPessoa = 0;<br>
+  int opPessimoSomaId = 0;<br>
+  Scanner scn = new Scanner(System.in);<br>
+  while(i< 10){<br>
+  System.out.println("Escreva sua idade:" );<br>
+  idade = scn.nextInt();<br>
+  System.out.println("Selecione sua opnião sobre o filme:"<br>
+  + "\n  -1 > Não tenho opnião "<br>
+  + "\n   0 > Péssimo"<br>
+  + "\n   1 > Ruim "<br>
+  + "\n   2 > Regular"<br>
+  + "\n   3 > Bom "<br>
+  + "\n   4 > Ótimo");<br>
+  opniaoGuardar = scn.nextInt();<br>
+  if(opniaoGuardar == -1) {<br>
+  opNSDizer = opNSDizer += 1;<br>
+  opNSDizerSoma = (opNSDizer * 100)/10;<br>
+  i++;<br>
+  }<br>
+  else if(opniaoGuardar == 0) {<br>
+  opPessimoPessoa = opPessimoPessoa+=1;<br>
+  opPessimoSomaId = opPessimoSomaId + idade;<br>
+  opPessimoMedia = opPessimoSomaId/opPessimoPessoa;<br>
+  i++;<br>
+  }<br>
+  if(opniaoGuardar == 4) {<br>
+  opOtimo = opOtimo + 1;<br>
+  i++;<br>
+  }<br>
+  else if(opniaoGuardar > 4 || opniaoGuardar < -1 || opniaoGuardar == -0) {<br>
+  System.out.println("Seu questionário foi inválidado por uma informação errada.");<br>
+  }<br>
+  else {i++;}<br>
+  }<br>
+  System.out.println(opOtimo+" Responderam : Ótimo" +"\n"+<br>
+  opPessimoMedia+" Foi a média da idade de pessoas que responderam: Péssimo" +"\n"+<br>
+  opNSDizerSoma+"% Foi a porcentagem das pessoas que não souberam o que dizer."<br>
+  );<br>
+  scn.close();}}
+</div><br><br>
+<!--______________________________________________________________________-->
+<h1>17. </h1>
+Faça um programa que solicite ao usuário as idades de todos os
+frequentadores do clube Alfa em um determinado dia da semana.
+Como não sabemos quantas idades teremos, o usuário deve entrar
+com as idades e quando digitar -1 o programa deve finalizar mostrando
+na tela quantas pessoas frequentaram o clube nesse dia e qual a
+média de idade.
+<br><br><div class="codigo">
+  public static void main (String[] args) {<br>
+  int i = 0, r = 0, s = 0, a1 = 0;<br>
+  Scanner scn = new Scanner(System.in);<br>
+  while(i>=0) {<br>
+  a1=a1+1;<br>
+  System.out.println("Digite a idade dos frequentadores do clube Alfa:");<br>
+  r = scn.nextInt();<br>
+  s += r;<br>
+  if(r ==-1) {<br>
+  s = s + 1;<br>
+  a1 = a1 - 1;<br>
+  System.out.println("A quantidade de pessoas que frequentaram o clube foi de: "<br>
+  +a1+" e a média das idades dessas pessoas são de: "+s/a1+" anos.");<br>
+  i = -5;<br>
+  }}<br>
+  i++;<br>
+  scn.close();
+  }}
+</div><br><br>
+<!--______________________________________________________________________-->
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo2" id="logo2">
+<object>
+<embed src="../../../svg/cyber3.svg">
+</object>
+</div>
+<div class="logo5" id="logo2">
+<object>
+<embed src="../../../svg/fundocorreto.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida3.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div class="logo3" id="logo3">
+<object>
+<embed src="../../../svg/batida2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+<a href="../aula/Aula5.html"><h1>ⴴ</h1></a>
+</div>
+<!--______________________________________________________________________-->
+<div id="casca1">
+</div>
+<div id="casca2">
+</div>
+<div id="casca3">
+</div>
+
+
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript4.js">
+</script>
+</html>

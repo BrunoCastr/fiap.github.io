@@ -1,0 +1,63 @@
+<svg version="1.1" id="Camada_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+	 <defs>
+	 <style>
+
+
+	 #Camada_3{
+
+		fill:rgba(255, 255, 255, 0);
+	 stroke-dasharray:2500;
+	 stroke-dashoffset:0;
+	 -webkit-animation: dash 8s linear forwards;
+	 -o-animaiton: dash 8s linear forwards;
+	 -moz-animation: dash 8s linear forwards;
+	 animation: dash 8s linear infinite;
+	 }
+
+	 #Camada_2{
+	 fill:rgba(255, 255, 255, 1);
+	 stroke-dasharray:2500;
+	 stroke-dashoffset:0;
+	 -webkit-animation: dash 8s linear forwards;
+	 -o-animaiton: dash 8s linear forwards;
+	 -moz-animation: dash 8s linear forwards;
+	animation: fill .8s;
+	 animation: dash 10s linear infinite;
+
+	 }
+
+	 @-webkit-keyframes dash{
+	 0%{
+	 stroke-dashoffset: 2500;
+	 }
+	 100%{
+	 stroke-dashoffset: -2500;
+	 }}
+
+
+
+	 </style>
+	 </defs>
+<style type="text/css">
+	.st0{fill:none;stroke:rgba(255, 255, 255, 0.5);stroke-width:1;stroke-miterlimit:10;}
+</style>
+<g id="Camada_3">
+	<line class="st0" x1="953.5" y1="75.5" x2="617.5" y2="173.5"/>
+	<line class="st0" x1="1000.5" y1="112.5" x2="614.5" y2="205.5"/>
+	<line class="st0" x1="1057.5" y1="159.5" x2="586.5" y2="257.5"/>
+	<line class="st0" x1="1090.5" y1="184.5" x2="578.5" y2="276.5"/>
+	<line class="st0" x1="1055.5" y1="229.5" x2="569.5" y2="301.5"/>
+	<line class="st0" x1="914.5" y1="281.5" x2="577.5" y2="330.5"/>
+	<line class="st0" x1="1053.5" y1="426.5" x2="981.5" y2="430.5"/>
+	<line class="st0" x1="1051.5" y1="483.5" x2="869.5" y2="491.5"/>
+	<line class="st0" x1="1032.5" y1="104.5" x2="1060.5" y2="99.5"/>
+	<line class="st0" x1="1132.5" y1="144.5" x2="1093.5" y2="151.5"/>
+	<line class="st0" x1="1213.5" y1="19.5" x2="1289.5" y2="-0.5"/>
+	<line class="st0" x1="1264.5" y1="53.5" x2="1305.5" y2="44.5"/>
+	<line class="st0" x1="1306.5" y1="231.5" x2="1351.5" y2="227.5"/>
+	<line class="st0" x1="1276.5" y1="235.5" x2="1214.5" y2="241.5"/>
+	<line class="st0" x1="1253.5" y1="264.5" x2="1278.5" y2="261.5"/>
+	<line class="st0" x1="1364.5" y1="252.5" x2="1307.5" y2="257.5"/>
+</g>
+</svg>

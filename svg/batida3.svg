@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1300 172.3" style="enable-background:new 0 0 1300 172.3;" xml:space="preserve">
+	 <defs>
+	 <style>
+
+
+	 #Camada_1{
+
+		fill:rgba(255, 255, 255, 0);
+	 stroke-dasharray:3000;
+	 stroke-dashoffset:0;
+	 -webkit-animation: dash 8s linear forwards;
+	 -o-animaiton: dash 8s linear forwards;
+	 -moz-animation: dash 8s linear forwards;
+	 animation: dash 10s linear infinite;
+
+	 }
+
+
+	 @-webkit-keyframes dash{
+	 100%{
+	 stroke-dashoffset: 3000;
+	 }
+	 0%{
+	 stroke-dashoffset: -3000;
+	 }}
+
+
+
+	 </style>
+	 </defs>
+
+ <style type="text/css">
+	.st0{stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:rgba(255, 255, 255, 0.1);stroke-width:4;stroke-miterlimit:10;}
+ </style>
+
+<g id="Camada_1">
+	<path class="st0" d="M0,136.5"/>
+	<path class="st1" d="M912.1,124.3c21.9-5.5,23.8-17.8,39.4-18c20.1-0.3,26.9,20.1,38.3,18.3c26.3-4.3,27.8-119.3,36.2-119.3
+		c8.2,0,8.4,110.9,43.6,119.6c13.9,3.4,29.7-9.9,44.7,0.1c9.4,6.3,10.7,16.7,17.9,16.8c7.5,0.1,8.5-10.9,19.3-16.7
+		c14.7-8,25.8,5.4,40.4,0.1c20.7-7.6,19.6-42.4,30.6-42.8c10.6-0.3,12,31.6,34.3,42.9c13.4,6.8,42.5,1.2,52.1-2"/>
+	</g>
+</svg>

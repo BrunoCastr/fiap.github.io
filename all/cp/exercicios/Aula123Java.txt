@@ -1,0 +1,1082 @@
+============================================================================
+================================AULA 1 2 E 3================================
+============================================================================
+
+Aula 2 Exercícios :
+1-
+package aula2;
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+	
+public static void main (String[] args){
+		
+int a0;
+				
+System.out.println("Digite o valor de B: ");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+
+System.out.println("Digite o valor de H: ");
+int a2 = in.nextInt();
+	    
+a0 = (a1*a2)/2;
+	    
+System.out.println("A soma da area é de: "+a0);
+
+}}
+
+============================================================================
+
+2-
+package aula2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio02 {
+	
+public static void main (String[] args){
+		
+//Exercicio exibicao da media do aluno
+		
+//Formatar o numero de casas
+		
+DecimalFormat df = new DecimalFormat("###,###,##0.0#");
+df.setMaximumFractionDigits(2);
+		
+double m0 = 0;
+		
+System.out.println("Digite sua primeira nota: ");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+System.out.println("Digite sua segunda nota: ");
+int a2 = in.nextInt();
+	    
+System.out.println("Digite sua segunda nota: ");
+int a3 = in.nextInt();
+	    
+m0 = (a1+a2+a3)/3;	    
+String valorFormatado = df.format(+m0);
+System.out.println("A sua media é de " + valorFormatado);
+	  
+}}
+
+
+
+============================================================================
+
+package aula2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio03 {
+	
+public static void main (String[] args){
+		
+double a0;
+		
+//Exercicio quadrado de qualquer numero
+		
+//Formatar o numero de casas
+DecimalFormat df = new DecimalFormat("###,###,##0.00");
+df.setMaximumFractionDigits(2);
+		
+System.out.println("Digite o numero: ");
+Scanner in = new Scanner(System.in);
+double a1 = in.nextDouble();
+	    
+a0=a1*a1;
+	    
+String valorFormatado = df.format(+a0);
+System.out.println("O numero "+a1+" ao quadrado é: "+valorFormatado);
+	    
+}}
+
+============================================================================
+
+
+package aula2;
+
+import java.util.Scanner;
+
+public class Exercicio04 {
+	
+public static void main (String[] args){
+		
+//Exercicio quadrado de varios numeros inteiros somados
+		
+int r1, r2;
+		
+System.out.println("Digite o primeiro numero: ");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+System.out.println("Digite o segundo numero: ");
+int a2 = in.nextInt();
+	    
+System.out.println("Digite o terceiro numero: ");
+int a3 = in.nextInt();
+	    
+r1 = a1 + a2 + a3;
+r2 = r1 * r1;
+		
+System.out.println("O quadrado dos valores somados é de: "+r2);
+
+}}
+
+============================================================================
+
+package aula22;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio05 {
+	
+public static void main (String[] args){
+		
+		
+/*PROGRAMA CALCULOS – O usuário informa quatro valores.
+O programa mostra o resultado da multiplicação do primeiro
+pelo terceiro e o resultado da soma do segundo com o quarto.*/
+		
+double r1, r2;
+		
+DecimalFormat df = new DecimalFormat("###,###,##0.00");
+df.setMaximumFractionDigits(2);
+		
+System.out.println("Digite o primeiro numero: ");
+Scanner in = new Scanner(System.in);
+double a1 = in.nextInt();
+	    
+System.out.println("Digite o segundo numero: ");
+double a2 = in.nextDouble();
+	    
+System.out.println("Digite o terceiro numero: ");
+double a3 = in.nextDouble();
+	    
+System.out.println("Digite o quarto numero: ");
+double a4 = in.nextDouble();
+	    
+r1 = a1 * a3;
+r2 = a2 + a4;
+		
+String valorFormatado = df.format(+r1);
+String valorFormatado2 = df.format(+r2);
+		
+System.out.println("A multiplicação do primeiro numero ("+a1+") com"
++ " o terceiro ("+a3+") é de: " +valorFormatado+" e a soma do segundo numero ("+a2+") com o"
++" quarto ("+a4+") é de : " +valorFormatado2);	    
+
+}} 
+
+============================================================================
+package aula22;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio06 {
+	
+public static void main (String[] args){
+	
+	
+/*PROGRAMA COTAÇÃO – O usuário digita quanto está valendo o
+dólar e quando em reais ele possui. O programa exibe quantos
+dólares vale os reais que o usuário informou.*/
+		
+		
+double r1;
+	
+DecimalFormat df = new DecimalFormat("###,###,##0.00");
+df.setMaximumFractionDigits(2);
+		
+	
+System.out.println("Informe quanto está valendo o dólar atualmente: ");
+Scanner in = new Scanner(System.in);
+double a1 = in.nextDouble();
+    
+System.out.println("Informe quantos reais você possui: ");
+double a2 = in.nextDouble();
+    
+r1 = a2 / a1;
+    
+String valorFormatado = df.format(+r1);
+
+System.out.println("Seus R$:"+a2+" Valem US$:"+valorFormatado);
+    
+}}
+============================================================================
+
+package aula2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio07 {
+	
+public static void main (String[] args){
+	
+/*PROGRAMA ABASTECIMENTO – Deve ser informado o preço do litro do 
+combusnvel e o valor em dinheiro que se deseja abastecer. O 
+programa mostra quantos litros serão comprados. (Ex. a gasolina
+custa R$ 2,70 e o motorista quer abastecer R$ 50,00).*/	
+		
+DecimalFormat df = new DecimalFormat("###,###,##0.0#");
+df.setMaximumFractionDigits(2);
+		
+double r1;
+		
+System.out.println("Informe quanto está valendo o litro combustivel:");
+Scanner in = new Scanner(System.in);
+double a1 = in.nextDouble();
+	    
+System.out.println("Quantos reais você deseja abastecer:");
+double a2 = in.nextDouble();
+	    
+r1 = a2/a1;
+String valorFormatado = df.format(+r1);
+	    
+System.out.println("Você abastecerá: "+valorFormatado+ " litros.");
+}}
+
+============================================================================
+
+package aula2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio08 {
+	
+public static void main (String[] args){
+		
+/*PROGRAMA TEMPERATURA – O usuário digita a temperatura em graus
+Célsius e o programa exibe o valor em graus Fahrenheit. A 
+conversão é dada pela seguinte fórmula: F = (9 * C + 160) / 5 */
+		
+DecimalFormat df = new DecimalFormat("###,###,##0.0#");
+df.setMaximumFractionDigits(2);
+		
+double r1;
+		
+System.out.println("Informe o valor em celsius:");
+Scanner in = new Scanner(System.in);
+double a1 = in.nextDouble();
+	    
+r1 = (9 * a1 + 160)/5;
+		
+String valorFormatado = df.format(+r1);
+		
+System.out.println("A temperatura: "+a1+"C em Fahrenheit é de: "+valorFormatado);
+
+}}
+
+============================================================================
+
+package aula2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio10 {
+	
+
+	
+public static void main (String[] args){
+		
+/*PROGRAMA PRESTAÇÃO – O usuário informa o valor de um boleto,
+o percentual de juros cobrado e o numero de dias em atraso.
+O programa calcula o novo valor a ser pago através da fórmula
+PRESTACAO VALOR + (VALOR * (JUROS/100)) * DIAS*/
+		
+
+DecimalFormat df = new DecimalFormat("###,###,##0.00");
+df.setMaximumFractionDigits(2);
+		
+double r1;
+		
+System.out.println("Informe o valor do boleto:");
+Scanner in = new Scanner(System.in);
+double a1 = in.nextDouble();
+	    
+System.out.println("Informe o percentual de juros:");
+double a2 = in.nextDouble();
+	    
+System.out.println("Informe o dias em atrasdo:");
+int a3 = in.nextInt();
+	    
+r1  = a1 + (a1*(a2/100)*a3);
+	    
+String valorFormatado = df.format(+r1);
+System.out.println("O novo valor a ser pago é: R$"+valorFormatado);
+	   
+}}
+
+============================================================================
+
+package aula22;
+
+import java.util.Scanner;
+
+public class Exercicio11 {
+	
+public static void main (String[] args){
+		
+/*PROGRAMA APURAÇÃO – Três candidatos concorreram a
+uma eleição (A, B, C). O usuário deve informar quantos votos
+cada candidato recebeu, quantos foram os votos brancos e
+quantos foram os votos nulos. O programa deve calcular e
+informar: o número total de eleitores, o percentual de votos
+que cada candidato recebeu (em relação ao número total de
+eleitores), o percentual de brancos e o
+percentual de nulos.*/
+		
+int r1, r2, r3, r4, r5, r6;
+		
+System.out.println("Informe a quantidade de votos do candidato A:");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+System.out.println("Informe a quantidade de votos do candidato B:");
+int a2 = in.nextInt();
+	    
+System.out.println("Informe a quantidade de votos do candidato C:");
+int a3 = in.nextInt();
+	    
+System.out.println("Informe a quantidade de votos Brancos:");
+int a4 = in.nextInt();
+	    
+System.out.println("Informe a quantidade de votos Nulos:");
+int a5 = in.nextInt();
+	    
+//Total de votos
+r1 = a1+a2+a3+a4+a5;
+//Percentual Candidato A
+r2 = (a1*100)/r1;
+//Percentual Candidato B
+r3 = (a2*100)/r1;
+//Percentual Candidato C
+r4 = (a3*100)/r1;
+//Percentual Votos brancos
+r5 = (a4*100)/r1;
+//Percentual Votos nulos
+r6 = (a5*100)/r1;
+		
+System.out.println(" O total de votos é de: "
++r1+" \n O percentual de votos no candidato A é de: "
++r2+"%, \n O percentual de votos no candidato B é de: "
++r3+"%, \n O percentual de votos no candidato C é de: " 
++r4+"%, \n O percentual de votos Brancos é de: "
++r5+"%, \n O percentual de votos Nulos é de: "+r6+"%");
+	    
+}}
+
+============================================================================
+===================================AULA 3===================================
+============================================================================
+
+package aula3;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+	
+public static void main (String[] args){
+		
+/*Faça um algoritmo que solicite o nome e a idade do usuário.
+Mostre na tela o nome somente dos usuários com 18 anos ou mais.*/
+		
+System.out.println("Informe o seu Nome:");
+Scanner in = new Scanner(System.in);
+String a1 = in.nextLine();
+	    
+System.out.println("Informe sua idade:");
+int a2 = in.nextInt();
+	    
+if(a2 >=18) {
+	    	
+System.out.println("Seu nome é: "+a1+" e você possui "+a2+" anos.");
+	    	
+}
+else if (a2 <= 17) {
+	    	
+System.out.println("Desculpe ;-;");
+}
+	    
+		
+
+}}
+============================================================================
+
+package aula3;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+	
+public static void main (String[] args){
+	
+/* Vamos simular uma calculadora simples de 4 operações? 
+O algoritmo deve solicitar 2 números e o 
+operador (* / + -). Mostrar na tela o resultado.*/
+		
+double a0;
+String e1 = "+";
+String e2 = "-";
+String e3 = "*";
+String e4 = "/";
+		
+		
+System.out.println("Escolha sua operação [+ - * / ]");
+Scanner in = new Scanner(System.in);
+String b1 = in.nextLine();
+		
+System.out.println("Informe o primeiro numero:");
+int a1 = in.nextInt();
+	    
+System.out.println("Informe o segundo numero:");
+int a2 = in.nextInt();
+	    
+	    
+	    
+if(b1.equals(e1)){
+a0 = a1 + a2;
+System.out.println("A soma do numero "+a1+" + "+a2+" é igual a: "+a0);}
+	    
+else if(b1.equals(e2)){
+a0 = a1 - a2;
+System.out.println("A subtração do numero "+a1+" - "+a2+" é igual a: "+a0);}
+	    
+else if(b1.equals(e3)){
+a0 = a1 * a2;
+System.out.println("A multiplicação do numero "+a1+" * "+a2+" é igual a: "+a0);}
+	    
+else if(b1.equals(e4)){
+a0 = a1 / a2;
+System.out.println("A divisão do numero "+a1+" / "+a2+" é igual a: "+a0);}
+	    
+else {System.out.println("Erro na especificação da operação");}
+
+}}
+
+============================================================================
+
+package aula3;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+	
+public static void main (String[] args){
+		
+		
+System.out.println("Informe o primeiro numero:");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+System.out.println("Informe o segundo numero:");
+int a2 = in.nextInt();
+	    
+System.out.println("Informe o terceiro numero:");
+int a3 = in.nextInt();
+	    
+if(a1>a2 && a2>a3 && a3<a1){
+			
+System.out.println(+a1+"--"+a2+"--"+a3);
+}
+		
+else if (a1>a3 && a3>a2 && a2<a1){
+			
+System.out.println(+a1+"--"+a3+"--"+a2);
+}
+		
+else if(a2>a1 && a1 > a3 && a3 < a2) {
+			
+System.out.println(+a2+"--"+a1+"--"+a3);
+			
+}
+		
+else if(a2>a3 && a3>a1&&a1<a2) {
+			
+System.out.println(+a2+"--"+a3+"--"+a1);
+}
+else if (a3>a1 && a1>a2 && a2<a3) {
+			
+System.out.println(+a3+"--"+a1+"--"+a2);
+}
+		
+else if (a3>a2 && a2>a1 && a1<a3) {
+			
+System.out.println(+a3+"--"+a2+"--"+a1);
+}		
+}	    
+}
+============================================================================
+
+package aula3;
+
+import java.util.Scanner;
+
+
+public class Exercicio4 {
+	
+public static void main (String[] args){
+		
+		
+System.out.println("Informe o primeiro numero:");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+System.out.println("Informe o segundo numero:");
+int a2 = in.nextInt();
+	    
+System.out.println("Informe o terceiro numero:");
+int a3 = in.nextInt();
+	    
+System.out.println("Informe o quarto numero:");
+int a4 = in.nextInt();
+	    
+if(a1<a2 && a1<a3 && a1<a4){
+			
+System.out.println("O menor numero é:"+a1);
+}
+		
+else if (a2<a1 && a2>a3 && a2<a4){
+			
+System.out.println("O menor numero é:"+a2);
+}
+		
+else if(a3<a1 && a3 < a2 && a3 < a1) {
+			
+System.out.println("O menor numero é:"+a3);
+			
+}
+		
+else if(a4<a1 && a4<a2 && a4<a3 ) {
+			
+System.out.println("O menor numero é:"+a4);
+}
+	    
+else {System.out.println("Erro! numero repetido");}
+
+}}
+
+
+============================================================================
+
+package aula3;
+
+public class Exercicio5 {
+	
+public static void main (String[] args){
+		
+int a0 = 5;
+int a1 = 18;
+int b0 ;
+		
+b0 = a0;
+a0 = a1;
+a1 = b0;
+		
+System.out.println(a0+" e "+a1);
+
+}}
+
+============================================================================
+
+package aula3;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+public static void main (String[] args){
+		
+System.out.println("Digite um valor igual ou maior a 0:");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+if(a1>=0) {
+	    	
+System.out.println("ok");
+}
+else {
+	    	
+	    
+System.out.println("Erro digite um valor IGUAL ou MAIOR a 0!");
+}		
+}
+}
+
+============================================================================
+
+package aula3;
+
+import java.util.Scanner;
+
+public class Exercicio7 {
+	
+public static void main (String[] args){
+		
+System.out.println("Digite um valor referente a um mês do ano:");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+switch (a1) {
+	    
+case 1:
+System.out.println("Janeiro");
+break;
+case 2:
+System.out.println("Fevereiro");
+break;
+case 3:
+System.out.println("Março");
+break;
+case 4:
+System.out.println("Abril");
+break;
+case 5:
+System.out.println("Maio");
+break;
+case 6:
+System.out.println("Junho");
+break;
+case 7:
+System.out.println("Julho");
+break;
+case 8:
+System.out.println("Agosto");
+break;
+case 9:
+System.out.println("Setembro");
+break;
+case 10:
+System.out.println("Outubro");
+break;
+case 11:
+System.out.println("Novembro");
+break;
+case 12:
+System.out.println("Dezembro");
+break;
+default:
+System.out.println("Numero inválido");
+
+}}}
+
+============================================================================
+============================Calculadora case================================
+============================================================================
+
+
+package aula3;
+
+import java.util.Scanner;
+
+public class CalcCase {
+public static void main (String[] args){
+
+
+double a0;
+
+
+System.out.println("Escolha sua operação [+ - * / ]");
+Scanner in = new Scanner(System.in);
+String b1 = in.nextLine();
+
+
+System.out.println("Informe o primeiro numero:");
+int a1 = in.nextInt();
+
+System.out.println("Informe o segundo numero:");
+int a2 = in.nextInt();
+
+switch (b1) {
+
+case "+":
+a0 = a1 + a2;
+System.out.println("A soma do numero "+a1+" + "+a2+" é igual a: "+a0);
+break;
+
+case "-":
+a0 = a1 - a2;
+System.out.println("A subtração do numero "+a1+" - "+a2+" é igual a: "+a0);
+break;
+
+case "*":
+a0 = a1 * a2;
+System.out.println("A multiplicação do numero "+a1+" * "+a2+" é igual a: "+a0);
+break;
+
+case "/":
+a0 = a1 / a2;
+System.out.println("A divisão do numero "+a1+" / "+a2+" é igual a: "+a0);
+break;
+
+default:
+System.out.println("Erro na especificação da operação");
+	
+}}}
+
+============================================================================
+
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+public static void main (String[] args){
+		
+System.out.println("Digite o valor:");
+Scanner in = new Scanner(System.in);
+int a1 = in.nextInt();
+	    
+if(a1>=0) {
+	    	
+	    
+if(a1 % 4 == 0 && a1 % 5 == 0) {
+	    		
+	    
+System.out.println("O valor é divisivel por 4 e 5");
+	    
+}
+	    
+else {
+	    		    
+System.out.println("Numero não divisivel por 4 e 5");
+}
+	    	
+}
+else {System.out.println("Numero inválido");}
+
+}}
+
+============================================================================
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+		
+public static void main (String[] args){
+		
+			
+System.out.println("Digite o numero: ");
+Scanner in = new Scanner(System.in);
+int a = in.nextInt();
+		
+
+if (a % 2 == 0){
+		
+System.out.println("O seu numero é Par");
+}
+
+		
+else
+
+System.out.println("O seu numero é Impar");
+				
+}
+}
+===========================================================================
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+	
+public static void main (String[] args){
+	
+int c;
+System.out.println("Digite o primeiro nuemro: ");
+Scanner in = new Scanner(System.in);
+int a = in.nextInt();
+	
+System.out.println("Digite o primeiro nuemro: ");
+int b = in.nextInt();
+	
+if(a > b) {
+c = a - b;
+System.out.println("A diferença de "+a+" para "+b+" é de: "+ c);
+}
+else if (b > a) {
+		
+c = b - a;
+System.out.println("A diferença de "+b+" para "+a+" é de: "+ c);
+}
+	
+else if(b == a || a == b) {System.out.println("Numeros iguais");}
+	
+else {System.out.println("Erro!");}
+
+}}
+===========================================================================
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+public static void main (String[] args){
+		
+System.out.println("Digite o numero: ");
+Scanner in = new Scanner(System.in);
+int a = in.nextInt();
+		
+int a1 = 10;
+int a2 = 20;
+int a3;
+		
+if(a % 2 == 0) {
+			
+a3 = a1 + a;
+		
+System.out.println("O "+a+" é par, e recebe +10 ficando: "+a3);
+			
+}
+		
+else {
+			
+a3 = a2 + a;	
+System.out.println("O "+a+" é impar, e recebe +20 ficando: "+a3);
+}
+
+}}
+===========================================================================
+
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+public static void main (String[] args){
+	
+System.out.println("Informe o valor I: ");
+Scanner in = new Scanner(System.in);	
+int a1 = in.nextInt();
+	
+System.out.println("Informe o valor II: ");
+int a2 = in.nextInt();
+	
+System.out.println("Informe o valor III: ");
+int a3 = in.nextInt();
+	
+if(a1>a2 && a2>a3 && a3<a1){
+		
+System.out.println(+a1+"--"+a2+"--"+a3);
+}
+	
+else if (a1>a3 && a3>a2 && a2<a1){
+		
+System.out.println(+a1+"--"+a3+"--"+a2);
+}
+	
+else if(a2>a1 && a1 > a3 && a3 < a2) {
+		
+System.out.println(+a2+"--"+a1+"--"+a3);
+		
+}
+	
+else if(a2>a3 && a3>a1&&a1<a2) {
+		
+System.out.println(+a2+"--"+a3+"--"+a1);
+}
+else if (a3>a1 && a1>a2 && a2<a3) {
+		
+System.out.println(+a3+"--"+a1+"--"+a2);
+}
+	
+else if (a3>a2 && a2>a1 && a1<a3) {
+		
+System.out.println(+a3+"--"+a2+"--"+a1);
+}
+    
+else {System.out.println("Numeros repetidos");}
+			
+}}
+
+===========================================================================
+
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio6 {
+
+public static void main (String[] args){
+		
+System.out.println("Informe o valor A: ");
+Scanner in = new Scanner(System.in);	
+int a = in.nextInt();
+		
+System.out.println("Informe o valor B: ");
+int b = in.nextInt();
+		
+System.out.println("Informe o valor C: ");
+int c  = in.nextInt();
+		
+int soma = a + b;
+		
+if(soma == c) {System.out.println("A soma de A + B é igual a C");}
+else if(soma > c) {System.out.println("A soma de A + B é maior a C");}
+else if (soma < c) {System.out.println("A soma de A + B é menor a C");}
+}}
+
+===========================================================================
+
+package Aula333;
+
+import java.util.Scanner;
+
+public class Exercicio7 {
+	
+public static void main (String[] args){
+		
+System.out.println("Informe seu SEXO ('F OU M'): ");
+Scanner in = new Scanner(System.in);	
+String a = in.next();
+		
+System.out.println("Informe sua idade: ");
+int b = in.nextInt();
+		
+System.out.println("Informe seu estado civil: ");
+String c = in.next();
+		
+
+if("Casada".compareTo(c)==0){
+			
+if("F".compareTo(a)==0) {
+			
+System.out.println("Informe o tempo de casamento: ");
+int d = in.nextInt();
+}
+
+};
+}}
+
+===========================================================================
+
+
+package Aula333;
+
+import java.util.Scanner;
+
+import java.text.DecimalFormat;
+
+public class Exercicio8 {
+public static void main (String[] args){
+		
+System.out.println("Informe seu SEXO ('F OU M'): ");
+Scanner in = new Scanner(System.in);	
+String a = in.next();
+		
+System.out.println("Informe sua altura: ");
+double b = in.nextDouble();
+		
+double a1, a2;
+double a3 = 62.1;
+double a4 = 44.7;
+double b3 = 72.7;
+double b4 = 58;
+
+DecimalFormat df = new DecimalFormat("###,###,##0.00");
+df.setMaximumFractionDigits(2);
+		
+switch(a){
+			
+case"F":
+a1 = a3 * b;
+a3 = a1 - a4;
+String valorFormatado = df.format(+a3);
+System.out.println("Seu peso ideal é de: "+valorFormatado);
+break;
+			
+case"M":
+a1 = b3 * b;
+a3 = a1 - b4;
+String valorFormatado2 = df.format(+a3);
+System.out.println("Seu peso ideal é de: "+valorFormatado2);
+break;
+			
+default:
+System.out.println("Erro na informação do SEXO"+a3);
+			
+}}}
+
+===========================================================================
+
+package Aula333;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Exercicio9 {
+	
+public static void main (String[] args){
+		
+		
+		
+System.out.println("Informe o método de pagamento (apenas digito): "
++ "\n 1 - À vista em dinheiro ou cheque, recebe 10% de desconto"
++ "\n 2 - À vista no cartão de crédito, recebe 15% de desconto"
++ "\n 3 - Em duas vezes, preço normal de ebqueta sem juros"
++ "\n 4 - Em duas vezes, preço normal de ebqueta mais juros de 10%");
+		
+		
+Scanner in = new Scanner(System.in);
+int a = in.nextInt();
+		
+System.out.println("Informe o valor do produto: ");
+double b = in.nextDouble();
+		
+DecimalFormat df = new DecimalFormat("###,###,##0.00");
+df.setMaximumFractionDigits(2);
+		
+double c, d;
+		
+switch (a) {
+case 1:
+c = 10 % b;
+d = b - c;
+String vf1 = df.format(+d);
+System.out.println("O novo valor a ser pago é de: R$"+ vf1);
+
+break;
+case 2:
+c = 15 % b;
+d = b - c;
+String vf2 = df.format(+d);
+System.out.println("O novo valor a ser pago é de: R$"+ vf2);
+			
+break;
+case 3:
+			
+c = b / 2;
+String vf3 = df.format(+c);
+System.out.println("Você ira pagar 2x de: R$"+ vf3);
+			
+break;
+case 4:
+			
+c = 10 % b;
+d = b + c;
+			
+String vf4 = df.format(+d);
+System.out.println("Você ira pagar 2x de: R$"+ vf4);
+
+break;
+		
+default:
+			
+System.out.println("Erro na seleção de metodos.");
+			
+}}}
+
+============================================================================
+================================AULA 1 2 e 3================================
+============================================================================

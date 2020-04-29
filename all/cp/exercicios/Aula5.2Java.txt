@@ -1,0 +1,214 @@
+============================================================================
+==================================AULA 5.2==================================
+============================================================================
+int num[] = new int[15];
+int aux = 0;
+System.out.println("Informe o número: ");
+for(int i=0;i<15;i++) {
+num[i] = sc.nextInt();
+if(num[i]>30) {aux +=1;}
+}
+System.out.println("Foram digitados: "+aux+" maiores que 30");
+}}
+============================================================================
+int num = 50, aux;
+aux = num - num - num;
+for(int i=aux;i<num+1;i++) {
+System.out.print(" "+i+" ");	
+}
+}}
+============================================================================
+for(int i=50;i>-1;i--) {
+System.out.print(" "+i+" ");	
+}
+}}
+============================================================================
+for(int i=50;i<151;i++) {
+System.out.print(" "+i+" ");	
+}
+}}
+============================================================================
+for(int i=50;i<201;i++) {
+if(i%5==0) {	
+System.out.print(i+" ");}
+}
+}}
+============================================================================
+for(int i=10;i<51;i++) {
+if(i%2==0) {	
+System.out.print(i+" ");}
+}
+}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num[] = new int[10];
+System.out.println("Informe o numero: ");
+for(int i=0;i<10;i++) {
+num[i] = sc.nextInt();}
+for(int i=0;i<10;i++) {
+System.out.println(num[i]*2);}}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num[] = new int[100];
+int result = 0;
+System.out.println("Informe o numero: ");
+for(int i=0;i<100;i++) {
+num[i] = sc.nextInt();
+result+=num[i];}
+System.out.println(result);}}
+============================================================================
+int num[] = new int[100];
+int result = 0;
+System.out.println("Informe o numero: ");
+for(int i=0;i<100;i++) {
+num[i] = sc.nextInt();
+if(num[i]%2!=0) {
+result+=num[i];}}
+System.out.println(result);	
+}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num[] = new int[20];
+int result = 0;
+System.out.println("Informe o numero: ");
+for(int i=0;i<20;i++) {
+num[i] = sc.nextInt();
+result+=num[i];}
+System.out.println(result/20);	
+}}
+============================================================================
+int menor = 0, maior=0,numero=0;
+Scanner sc = new Scanner(System.in);
+System.out.println("Entre com 10 numeros:");
+numero = sc.nextInt();
+maior = numero;
+menor = numero;
+for(int i=0; i<10;i++) {
+numero= sc.nextInt();
+if(numero < menor){
+menor = numero;	
+}
+else if(numero > maior){
+maior = numero;	
+}}
+System.out.println("Maior: "+maior+" Menor: "+menor);
+}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num;
+System.out.println("Informe o numero: ");
+num = sc.nextInt();
+for(int i=0;i<num;i++) {	
+if(i%3==0) {	
+System.out.print(i+" ");}
+}}}
+============================================================================
+Scanner sc = new Scanner(System.in);
+int num, aux=0;
+System.out.println("Informe o numero: ");
+for(int i=0;i<15;i++) {	
+num = sc.nextInt();
+if(num>0){	
+aux += 1;
+}
+}System.out.println("Foram digitados: "+aux+" numeros positivos.");}}
+============================================================================
+int   inteiro = 0, i = 1; 
+float r1=0,real = 0;
+Scanner scn = new Scanner(System.in);
+System.out.println("Entre com um numero base:");				
+real = scn.nextFloat();												
+System.out.println("Entre com um numero inteiro:");				
+inteiro = scn.nextInt();
+r1 = real * real;   
+inteiro = inteiro - 1;
+while(i<inteiro) {
+r1 = r1 * real;
+i++;
+System.out.println(+real+" a "+(inteiro+1)+" = "+r1);
+scn.close();}}
+============================================================================
+Scanner sc = new Scanner(System.in);	
+int i = 0;
+float a1[] = new float [10];
+float c1[] = new float [1];		
+for (i = 0; i < 10; i++) {
+System.out.print("Digite a "+(i+1)+ "º média: " );			
+a1[i]=sc.nextInt();     
+}			
+for (int a = 0; a < 10; a++) {
+for (i = 1; i < 10; i++) {
+if(a1[i]>a1[i-1]) {
+c1[0] = a1[i-1];
+a1[i-1] = a1[i];
+a1[i] = c1[0];}}}		
+System.out.println("As 5 melhores médias são: ");
+for (i = 0; i < 5; i++) {
+System.out.println(+a1[i]);	}sc.close();
+}}
+============================================================================
+public static void main (String[] args) {
+		
+int idade = 0, opniaoGuardar = 0, i = 0;
+int opNSDizer = 0;
+int opNSDizerSoma = 0;
+int opOtimo = 0;
+int opPessimoMedia = 0;
+int opPessimoPessoa = 0;
+int opPessimoSomaId = 0;	
+Scanner scn = new Scanner(System.in);	
+while(i<10){
+System.out.println("Escreva sua idade:" );
+idade = scn.nextInt();
+System.out.println("Selecione sua opnião sobre o filme:"
++ "\n  -1 > Não tenho opnião "
++ "\n   0 > Péssimo"
++ "\n   1 > Ruim "
++ "\n   2 > Regular"
++ "\n   3 > Bom "
++ "\n   4 > Ótimo");
+opniaoGuardar = scn.nextInt();
+if(opniaoGuardar == -1) {
+opNSDizer = opNSDizer += 1;
+opNSDizerSoma = (opNSDizer * 100)/10;
+i++;
+}
+else if(opniaoGuardar == 0) {
+opPessimoPessoa = opPessimoPessoa+=1;                    
+opPessimoSomaId = opPessimoSomaId + idade;     
+opPessimoMedia = opPessimoSomaId/opPessimoPessoa;
+i++;
+}
+if(opniaoGuardar == 4) {
+opOtimo = opOtimo + 1;
+i++;
+}
+else if(opniaoGuardar > 4 || opniaoGuardar < -1 || opniaoGuardar == -0) {
+System.out.println("Seu questionário foi inválidado por uma informação errada.");
+}
+else {i++;}
+}
+System.out.println(opOtimo+" Responderam : Ótimo" +"\n"+
+opPessimoMedia+" Foi a média da idade de pessoas que responderam: Péssimo" +"\n"+
+opNSDizerSoma+"% Foi a porcentagem das pessoas que não souberam o que dizer."
+);
+scn.close();}}
+============================================================================
+public static void main (String[] args) {
+int i = 0, r = 0, s = 0, a1 = 0;
+Scanner scn = new Scanner(System.in);
+while(i>=0) {
+a1=a1+1;
+System.out.println("Digite a idade dos frequentadores do clube Alfa:");
+r = scn.nextInt();
+s += r;
+if(r ==-1) {
+s = s + 1;
+a1 = a1 - 1;
+System.out.println("A quantidade de pessoas que frequentaram o clube foi de: "
++a1+" e a média das idades dessas pessoas são de: "+s/a1+" anos.");		
+i = -5;	
+}}
+i++;
+scn.close();
+}}

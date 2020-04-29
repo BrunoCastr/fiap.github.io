@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 1 2 e 3</title>
+</head>
+<body onload="marcar()">
+
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<div class="Guardador" id="Guardador">
+
+<div id="parte1">
+<!-- ___________________________Aula1___________________________-->
+<h1>Aula 1</h1>
+<p>(Apresentação do professor e a introdução dos conceitos sobre lógica)</p>
+<br><br>
+
+<h1>O	que	é	Lógica?</h1><br>
+<p>
+É	a	ciência	que	estuda	as	leis	e	critérios	de	validade	que
+regem	o	pensamento	e	a	demonstração,	ou	seja,	ciência
+dos	princípios	formais	do	pensamento.
+Usar	a	lógica	no	dia	a	dia	é	 fundamental,	principalmente
+para	 os	 profissionais	 de	 TI	 (desenvolvedores	 e	 analistas)
+que	possuem	como	princípio	entender	a	necessidade	dos
+usuários	e	trazer	solução:	rápida,	eficiente	e	eficaz.
+</p>
+
+<br><br><h1>O	que	é	Sequencia	Lógica?</h1><br>
+
+<p>
+São	passos	executados	até	atingir	um	objetvo	ou	solução
+do	problema.
+</p>
+
+
+<br><br><h1>O	que	é	instrução?</h1><br>
+<p>Regra	ou	norma	definida	para	realização	ou	emprego	de
+algo.</p>
+
+
+<br><br><h1>O	que	é	Algoritmo?</h1><br>
+<p>Sequencia	finita	de	passos	que	levam	a	execução	de	uma
+tarefa.</p>
+</div>
+<!-- ___________________________Aula1___________________________-->
+
+
+
+<!-- ___________________________Aula2___________________________-->
+<div id="parte2">
+
+<h1>Aula 2</h1>
+<p>(Apresentação do VisuAlg, tipos de dados, Expressões lógicas e Exercicios.)</p>
+<br><br>
+
+<h1>VisuAlg</h1><br>
+<p>Esta ferramenta permite aos iniciantes em programação
+melhor entendimento por	apresentar um ambiente	próximo
+da realidade.
+Ela	é capaz de simular o que acontece	na tela	do
+computador com o uso dos comandos leia e escreva,
+verificar os valores	das	variáveis, o acompanhamento passo
+a	passo	da execução	do algoritmo e suporta um modo
+simples	de depuração.</p>
+
+<br><br><h1>Variáveis</h1><br>
+<p>Variáveis são espaços reservados na memória do computador para
+guardar informações que serão ultizadas durante a execução
+de um programa.</p><br><br>
+
+<h1>Exemplo código VisuAlg:</h1><br>
+<div class="codigo">
+
+Algoritmo "PROGRAMA PRESTAÇÃO"<br>
+// Disciplina  : Linguagem e Lógica de Programação<br>
+// Professor   : Fernanda<br>
+// Descrição   : O programa calcula o novo valor a ser pago.<br>
+// Autor(a)    : Bruno<br>
+// Data atual  : 01/07/2018<br><br>
+
+Var<br>
+a1,a2,a3:real<br>
+resultado:real<br><br>
+
+Inicio<br><br>
+
+escreval("Informe o valor do boleto: ")<br>
+leia(a1)<br>
+escreval("Informe o valor de juros: ")<br>
+leia(a2)<br>
+escreval("Informe o numero de dias em atraso: ")<br>
+leia(a3)<br><br>
+
+resultado <= a1+(a1*(a2/100))*a3<br><br>
+
+escreva("Resultado: ",resultado)<br><br>
+
+Fimalgoritmo<br>
+</div>
+
+
+<br><br><h1>Operadores	Aritméticos:</h1><br>
+
+<table>
+
+<tr>
+<th>Operação</th>
+<th>Pseudocódigo</th>
+</tr>
+
+<tr>
+<td>Adição</td>
+<td>+</td>
+</tr>
+
+<tr>
+<td>Subtração</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Multiplicação</td>
+<td>*</td>
+</tr>
+
+<tr>
+<td>Divisão</td>
+<td>/</td>
+</tr>
+
+<tr>
+<td>Resto da divisão inteira</td>
+<td>mod</td>
+</tr>
+
+<tr>
+<td>Quociente da divisão inteira</td>
+<td>div</td>
+</tr>
+
+<tr>
+<td>Potenciação</td>
+<td>ˆ</td>
+</tr>
+
+<tr>
+<td>Divisão inteira</td>
+<td>\</td>
+</tr>
+
+</table>
+
+<br><br><h1>Operadores	Relacionais:</h1><br>
+
+<table>
+
+<tr>
+<th>Operador</th>
+<th>Pseudocódigo</th>
+</tr>
+
+<tr>
+<td>Igual</td>
+<td>=</td>
+</tr>
+
+<tr>
+<td>Menor</td>
+<td><</td>
+</tr>
+
+<tr>
+<td>Menor ou igual</td>
+<td><=</td>
+</tr>
+
+<tr>
+<td>Diferente</td>
+<td>< ></td>
+</tr>
+
+<tr>
+<td>Maior</td>
+<td>></td>
+</tr>
+
+<tr>
+<td>Maior ou igual </td>
+<td>>=</td>
+</tr>
+
+
+</table>
+
+<br><br><h1>Operadores Lógicos:</h1><br>
+
+<table>
+
+<tr>
+<th>Operador</th>
+<th>Pseudocódigo</th>
+</tr>
+
+<tr>
+<td>Não (NOT)</td>
+<td>nao</td>
+</tr>
+
+<tr>
+<td>E (AND)</td>
+<td>e</td>
+</tr>
+
+<tr>
+<td>Ou (OR)</td>
+<td>ou</td>
+</tr>
+
+</table>
+
+<br>
+
+</div>
+<!-- ___________________________Aula2___________________________-->
+<div id="parte3">
+
+<h1>Aula 3</h1>
+<p>(Desvio Condicional, Seleção Múltipla, e Exercicios.)</p>
+
+
+<br><br><h1>Desvio Condicional - Simples</h1><br>
+<p>Quando há necessidade de executar uma instrução apenas se determinada condição acontecer.</p>
+
+<br><br><h1>Exemplo:</h1><br>
+<div class="codigo">
+
+var<br>
+num: inteiro<br><br>
+
+Inicio<br>
+num < - 10<br><br>
+
+se (num > 10) entao<br>
+escreval("Maior que 10")<br>
+fimse<br>
+escreva("FIM")<br><br>
+
+Fimalgoritmo<br>
+
+</div>
+
+<br><br><h1>Desvio Condicional - Composto</h1><br>
+<p>Quando há necessidade de executar uma instrução quando a resposta é SIM e quando é NÃO.</p>
+
+<br><br><h1>Exemplo:</h1><br>
+<div class="codigo">
+
+var<br>
+num: inteiro<br><br>
+
+Inicio<br>
+num < - 10<br><br>
+
+se (num > 10) entao<br>
+escreval("Maior que 10")<br>
+
+senao<br>
+escreva("Menor ou igual a 10")<br>
+fimse<br>
+escreva("FIM")<br><br>
+
+Fimalgoritmo<br>
+
+</div><br>
+
+
+
+<br><br><h1>Seleção Múltipla</h1><br>
+<p>Quando outras verificações são feitas caso a anterior tenha falhado.
+A proposta da estrutura ESCOLHA-CASO é permitir ir direto no bloco de código
+ desejado, dependendo do valor de uma variável de verificação.</p>
+
+<br><br><h1>Exemplo:</h1><br>
+<div class="codigo">
+
+algoritmo "DependentesFuncionario"<br>
+var Nome: Caractere<br>
+Sal, nSal : Real<br>
+dep : Inteiro<br><br>
+
+inicio<br>
+escreva ("Qual o nome do Funcionario?: ")<br>
+leia (Nome)<br>
+escreva ("Qual o salario do Funcionario?: R$")<br>
+leia (Sal)<br>
+escreva ("Qual e a quantidade de dependentes? ")<br>
+Leia (Dep)<br>
+escolha Dep<br>
+caso 0<br>
+nSal < - Sal + (Sal*5/100)<br>
+caso 1, 2, 3<br>
+nSal < - Sal + (Sal*10/100)<br>
+caso 4, 5, 6<br>
+nSal   Sal + (Sal*15/100)<br>
+OutroCaso<br>
+nSal < - Sal + (Sal*18/100)<br>
+FimEscolha<br><br>
+
+EscrevaL ("O novo salario de ", Nome, " será de R$", nSal:5:2)<br>
+Fimalgoritmo<br>
+
+
+</div><br>
+
+<div class="codigo">
+  <a href="../exercicios/exercicio1.html">Exercicios no VisuAlg</a><br>
+<a href="../exercicios/Aula123Java.txt" target="_blank">Exercicios no Java.txt</a>
+</div>
+
+
+</div>
+
+
+
+<br>
+<input id="avancar" type="button" value="◔" onclick="acessar()"></input>
+<input id="voltar" type="button" value="⟲" onclick=""></input>
+
+
+
+
+
+
+</div>
+
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/q.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+
+<div id="iconmenu">
+
+<label for="toggle-1"><h1>≡</h1></label>
+
+</div>
+
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+
+<div id="menu">
+
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="#" ><p> Aula 1 2 e 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="Aula6.html"><p> Aula 6</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

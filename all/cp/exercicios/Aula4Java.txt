@@ -1,0 +1,75 @@
+============================================================================
+===================================AULA 4===================================
+============================================================================
+
+public static void main(String[]args) {
+double salario,prestacao, auxiliar;	
+Scanner sc = new Scanner(System.in);
+System.out.println("Informe o valor do salário: ");
+salario = sc.nextDouble();
+System.out.println("Informe o valor da prestação: ");
+prestacao= sc.nextDouble();
+auxiliar = salario * 0.3;
+if(prestacao > auxiliar) {
+System.out.println("Empréstimo não pode ser concedido");
+}
+else {
+System.out.println("Empréstimo pode ser concedido");
+}}}
+
+============================================================================
+
+public static void main(String[]args) {
+String destino; 
+int IouV;
+Scanner sc = new Scanner(System.in);
+System.out.println("Informe o destino: ");
+destino = sc.next();
+System.out.println("Digite '1' para ida "
+				 + "\nDigite '2' para ida e volta");
+IouV = sc.nextInt();
+switch (destino) {
+case "Norte":
+if(IouV==1) {
+System.out.println("Você irá pagar RS 100");
+}else {System.out.println("Você irá pagar RS 180");}
+break;
+case "Nodeste":
+if(IouV==1) {
+System.out.println("Você irá pagar RS 205");
+}else {System.out.println("Você irá pagar RS 307");}	
+break;
+case "Centro-oeste":
+if(IouV==1) {
+System.out.println("Você irá pagar RS 548");
+}else {System.out.println("Você irá pagar RS 1007");}	
+break;
+default:
+System.out.println("Inválido");
+}}}
+
+============================================================================
+
+package ex;
+import java.util.Scanner;
+public class EX {
+public static void main(String[]args) {	
+Scanner sc = new Scanner(System.in);
+int digito, auxiliar, i = 0, soma, mult;
+System.out.println("Informe o digito: ");
+digito = sc.nextInt();
+auxiliar = digito;
+while(auxiliar > 0 ) {
+i *= 10;	
+i += (auxiliar %10);
+auxiliar /=10;
+}
+soma = i + digito;
+mult = (soma%10) * 3;
+mult = mult + ((soma/10)%10)* 2;
+mult = mult + (((soma/10)/10%10)%10) * 1;
+mult = mult % 10;
+System.out.println("Digito: " + mult);
+}}
+
+============================================================================
