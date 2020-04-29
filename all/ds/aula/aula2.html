@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 2</title>
+</head>
+<body onload="marcar()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+<h1>Aula 2</h1>
+<p>(Modelos e Metodologias para Aplicação das Etapas do Processo de Construção de SW)</p>
+<br><br>
+
+<h1>Processos - Modelos</h1><br>
+Os modelos de processos representam, cada um, um processo de software sob uma
+ perspectiva arquitetural, ou seja, vemos a estrutura do processo, mas não os detalhes de atividades específicas.<br><br>
+Os modelos estudados são:<br><br>
+
+<h1>O modelo cascata</h1><br>
+
+<div class="icon">
+<object>
+<embed src="../../../svg/two-straight.svg">
+</object>
+</div><br>
+
+(A fase seguinte não deve se iniciar até que a fase precedente tenha sido concluída. Na prática, esses estágios se sobrepõem e trocam informações entre si.
+Durante o projeto, são identificados problemas com os requisitos; durante a codificação, são verificados problemas de projeto, e assim por diante.
+O modelo cascata segue uma metodologia tradicional de produção de SW.)<br><br>
+
+
+Esse modelo considera as atividades de especificação, desenvolvimento, validação
+ e evolução, que são fundamentais aos processos, e as representa como fases
+  separadas do processo, como a especificação de requisitos, o projeto de software,
+   a implementação, os testes e assim por diante.<br><br>
+
+   É devido à sequência em cascata de uma fase para outra que esse modelo é conhecido como Modelo Cascata.<br>
+Os principais estágios do modelo retratam as atividades de desenvolvimento fundamentais:<br><br>
+
+⍻ <u>Análise e definição de requisitos:</u><br>
+As funções, as restrições e os objetivos do sistema são estabelecidos por meio da<br>
+consulta aos usuários do sistema (levantamento de requisitos). Em seguida, são definidos em detalhes e servem como uma especificação do sistema (análise de requisitos).<br><br>
+Alguns autores trabalham, nessa fase, a elicitação de requisitos como uma só etapa.<br><br>
+⍻ <u>Projeto de software:</u><br>
+O processo de projeto agrupa os requisitos em sistemas de Hardware ou de Software.
+ Ele estabelece uma arquitetura do sistema geral. O projeto de software envolve a
+  identificação e a descrição das abstrações fundamentais do sistema de Software e
+   suas relações por meio de Diagramas UML. Nessa fase também podemos apresentar
+    alguns protótipos de telas.<br><br>
+⍻ <u>Implementação e teste de unidades:</u><br>
+Durante esse estágio, o projeto de SW é compreendido como um conjunto de programas
+ e unidades de programa. O teste de unidades envolve verificar que cada unidade atenda a suas especificações.<br><br>
+
+⍻ <u>Integração e teste de sistemas:</u><br>
+As unidades de programa ou programas individuais são integrados e testados como
+ um sistema completo a fim de garantir que os requisitos de SW foram atendidos. Depois dos testes, o sistema de SW é entregue ao cliente.<br><br>
+
+⍻ <u>Operação e manutenção:</u><br>
+O sistema é instalado e colocado em operação. A manutenção envolve corrigir erros que não foram descobertos
+ em estágios anteriores do ciclo de vida, melhorando a implementação das unidades de sistema e aumentando as funções desse sistema à medida que novos requisitos são descobertos.<br><br><br>
+
+
+
+<h1>Desenvolvimento evolucionário</h1><br>
+
+<div class="icon">
+<object>
+<embed src="../../../svg/spiral.svg">
+</object>
+</div><br>
+
+Essa abordagem intercala as atividades de especificação, desenvolvimento e validação.<br>
+Um sistema inicial é rapidamente desenvolvido a partir de especificações abstratas, que são então refinadas com informações do cliente, para produzir um sistema que satisfaça a suas necessidades.<br><br>
+
+O desenvolvimento evolucionário tem como base a ideia de desenvolver uma implementação
+ inicial, expor o resultado ao comentário do usuário e fazer seu aprimoramento
+  por meio de muitas versões, até que um sistema adequado tenha sido desenvolvido. Esse modelo segue a ideia de metodologia ágil.<br><br>
+No desenvolvimento revolucionário existe o desenvolvimento exploratório, em que o objetivo do processo é trabalhar com o cliente, a fim de explorar seus requisitos e entregar um sistema final.<br><br>
+O desenvolvimento se inicia com as partes do sistema que são compreendidas. O sistema evolui com o acréscimo de novas características, à medida que elas são propostas pelo cliente.<br><br>
+
+<h1>Modelo Incremental</h1><br>
+
+<div class="icon">
+<object>
+<embed src="../../../svg/loop.svg">
+</object>
+</div><br>
+
+O modelo de processo incremental aplica sequências lineares (como no modelo cascata)
+de forma escalonada, à medida que o tempo for avançando. Cada uma das sequencias
+lineares gera um incremento do software. Esses incrementos são entregáveis e prontos para o cliente.<br><br>
+
+Um exemplo de um processo incremental é um software de e-mail que inicialmente
+ contém funções apenas para enviar e-mails à destinatários e ler e-mails
+  recebidos. Em um segundo incremento o software poderia adicionar
+  funções de revisão ortográfica e gerenciamento de e-mails recebidos.
+   No terceiro incremento o software poderia adicionar um controle de spam. E assim sucessivamente.<br><br>
+
+O modelo de processo incremental entrega um produto operacional a cada incremento,
+ou seja, um produto sem erros e pronto para o usuário utilizar. Mesmo que os
+primeiros incrementos sejam partes do produto, essas partes são operacionais
+e funcionam sem as outras. Portanto, os incrementos possuem totais condições
+de atender ao usuário. Assim como no modelo evolucionário, o incremental segue uma metodologia ágil.<br><br><br>
+
+
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/cyber2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao"></div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="aula1.html" ><p> Aula 1</p></a></li>
+<li><a href="#"><p> Aula 2</p></a></li>
+<li><a href="Aula3.html"><p> Aula 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="../exercicios/exercicio2.html"><p> Aula 7</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 5</title>
+</head>
+<body onload="marcar2()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+<h1>Aula 5</h1>
+(Diagrama de Casos de Uso/ou Use Case)<br><br>
+<h1>Visão "use-case"</h1><br>
+Descreve a funcionalidade do sistema desempenhada pelos atores externos do sistema (usuários)..<br><br>
+
+Exemplo: Diagrama de Caso de Uso<br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case1.svg">
+</object>
+</div>
+</div><br>
+
+<h1>Introdução</h1><br>
+O modelo de casos de uso ou diagrama de use case é uma representação das funcionalidades do sistema e dos elementos externos ao sistema que interagem com o mesmo.<br>
+
+O modelo de casos de uso modela os requisitos funcionais do sistema.<br>
+
+Além disso, o modelo de casos de uso força os desenvolvedores a moldar o sistema de acordo com o usuário.<br><br>
+
+Permite organizar os requisitos, eliminando as redundâncias de informações por meio de relacionamentos de casos de uso.<br>
+
+Capta o comportamento desejado para um sistema, por meio de análise de requisitos.<br>
+
+Pode ser usado em todas as fases no desenvolvimento de um sistema, orientando na definição da arquitetura até os testes funcionais do sistema.<br><br>
+
+<h1>Componentes de um Use Case</h1><br>
+
+O modelo de casos de uso ou diagrama de use case de um sistema é composto de:<br><br>
+
+⍻ Casos de uso<br>
+⍻ Atores<br>
+⍻ Relacionamentos<br><br>
+
+O conjunto desses componentes forma um Diagrama de Caso de Uso ou um Cenário.<br><br>
+
+<h1>Cenário</h1><br>
+
+• Um caso de uso tem diversas maneiras de ser realizado.<br><br>
+
+• Um cenário é a descrição de uma das maneiras pelas quais um caso de um pode ser realizado.<br><br>
+
+• Úteis durante a modelagem de interações.<br><br>
+
+• Diagramas de Casos de uso representam uma sequência de interações entre o sistema e o ator<br><br>
+
+<h1>Descrição dos cenários</h1><br>
+
+Cada diagrama de caso de uso é definido através da descrição narrativa das interações que ocorrem entre o(s) elemento(s) externo(s) e o sistema.<br><br>
+
+Chamamos isso de descrição dos cenários ou documentação dos diagramas de caso de uso.<br><br>
+
+Exemplo – Descrição contínua: <br>
+<br><div class="codigo">
+O Cliente chega ao caixa eletrônico e insere seu cartão.<br>
+ O Sistema requisita a senha do Cliente.<br>
+  Após o Cliente fornecer sua senha e esta ser validada, o Sistema exibe as opções de operações possíveis.<br>
+   O Cliente opta por realizar um saque.<br>
+    Então o Sistema requisita o total a ser sacado. <br>
+   Após o Sistema verificar o saldo do Cliente, o mesmo fornece a quantia desejada e imprime o recibo para o Cliente.
+</div><br>
+
+Exemplo – Descrição numerada<br>
+<br><div class="codigo">
+1.  Cliente insere seu cartão no caixa eletrônico.<br>
+2.  Sistema apresenta solicitação de senha.<br>
+3.  Cliente digita senha.<br>
+4.  Sistema exibe menu de operações disponíveis.<br>
+5.  Cliente indica que deseja realizar um saque.<br>
+6.  Sistema requisita quantia a ser sacada.<br>
+7.  Sistema verifica o saldo do Cliente.<br>
+8.  Cliente retira a quantia e recibo.<br>
+
+</div><br><br>
+
+<h1>Atores</h1><br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case2.svg">
+</object>
+</div>
+</div><br>
+
+Um ator corresponde a um papel representado em relação ao sistema.<br>
+• O mesmo indivíduo pode ser o Cliente que compra mercadorias e o Vendedor que processa vendas.<br>
+• Uma pessoa pode representar o papel de Funcionário de uma instituição bancária que realiza a manutenção de um caixa eletrônico, mas também pode ser o Cliente do banco que realiza o saque de uma quantia.<br><br>
+
+O nome dado a um ator deve lembrar o seu papel, ao invés de lembrar quem o representa.<br><br>
+
+Elemento externo que interage com o sistema.<br>
+• “externo”: atores não fazem parte do sistema.
+• “interage”: um ator troca informações com o sistema.<br><br>
+Casos de uso representam uma sequência de interações entre o sistema e o ator.<br>
+• no sentido de troca de informações entre eles.<br><br>
+Normalmente um agente externo inicia a sequência de interações como o sistema, ou um evento acontece para que o sistema responda.<br><br>
+
+Categorias de atores:<br><br>
+
+⧉ pessoas (Empregado, Cliente, Gerente, Almoxarife, Vendedor, etc);<br>
+⧉ organizações (Empresa Fornecedora, Agência de Impostos, Administradora de Cartões, etc);<br>
+⧉ outros sistemas (Sistema de Cobrança, Sistema de Estoque de Produtos, etc).<br>
+⧉ equipamentos (Leitora de Código de Barras, Sensor, etc.)<br><br>
+
+<h1>Notação</h1><br>
+A notação para um ator é a figura de um boneco<br>
+com o nome do ator definido abaixo desta figura.<br><br>
+
+Cada caso de uso é representado por uma elipse.<br>
+O nome do caso de uso é posicionado abaixo ou dentro da elipse.<br><br>
+
+Os relacionamentos tem várias notações e dependem de suas características. Veremos mais adiante.<br><br>
+
+Exemplo - Notação<br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case3.svg">
+</object>
+</div>
+</div><br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case4.svg">
+</object>
+</div>
+</div><br>
+
+<h1>Relacionamentos Diagrama de Use Case</h1><br>
+
+Atores e Casos de Uso<br>
+• Casos de uso e atores não existem sozinhos. Pode haver relacionamentos entre eles.<br>
+• Único relacionamento existente é <u>COMUNICAÇÃO ou ASSOCIAÇÃO</u>.<br><br>
+
+Entre Casos de Uso<br>
+• A UML define diversos de relacionamentos no modelo de casos de uso(diagrama de use case):<br><br>
+⧉ Inclusão (Include)<br>
+⧉ Extensão (Extend)<br>
+⧉ Generalização (Herança)<br><br>
+
+Os relacionamentos de inclusão, extensão são  representados por uma seta direcionada de um caso de uso para outro.<br><br>
+
+A seta (tracejada) de um relacionamento de inclusão recebe o estereótipo << include >>.<br>
+⤏<br><br>
+A seta (tracejada) de um relacionamento de exclusão recebe o estereótipo << extend >>.<br>
+⤏<br><br>
+A seta (sólida) de um relacionamento de herança  não recebe estereótipo.<br>
+➝<br><br>
+
+• Inclusão /Include - mais de um caso de uso será captado em outro caso de uso.<br>
+• É obrigatória a ocorrência da outra funcionalidade.<br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case5.svg">
+</object>
+</div>
+</div><br>
+
+• Extensão /Extend- descrevem cenários(opcionais) que somente ocorrerão em uma situação específica.<br>
+• Não é obrigatória a execução da outra funcionalidade, somente em casos condicionais ou de restrição.(se)<br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case6.svg">
+</object>
+</div>
+</div><br>
+
+Exemplo<br><br>
+Considere um processador de textos.<br>
+Considere que um dos casos de uso deste sistema seja Editar Documento.<br>
+No cenário típico deste caso de uso, o ator abre o documento, modifica-o, salva as modificações e fecha o documento.<br>
+Mas, em outro cenário, o ator pode desejar que o sistema faça uma verificação ortográfica no documento.<br>
+Em outro, ele pode querer realizar a substituição de um fragmento de texto por outro.<br>
+
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case7.svg">
+</object>
+</div>
+</div><br>
+
+Generalização/ Herança<br><br>
+• Este relacionamento permite que um caso de uso (ou um ator) herde características de um caso de uso (ator) mais genérico.<br>
+• O caso de uso (ator) herdeiro pode especializar o comportamento do caso de uso (ator) base.<br>
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case8.svg">
+</object>
+</div>
+</div><br>
+
+Relacionamento no qual o reuso é mais evidente.<br>
+
+Este relacionamento permite que um caso de uso herde características de um caso de uso mais genérico.<br>
+
+O caso de uso herdeiro pode especializar o comportamento do caso de uso base.<br>
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case9.svg">
+</object>
+</div>
+</div><br>
+
+Entre Atores<br><br>
+O único relacionamento permitido entre ATORES é a GENERALIZAÇÃO/HERANÇA, o ator especializado recebe as atribuições do ator generalizado.<br>
+Este relacionamento permite que  um ator herde os comportamentos de ator mais genérico.<br>
+O ator herdeiro pode especializar o comportamento do ator base(especializado).<br>
+<br><div class="codigo">
+<div class="case">
+<object>
+<embed src="../../../svg/Case10.svg">
+</object>
+</div>
+</div><br><br>
+
+<h1>Como identificar os Casos de Uso?</h1><br>
+Os atores e os casos de uso são identificados a partir de informações coletadas na fase de levantamento e análise de requisitos do sistema.<br><br>
+
+Durante esta fase, os analistas devem identificar as atividades(processo) do negócio relevantes ao sistema a ser construído.<br><br>
+
+Não há uma regra geral que indique quantos casos de uso são necessários para descrever completamente um sistema.<br>
+
+A quantidade de casos de uso a ser utilizada depende completamente da complexidade do sistema e do processo de negócio analisado.<br><br>
+
+<h1>Como identificar os Atores?</h1><br>
+
+⧉ Fontes e os destinos das informações a serem processadas são atores em potencial.<br>
+• Uma vez que um ator é todo elemento externo que interage com o sistema.<br><br>
+
+⧉ O analista deve identificar:<br>
+• As áreas da empresa que serão afetadas ou utilizarão o sistema.<br>
+• Fontes de informações a serem processadas e os destinos das informações geradas pelo sistema.<br><br>
+
+Perguntas úteis:<br>
+<br><div class="codigo">
+• Que órgãos, empresas ou pessoas irão utilizar o sistema?<br>
+• Que outros sistemas irão se comunicar com o sistema a ser construído?<br>
+• Alguém deve ser informado de alguma ocorrência no sistema?<br>
+• Quem está interessado em um certo requisito funcional do sistema?<br>
+</div><br><br>
+
+
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/cyber2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao">
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="aula1.html" ><p> Aula 1</p></a></li>
+<li><a href="aula2.html"><p> Aula 2</p></a></li>
+<li><a href="Aula3.html"><p> Aula 3</p></a></li>
+<li><a href="Aula4.html"><p> Aula 4</p></a></li>
+<li><a href="#.html"><p> Aula 5</p></a></li>
+<li><a href="../exercicios/exercicio2.html"><p> Aula 7</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>

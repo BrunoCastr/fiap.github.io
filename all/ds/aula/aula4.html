@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../css/styleA.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<title>Aula 4</title>
+</head>
+<body onload="marcar2()">
+<input type="checkbox" id="toggle-1"></input>
+<input type="checkbox" id="toggle-2"></input>
+<!--______________________________________________________________________-->
+<div class="Guardador">
+
+<h1>Aula 4</h1>
+<p>(Requisitos)</p>
+<br><br>
+
+<h1>O que é Requisito?</h1><br><br>
+
+Requisito (Leffingwell & Widrig, 2003):<br>
+“Uma condição ou capacidade de software requisitada por um usuário para resolver um problema e alcançar um resultado”;<br><br>
+
+“Uma condição ou capacidade de um software que deve ser implementada por um sistema ou componente de sistema para satisfazer um contrato, padrão, especificação ou outra documentação formal”.<br><br>
+
+Requisitos são descritos em diferentes níveis de abstração:<br><br>
+
+ Requisitos de Usuário: São declarações, em uma linguagem simples, natural, tabelas, de quais serviços são esperados do sistema e as <u>restrições sob as quais ele deve operar (Regras de Negócio)</u>
+Os requisitos de Usuário são os resultados na etapa de levantamento de requisitos.<br><br>
+
+Exemplo de requisito de usuário:<br><br>
+<div class="codigo">
+O sistema ABC deve fornecer um sistema de contabilidade financeira que mantenha registro de todos os pagamentos realizados pelos usuários do sistema.
+ Os gerentes podem configurar esse sistema de modo que os usuários frequentes possam receber descontos...
+</div><br><br>
+
+Requisitos de Sistema: são versões expandidas dos requisitos de usuário usados
+ pelos engenheiros de software como ponto de partida para o projeto do sistema. Devem descrever o comportamento externo do sistema e suas restrições operacionais.<br><br>
+
+ Não devem estar relacionados a como o sistema pode ser projetado ou implementado.”<br>
+ É uma das atividades da etapa de análise de requisitos.<br><br>
+
+ Exemplo de requisito de sistema:<br><br>
+ <div class="codigo">
+    • Ao solicitar um documento ao sistema, deve ser apresentado ao solicitante um formulário que registra os detalhes do usuário e da solicitação feita.<br><br>
+    • O cliente consulta o saldo da conta corrente, o sistema exibe o saldo disponível para o saque.
+</div><br><br>
+
+Requisitos de Domínio: São requisitos derivados do domínio da aplicação e descrevem características do sistema e qualidades que refletem o domínio, portanto as regras do negócio.<br><br>
+
+Exemplo de requisito de domínio:<br><br>
+ <div class="codigo">
+O cálculo da média final de cada aluno é dado pela fórmula:     (Nota1 * 2 + Nota2 +3)/5<br>
+Um aluno pode se matricular em uma disciplina desde que ele tenha sido aprovado nas disciplinas consideradas pré-requisitos.
+</div><br><br>
+
+<h1>Requisitos Funcionais</h1><br>
+
+São requisitos que descrevem as funções ou serviços que o software deverá desempenhar.<br><br>
+ <div class="codigo">
+   RF01 -  O sistema deverá permitir o cadastro de clientes ou<br>
+   RF01 - Cadastrar Cliente<br><br>
+
+   RF02 - O sistema deverá permitir a geração de relatórios sobre o desempenho de vendas no semestre ou<br>
+   RF02 - Gerar relatórios sobre o desempenho de vendas no semestre<br><br>
+
+   RF03 - O sistema deverá permitir o pagamento das compras com cartão de crédito  ou<br>
+   RF03 – Registrar Pagamento das compras com cartão de crédito<br>
+</div><br><br>
+
+<h1>Requisitos Não-Funcionais</h1><br>
+
+São requisitos que expressam condições que o software deve atender ou qualidades específicas que o software deve ter. Esses requisitos colocam restrições no sistema.<br><br>
+
+<div class="codigo">
+  RNF01 - O sistema deve ser compatível com os browsers IE (versão 8 ou superior) e Firefox (versão 6 ou superior).<br><br>
+
+  RNF02 -O sistema deve garantir que o tempo de resposta das consultas não seja maior do que 5 segundos.<br>
+</div><br><br>
+
+<h1>Regras de Negócio (Restrição):</h1><br>
+
+- Algo que limita/restringe o sistema. Está dentro do nosso controle e muitas vezes é utilizado para evitar um risco, ou seja, acaba sendo uma resposta a um risco.<br><br>
+- Nos exemplos, seria uma maneira de minimizar o risco do sistema não funcionar em versões inferiores dos browsers IE e Firefox.<br><br>
+
+‣ F unctionality- Funcionalidade         –     RF<br><br>
+
+‣ U sability – Usabilidade<br>
+‣ R eliability - Confiabilidade          -     RNF<br>
+‣ P erformance - Desempenho<br>
+‣ S upportability - Suportabilidade<br><br>
+
+<h1>Requisitos – FURPS+</h1><br>
+
+No processo de desenvolvimento de software, os requisitos são categorizados de acordo com o modelo FURPS+, mneumônico com o seguinte significado:<br><br>
+
+F = Funcionality<br>
+Funcionalidade: determina o que o sistema deve executar.<br><br>
+<div class="codigo">
+  “Cadastrar Usuário”, “Listar Notícias”;<br>
+      ou seja, REQUISITOS FUNCIONAIS
+
+</div><br><br>
+
+U = Usability<br>
+Usabilidade: fatores humanos, recursos de ajuda, documentação.<br><br>
+<div class="codigo">
+  “A tolerância é de 1 falha a cada 30 dias”;
+</div><br><br>
+
+P = Performance<br>
+Desempenho: tempos de resposta, fluxo de vazão, precisão, disponibilidade, uso de recursos.<br><br>
+<div class="codigo">
+  “A página de consulta de produtos não pode demorar mais que 3 segundos para processar”;
+</div><br><br>
+
+S = Supportability<br>
+Facilidade de suporte: facilidade de adaptação e de manutenção, internacionalização, configurabilidade.<br><br>
+<div class="codigo">
+  “O website deve ser trilíngüe (Português, Inglês e Espanhol)”;
+</div><br><br>
+
++
+<br>Outras características, geralmente restrições (NÃO FUNCIONAIS)<br><br>
+Requisitos de Design: restrições de modelagem do sistema
+<div class="codigo">
+“O banco de dados usado deve ser relacional”;
+</div><br><br>
+Requisitos de Implementação: restrições a respeito das tecnologias utilizadas
+<div class="codigo">
+“A linguagem de desenvolvimento deve ser PHP, versão 5.2.6 ou superior”;
+</div><br><br>
+Requisitos de Interface: especifica um item externo a qual o sistema deve interagir
+<div class="codigo">
+“O sistema X deve conversar com Y utilizando Webservices”;
+</div><br><br>
+Requisitos Físicos: restrições de hardware e infraestrutura
+<div class="codigo">
+“O sistema deve ser armazenado em dois servidores, de forma redundante”;
+</div><br>
+
+<br><br><h1>Exercicios</h1>
+<br><div class="codigo">
+<a href="../exercicios/exercicio1.html">Exercicios-4.html</a><br>
+</div><br>
+
+</div>
+<!--______________________________________________________________________-->
+<div class="logo" id="logo2">
+<object>
+<embed src="../../../svg/cyber2.svg">
+</object>
+</div>
+<!--______________________________________________________________________-->
+<div id="iconmenu">
+<label for="toggle-1"><h1>≡</h1></label>
+</div>
+<div id="iconmenu2">
+<label for="toggle-2"><h1>۞</h1></label>
+</div>
+<!--______________________________________________________________________-->
+<div class="fundao" id="fundao">
+</div>
+<!--______________________________________________________________________-->
+<div id="menu">
+<div id="menumenu">
+<nav id="submenu">
+<li><a href="aula1.html" ><p> Aula 1</p></a></li>
+<li><a href="aula2.html"><p> Aula 2</p></a></li>
+<li><a href="Aula3.html"><p> Aula 3</p></a></li>
+<li><a href="#.html"><p> Aula 4</p></a></li>
+<li><a href="Aula5.html"><p> Aula 5</p></a></li>
+<li><a href="../exercicios/exercicio2.html"><p> Aula 7</p></a></li>
+<label for="toggle-1"><h1>≡</h1></label>
+</nav>
+</div>
+</div>
+<!--______________________________________________________________________-->
+</body>
+<script type="text/javascript" src="../../../js/javascript3.js">
+</script>
+</html>
